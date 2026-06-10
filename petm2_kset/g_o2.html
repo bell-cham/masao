@@ -1,0 +1,584 @@
+<HTML>
+
+
+<HEAD>
+
+
+<TITLE>オフィシャルステージ上級編 ORGE/YU EDITIONです。グラーソルやフェーゴなどはこちらでしか手に入らないようです。</TITLE>
+
+
+</HEAD>
+
+<BODY background="h.png" bgcolor="black" text="white">
+
+
+<CENTER>
+<APPLET CODE="PetMon2" WIDTH="512" HEIGHT="320" ARCHIVE="petm2_c.zip">
+
+
+<!--  地図画面         -->
+<!--
+
+  地図画面は、 15 * 9 個のブロックで構成されていて、
+  文字の組み合わせで表現されています。
+
+
+  文字の説明
+
+  .  空白
+  A  自分
+  B  キド研究所
+  C  ペットセンター
+  D  店
+  E  育て屋
+  F  ジム
+  I  メッセージの人１
+  J  メッセージの人２
+
+  a  ステージ１
+  b  ステージ２
+  c  ステージ３
+  d  ステージ４
+
+  1  中継地点
+  2  縦の道
+  3  横の道
+
+-->
+
+
+<!--                          0         10   -->
+<!--                          012345678901234-->
+<PARAM NAME="chizu-0"  VALUE=".........d33131">
+<PARAM NAME="chizu-1"  VALUE="............2..">
+<PARAM NAME="chizu-2"  VALUE=".133a.......2..">
+<PARAM NAME="chizu-3"  VALUE=".2..........2..">
+<PARAM NAME="chizu-4"  VALUE=".2..........2..">
+<PARAM NAME="chizu-5"  VALUE=".2..........2..">
+<PARAM NAME="chizu-6"  VALUE=".2..E.....c.2..">
+<PARAM NAME="chizu-7"  VALUE=".2..2.....2.2..">
+<PARAM NAME="chizu-8"  VALUE=".133A3C3F3D3B3b">
+
+
+<!--  ジムリーダーの名前                                     -->
+<PARAM NAME="gym_name"      VALUE="工場長">
+
+<!--  ジムリーダーのペットのパスワード                       -->
+<PARAM NAME="gym_password2" VALUE="tyqudcmrwz5rfg3">
+<PARAM NAME="gym_password1" VALUE="a66ia0dpkcl1rdm">
+<PARAM NAME="gym_password3" VALUE="zogepxslk7kr97d">
+
+
+<!--  ジムリーダーのセリフ１                                 -->
+<!--  セリフの不要な行は、 "0" と指定して下さい。            -->
+<PARAM NAME="gym_serifu1-1" VALUE="まあ、恨んでても仕方ないな。">
+<PARAM NAME="gym_serifu1-2" VALUE="これからは仲良くやろうや。">
+<PARAM NAME="gym_serifu1-3" VALUE="親善試合でもしないか？">
+
+<!--  ジムリーダーのセリフ２                                 -->
+<PARAM NAME="gym_serifu2-1" VALUE="今回出てくるモンスターは">
+<PARAM NAME="gym_serifu2-2" VALUE="前回と同じだがレベルが下がっている。">
+<PARAM NAME="gym_serifu2-3" VALUE="勝てたら賞金出るぜ。">
+
+<!--  ジムリーダーのセリフ３                                 -->
+<PARAM NAME="gym_serifu3-1" VALUE="oh、、、You're strong、、、">
+
+<!--  ジムリーダーのセリフ４                                 -->
+<PARAM NAME="gym_serifu4-1" VALUE="I'm strong">
+
+<!--  ジムリーダーのセリフ５                                 -->
+<PARAM NAME="gym_serifu5-1" VALUE="とりあえず私に勝とう。">
+
+<!--  ジムリーダーのセリフ６                                 -->
+<PARAM NAME="gym_serifu6-1" VALUE="相変わらず強いな。">
+<PARAM NAME="gym_serifu6-2" VALUE="賞金やるわ。">
+<PARAM NAME="gym_serifu6-3" VALUE="0">
+
+<!--  ジムリーダーのセリフ７                                 -->
+<PARAM NAME="gym_serifu7-1" VALUE="私の３連敗か、、、">
+
+<!--  ジムリーダーのセリフ８                                 -->
+<PARAM NAME="gym_serifu8-1" VALUE="行け！ボルラット！">
+<PARAM NAME="gym_serifu8-2" VALUE="レベルは低いが技はすげえぜ、、、">
+
+<!--  ジムリーダーのセリフ９                                 -->
+<PARAM NAME="gym_serifu9-1" VALUE="別に恨みがなくなったから">
+<PARAM NAME="gym_serifu9-2" VALUE="レベルが下がったわけではないぞ、、、">
+
+<!--  ジムリーダーのセリフ１０                               -->
+<PARAM NAME="gym_serifu10-1" VALUE="チェリル！お前で最後じゃ！">
+<PARAM NAME="gym_serifu10-2" VALUE="くれぐれも無理はするなよ、、、">
+
+<!--  ジムリーダーのセリフ１１                               -->
+<PARAM NAME="gym_serifu11-1" VALUE="地上型の特権、ペットレース！">
+<PARAM NAME="gym_serifu11-2" VALUE="空中型共よ、指を咥えて見ているがいい！">
+<PARAM NAME="gym_serifu11-3" VALUE="てかこれ何の意味があるんだろうな、、、">
+
+
+<!--  メッセージの人１  名前                                 -->
+<PARAM NAME="name_message1"  VALUE="マグナム団団長">
+
+<!--  メッセージの人１  セリフ１                             -->
+<PARAM NAME="serifu20-1" VALUE="がはははは。">
+<PARAM NAME="serifu20-2" VALUE="我こそは、マグナム団団長である。つまり、">
+<PARAM NAME="serifu20-3" VALUE="マグナム団で、一番、えらいという事だ。">
+<PARAM NAME="serifu20-4" VALUE="どうだ、すごいだろう。">
+
+<!--  メッセージの人１  セリフ２                             -->
+<PARAM NAME="serifu21-1" VALUE="君が今、我がマグナム団に入団するなら、">
+<PARAM NAME="serifu21-2" VALUE="副団長代理にしてやるぞ。">
+<PARAM NAME="serifu21-3" VALUE="マグナム団で、３番目に、えらいという事だ。">
+<PARAM NAME="serifu21-4" VALUE="どうだ、すごいだろう。がはははは。">
+
+
+<!--  メッセージの人２  名前                                 -->
+<PARAM NAME="name_message2"  VALUE="マグナム団副団長">
+
+<!--  メッセージの人２  セリフ１                             -->
+<PARAM NAME="serifu22-1" VALUE="ふっふっふ。">
+<PARAM NAME="serifu22-2" VALUE="ここは、我がマグナム団の、秘密基地だ。">
+<PARAM NAME="serifu22-3" VALUE="我々マグナム団は、何を隠そう、">
+<PARAM NAME="serifu22-4" VALUE="環境保護を目的として、常に活動している。">
+
+<!--  メッセージの人２  セリフ２                             -->
+<PARAM NAME="serifu23-1" VALUE="２と書かれた扉には、大きな秘密がある。">
+<PARAM NAME="serifu23-2" VALUE="怪獣を２体倒さないと開かないという、">
+<PARAM NAME="serifu23-3" VALUE="大きな秘密がなあ。">
+<PARAM NAME="serifu23-4" VALUE="ふっふっふ。君に、この謎は解けまい。">
+
+
+<!--  育て屋さんのセリフ                                     -->
+<PARAM NAME="serifu1-1" VALUE="モンスターの憩いの場です。">
+<PARAM NAME="serifu1-2" VALUE="レベルアップさせるのに最適。">
+<PARAM NAME="serifu1-3" VALUE="食料、エナジードリンク、">
+<PARAM NAME="serifu1-4" VALUE="ベッドからマッサージ器も完備。">
+
+
+<!--  キドはかせのセリフ１                                   -->
+<PARAM NAME="serifu2-1" VALUE="0">
+<PARAM NAME="serifu2-2" VALUE="0">
+<PARAM NAME="serifu2-3" VALUE="君が、今日から、モンスタートレーナーになる">
+<PARAM NAME="serifu2-4" VALUE="君じゃな。">
+
+<!--  キドはかせのセリフ２                                   -->
+<PARAM NAME="serifu3-1" VALUE="品種改良で強くなったうさぎを３種類">
+<PARAM NAME="serifu3-2" VALUE="用意しておいたから、どれかを選んでくれたまえ。">
+<PARAM NAME="serifu3-3" VALUE="0">
+<PARAM NAME="serifu3-4" VALUE="0">
+
+<!--  キドはかせのセリフ３                                   -->
+<PARAM NAME="serifu4-1" VALUE="そいつは、最高のモンスターじゃ。">
+<PARAM NAME="serifu4-2" VALUE="0">
+
+<!--  キドはかせのセリフ４                                   -->
+<PARAM NAME="serifu5-1" VALUE="君が持っている、モンスター図鑑は、">
+<PARAM NAME="serifu5-2" VALUE="見つけたり、捕まえたりすると、自動的に">
+<PARAM NAME="serifu5-3" VALUE="データーが記録される。モンスターの研究に">
+<PARAM NAME="serifu5-4" VALUE="役立つので、がんばっくれたまえよ。">
+
+<!--  キドはかせのセリフ５                                   -->
+<PARAM NAME="serifu6-1" VALUE="ところで、モンスターは全部で、">
+<PARAM NAME="serifu6-2" VALUE=" 種類いる事が、最近の研究により、">
+<PARAM NAME="serifu6-3" VALUE="明らかになった。全部集めたとしたら、君は、">
+<PARAM NAME="serifu6-4" VALUE="モンスターマスターじゃな。">
+
+<!--  キドはかせのセリフ６                                   -->
+<PARAM NAME="serifu7-1" VALUE="初心者トレーナーとして、ここを訪れた">
+<PARAM NAME="serifu7-2" VALUE="君が、今では、図鑑を完成させる程とは。">
+<PARAM NAME="serifu7-3" VALUE="成長とは、早いものじゃな。">
+<PARAM NAME="serifu7-4" VALUE="今日から、君は、モンスターマスターじゃ。">
+
+
+<!--  マップデーター         -->
+<!--  ペットレース ミニ  左側                               -->
+<!--                             0         10        20        30        40        50        60        -->
+<!--                             0123456789012345678901234567890123456789012345678901234567890123456789-->
+<PARAM NAME="race-0-0"    VALUE="......................................................................">
+<PARAM NAME="race-0-1"    VALUE="......................................................................">
+<PARAM NAME="race-0-2"    VALUE="......................................................................">
+<PARAM NAME="race-0-3"    VALUE=".................................12.....12.....12.....12..............">
+<PARAM NAME="race-0-4"    VALUE="....................................................H.................">
+<PARAM NAME="race-0-5"    VALUE="......................3..33.3.........................................">
+<PARAM NAME="race-0-6"    VALUE=".A....3..3............aaaaaaa.........................................">
+<PARAM NAME="race-0-7"    VALUE="aaaaaaaaaaa.33.3.3.33.bbbbbbb..3..33..B..3333.33.8..3.33.3.3..3..3..3.">
+<PARAM NAME="race-0-8"    VALUE="bbbbbbbbbbbaaaaaaaaaaabbbbbbbaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa">
+<PARAM NAME="race-0-9"    VALUE="bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb">
+
+<!--  ペットレース ミニ  右側                               -->
+<!--                             70        80        90        100       110       120       130       -->
+<!--                             0123456789012345678901234567890123456789012345678901234567890123456789-->
+<PARAM NAME="race-1-0"    VALUE="......................................................................">
+<PARAM NAME="race-1-1"    VALUE="......................................................................">
+<PARAM NAME="race-1-2"    VALUE="......................................................................">
+<PARAM NAME="race-1-3"    VALUE="......................................................................">
+<PARAM NAME="race-1-4"    VALUE="......................................................................">
+<PARAM NAME="race-1-5"    VALUE="......................................................................">
+<PARAM NAME="race-1-6"    VALUE="......................................................................">
+<PARAM NAME="race-1-7"    VALUE="......................................................................">
+<PARAM NAME="race-1-8"    VALUE="......................................................................">
+<PARAM NAME="race-1-9"    VALUE="......................................................................">
+
+
+<!--  背景色    光の３原色の成分で設定します                 -->
+<!--  ステージ１                                             -->
+<!--  赤の成分  (0-255)  -->
+<PARAM NAME="stage1_backcolor_red" VALUE="0">
+<!--  緑の成分  (0-255)  -->
+<PARAM NAME="stage1_backcolor_green" VALUE="0">
+<!--  青の成分  (0-255)  -->
+<PARAM NAME="stage1_backcolor_blue" VALUE="0">
+
+<!--  ステージ２                                             -->
+<!--  赤の成分  (0-255)  -->
+<PARAM NAME="stage2_backcolor_red" VALUE="0">
+<!--  緑の成分  (0-255)  -->
+<PARAM NAME="stage2_backcolor_green" VALUE="0">
+<!--  青の成分  (0-255)  -->
+<PARAM NAME="stage2_backcolor_blue" VALUE="0">
+
+<!--  ステージ３                                             -->
+<!--  赤の成分  (0-255)  -->
+<PARAM NAME="stage3_backcolor_red" VALUE="0">
+<!--  緑の成分  (0-255)  -->
+<PARAM NAME="stage3_backcolor_green" VALUE="0">
+<!--  青の成分  (0-255)  -->
+<PARAM NAME="stage3_backcolor_blue" VALUE="0">
+
+<!--  ステージ４                                             -->
+<!--  赤の成分  (0-255)  -->
+<PARAM NAME="stage4_backcolor_red" VALUE="0">
+<!--  緑の成分  (0-255)  -->
+<PARAM NAME="stage4_backcolor_green" VALUE="0">
+<!--  青の成分  (0-255)  -->
+<PARAM NAME="stage4_backcolor_blue" VALUE="0">
+
+<!--  ペットレースミニの背景色                               -->
+<!--  赤の成分  (0-255)  -->
+<PARAM NAME="race_backcolor_red" VALUE="0">
+<!--  緑の成分  (0-255)  -->
+<PARAM NAME="race_backcolor_green" VALUE="255">
+<!--  青の成分  (0-255)  -->
+<PARAM NAME="race_backcolor_blue" VALUE="255">
+
+
+<!--  システムモード    0    コンストラクション              -->
+<!--                    1    オフィシャルゲーム              -->
+<!--                    2    オフィシャルゲーム・上級編      -->
+<PARAM NAME="system_mode" VALUE="2">
+
+
+<!--  タイトル画面のファイル名                              -->
+<PARAM NAME="filename_title" VALUE="t.png">
+
+<!--  エンディング画面のファイル名                          -->
+<PARAM NAME="filename_ending" VALUE="clear_.png">
+
+<!--  地図画面の背景のファイル名                            -->
+<PARAM NAME="filename_chizu" VALUE="g_map.png">
+
+<!--  ジム戦の背景のファイル名                              -->
+<PARAM NAME="filename_gym" VALUE="g_gym.gif">
+
+<!--  キャラクターパターンのファイル名                      -->
+<PARAM NAME="filename_pattern" VALUE="g_o.gif">
+
+
+<!--  アイテムの名前    -->
+<PARAM NAME="name_kizugusuri"     VALUE="治療薬">
+<PARAM NAME="name_petdrink"       VALUE="エナジードリンク">
+<PARAM NAME="name_kinomi"         VALUE="おいも">
+<PARAM NAME="name_dokukinoko"     VALUE="テトロドトキシン">
+<PARAM NAME="name_upball"         VALUE="五芒星（上昇）">
+<PARAM NAME="name_lineball"       VALUE="五芒星（直進）">
+<PARAM NAME="name_powerball"      VALUE="五芒星（弱体化不要）">
+<PARAM NAME="name_kinnotama"      VALUE="クリスタル">
+<PARAM NAME="name_wazamachine01"  VALUE="レーザーポインタ">
+<PARAM NAME="name_wazamachine02"  VALUE="神経毒発射機">
+<PARAM NAME="name_wazamachine03"  VALUE="人口地震発動機">
+<PARAM NAME="name_wazamachine04"  VALUE="プラズマ砲発射機">
+<PARAM NAME="name_wazamachine05"  VALUE="セルフ回復薬">
+<PARAM NAME="name_wazamachine06"  VALUE="PP削減球発射機">
+
+
+<!--  セリフ中のどくきのこの名前  -->
+<PARAM NAME="name_dokukinoko_s"        VALUE="テトロドトキシン">
+
+<!--  どくきのこの説明            -->
+<PARAM NAME="name_dokukinoko_setumei"  VALUE="駆除すると３０円もらえます。">
+
+<!--  セリフ中のきんのたまの名前  -->
+<PARAM NAME="name_kinnotama_s"         VALUE="クリスタル">
+
+<!--  きんのたまの説明            -->
+<PARAM NAME="name_kinnotama_setumei"   VALUE="あなたの身体と懐を温めます。">
+
+
+<!--  登場人物の名前    -->
+<PARAM NAME="name_kidohakase"     VALUE="じじ様">
+<PARAM NAME="name_jyuuisan"       VALUE="Auto Aid System">
+<PARAM NAME="name_teninsan"       VALUE="Auto Shopping System">
+<PARAM NAME="name_sodateyasan"    VALUE="モンスターズホテル">
+<PARAM NAME="name_dragontaxy"     VALUE="ハピ子">
+<PARAM NAME="name_furuure"        VALUE="シャナン">
+
+<!--  最初に用意されている主人公の名前
+
+      ５文字以内のカタカナ以外は、
+      正常にパスワード化されません。
+-->
+<PARAM NAME="name_boy1"   VALUE="オーガ">
+<PARAM NAME="name_boy2"   VALUE="タカシ">
+<PARAM NAME="name_boy3"   VALUE="デビッド">
+<PARAM NAME="name_boy4"   VALUE="アドルフ">
+<PARAM NAME="name_girl1"  VALUE="ユー">
+<PARAM NAME="name_girl2"  VALUE="カナコ">
+<PARAM NAME="name_girl3"  VALUE="ケイト">
+<PARAM NAME="name_girl4"  VALUE="ヒルダ">
+
+<!--  モンスターの名前    -->
+<PARAM NAME="name_fennec"        VALUE="ソーファ">
+<PARAM NAME="name_kametank"      VALUE="ホーリー">
+<PARAM NAME="name_sunvista"      VALUE="チェリー">
+<PARAM NAME="name_butapig"       VALUE="スクアル">
+<PARAM NAME="name_karara"        VALUE="パンチユウ">
+<PARAM NAME="name_iwatops"       VALUE="マガルデ">
+<PARAM NAME="name_yachamo"       VALUE="ボルラット">
+<PARAM NAME="name_mariri"        VALUE="バルチルス">
+<PARAM NAME="name_chireihana"    VALUE="ビーナ">
+<PARAM NAME="name_poppie"        VALUE="バルンド">
+<PARAM NAME="name_namakezaru"    VALUE="ケムリュウ">
+<PARAM NAME="name_lunarock"      VALUE="モノアイ">
+<PARAM NAME="name_pikachii"      VALUE="ビリマオン">
+<PARAM NAME="name_sungoose"      VALUE="スミロドン">
+<PARAM NAME="name_starnal"       VALUE="アイゼル">
+<PARAM NAME="name_hercules"      VALUE="フォックス">
+<PARAM NAME="name_lanster"       VALUE="キャナビー">
+<PARAM NAME="name_kamalike"      VALUE="タラチュン">
+<PARAM NAME="name_chirumichiru"  VALUE="エアバード">
+<PARAM NAME="name_popony"        VALUE="チェリル">
+<PARAM NAME="name_yureko"        VALUE="ユレオ">
+<PARAM NAME="name_sunnyna"       VALUE="ネオクロウ">
+<PARAM NAME="name_bibidama"      VALUE="マグマ">
+<PARAM NAME="name_pichika"       VALUE="サタリン">
+<PARAM NAME="name_blackal"       VALUE="ドラーゴ">
+<PARAM NAME="name_makkalgo"      VALUE="サラマンダ">
+<PARAM NAME="name_rachi"         VALUE="デュウム">
+<PARAM NAME="name_atis"          VALUE="グラーソル">
+<PARAM NAME="name_latis"         VALUE="フェーゴ">
+<PARAM NAME="name_tubomushi"     VALUE="タラキシン">
+<PARAM NAME="name_taiking"       VALUE="ホーガ">
+<PARAM NAME="name_mirocureall"   VALUE="シードラゴ">
+<PARAM NAME="name_airms"         VALUE="ファイセル">
+<PARAM NAME="name_grounder"      VALUE="グリード">
+<PARAM NAME="name_kaiole"        VALUE="ハーピー">
+<PARAM NAME="name_senkuuza"      VALUE="ミストロン">
+
+
+<!--  技の名前の変更    0    オフィシャルの名前                     -->
+<!--                    1    変更する                               -->
+<!--  変更する場合、モンスター特有の技が、下記の名前に              -->
+<!--  置き換わる為、全てを設定し直さないと、不自然になります。      -->
+<PARAM NAME="waza_name_hf"       VALUE="1">
+
+<!--  技の名前                                                      -->
+<PARAM NAME="waza_name1"         VALUE="ジャンプ">
+<PARAM NAME="waza_name2"         VALUE="体当たり">
+<PARAM NAME="waza_name3"         VALUE="火の粉">
+<PARAM NAME="waza_name4"         VALUE="火の粉×５">
+<PARAM NAME="waza_name5"         VALUE="冷凍ミサイル">
+<PARAM NAME="waza_name6"         VALUE="アイスカッター×５">
+<PARAM NAME="waza_name7"         VALUE="葉の刃">
+<PARAM NAME="waza_name8"         VALUE="葉の刃×５">
+<PARAM NAME="waza_name9"         VALUE="中高一本拳">
+<PARAM NAME="waza_name10"        VALUE="つつく">
+<PARAM NAME="waza_name11"        VALUE="大地の怒り">
+<PARAM NAME="waza_name12"        VALUE="レールガン">
+<PARAM NAME="waza_name13"        VALUE="追尾弾">
+<PARAM NAME="waza_name14"        VALUE="かみちぎる">
+<PARAM NAME="waza_name15"        VALUE="猛禽狩り">
+<PARAM NAME="waza_name16"        VALUE="膝蹴り">
+<PARAM NAME="waza_name17"        VALUE="自然の怒り">
+<PARAM NAME="waza_name18"        VALUE="レーザー">
+<PARAM NAME="waza_name19"        VALUE="神の怒り">
+<PARAM NAME="waza_name20"        VALUE="突風">
+<PARAM NAME="waza_name21"        VALUE="ドリルショット">
+<PARAM NAME="waza_name22"        VALUE="お年玉">
+<PARAM NAME="waza_name23"        VALUE="もやっとボール×５">
+<PARAM NAME="waza_name24"        VALUE="天使の悦び">
+<PARAM NAME="waza_name25"        VALUE="リーフファング">
+<PARAM NAME="waza_name26"        VALUE="竜巻">
+<PARAM NAME="waza_name27"        VALUE="ポルターガイスト">
+<PARAM NAME="waza_name28"        VALUE="チェリーボム">
+<PARAM NAME="waza_name29"        VALUE="おすそわけ">
+<PARAM NAME="waza_name30"        VALUE="アロエカッター">
+<PARAM NAME="waza_name31"        VALUE="肉体の悦び">
+<PARAM NAME="waza_name32"        VALUE="砲撃">
+<PARAM NAME="waza_name33"        VALUE="毒霧">
+<PARAM NAME="waza_name34"        VALUE="背水の陣">
+<PARAM NAME="waza_name35"        VALUE="さそりの針">
+<PARAM NAME="waza_name36"        VALUE="怨念">
+<PARAM NAME="waza_name37"        VALUE="散乱">
+<PARAM NAME="waza_name38"        VALUE="プラズマ砲">
+<PARAM NAME="waza_name39"        VALUE="神様からのお年玉">
+<PARAM NAME="waza_name40"        VALUE="炎の怒り">
+<PARAM NAME="waza_name41"        VALUE="追尾弾×２">
+<PARAM NAME="waza_name42"        VALUE="悪霊召喚">
+<PARAM NAME="waza_name43"        VALUE="魔界旅行">
+<PARAM NAME="waza_name44"        VALUE="悪魔の怒り">
+<PARAM NAME="waza_name45"        VALUE="太陽の悦び">
+<PARAM NAME="waza_name46"        VALUE="豪雪">
+<PARAM NAME="waza_name47"        VALUE="ドリルヘッド">
+<PARAM NAME="waza_name48"        VALUE="焦土">
+<PARAM NAME="waza_name49"        VALUE="建造物解体">
+<PARAM NAME="waza_name50"        VALUE="冷気">
+<PARAM NAME="waza_name51"        VALUE="バトラコトキシン">
+<PARAM NAME="waza_name52"        VALUE="特攻">
+<PARAM NAME="waza_name53"        VALUE="血潮の悦び">
+<PARAM NAME="waza_name54"        VALUE="大山鳴動">
+<PARAM NAME="waza_name55"        VALUE="エネルギー砲">
+<PARAM NAME="waza_name56"        VALUE="芋の怒り">
+<PARAM NAME="waza_name57"        VALUE="忍び寄る手">
+
+
+</APPLET>
+</CENTER>
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+
+
+<HR>
+
+
+<H2>キーボード操作</H2>
+
+<DL>
+<DT>（←），（４）
+<DD>左へ歩く
+<DT>（→），（６）
+<DD>右へ歩く
+<DT>（Ｚ）、（スペース）
+<DD>決定ボタン、ジャンプ
+<DT>（Ｘ）
+<DD>キャンセルボタン
+<DT>（↓）、（２）
+<DD>セレクトボタン下、右
+<DT>（↑）、（８）
+<DD>セレクトボタン上、左
+<DT>（Ｔ）
+<DD>タイトル画面に戻る
+</DL>
+
+<H2>特殊キー</H2>
+
+<DL>
+<DT>（ファンクションキー）
+<DD>メニューの項目を選択する
+<DT>（Ｃ）
+<DD>主人公がジャンプする
+<DT>（Ｖ）
+<DD>選択中のペットにジャンプを命令する
+<DT>（Ａ）、（Ｓ）、（Ｄ）、（Ｆ)、（Ｇ）、（Ｈ）
+<DD>ペットボールを選択する
+</DL>
+
+<H2>パスワードの表示／入力について</H2>
+
+パスワードの表示／入力は、ダイアログ中のテキストフィールドで行います。ここでは、マウスによる、コピー＆ペーストが使えないので、キーボードから行います。 [Shift] + カーソルキーで、パスワードの範囲を指定し、 [Ctrl] + [C] でコピー、 [Ctrl] + [V] で貼り付けます。<P>
+<hr>
+
+<h2>追加アイテム解説</h2>
+以下のアイテムは、全てわざマシンです。<br>
+<h4>人口地震発動機</h4>
+大地の怒り（要するに地震）を覚えさせることができます。<br>
+<h4>プラズマ砲発射機</h4>
+プラズマ砲を覚えさせることができます。本編のミストロンのものとは違い、まっすぐに飛びます。<br>
+<h4>セルフ回復薬</h4>
+肉体の悦び（自己再生）を覚えさせることができます。HPは足りないがPPは有り余っている、そんな時に役立つかもしれません。<br>
+<h4>PP削減球発射機</h4>
+忍び寄る手（ナイトヘッド）を覚えさせることができます。相手のPPを削減し、攻撃してこなくすることができます。<br>
+<BR>
+<HR>
+
+
+<H2>タイプ別技効果表</H2>
+
+<TABLE BORDER="1">
+<TR><TH>使う技＼受ける側</TH>
+<TH>ノーマル</TH><TH>炎</TH><TH>氷</TH><TH>草</TH><TH>電気</TH><TH>岩</TH><TH>地面</TH>
+<TH>鳥</TH><TH>虫</TH><TH>格闘</TH><TH>エスパー</TH><TH>ゴースト</TH></TR>
+
+<TR><TH>ノーマル</TH>
+<TD>○</TD><TD>○</TD><TD>○</TD><TD>○</TD><TD>○</TD><TD>△</TD><TD>○</TD>
+<TD>○</TD><TD>○</TD><TD>○</TD><TD>○</TD><TD>×</TD></TR>
+
+<TR><TH>炎</TH>
+<TD>○</TD><TD>△</TD><TD>△</TD><TD>◎</TD><TD>○</TD><TD>△</TD><TD>○</TD>
+<TD>○</TD><TD>◎</TD><TD>○</TD><TD>○</TD><TD>○</TD></TR>
+
+<TR><TH>氷</TH>
+<TD>○</TD><TD>◎</TD><TD>△</TD><TD>△</TD><TD>○</TD><TD>◎</TD><TD>◎</TD>
+<TD>○</TD><TD>○</TD><TD>○</TD><TD>○</TD><TD>○</TD></TR>
+
+<TR><TH>草</TH>
+<TD>○</TD><TD>△</TD><TD>◎</TD><TD>△</TD><TD>○</TD><TD>◎</TD><TD>◎</TD>
+<TD>△</TD><TD>△</TD><TD>○</TD><TD>○</TD><TD>○</TD></TR>
+
+<TR><TH>電気</TH>
+<TD>○</TD><TD>○</TD><TD>◎</TD><TD>△</TD><TD>△</TD><TD>△</TD><TD>×</TD>
+<TD>◎</TD><TD>○</TD><TD>○</TD><TD>○</TD><TD>○</TD></TR>
+
+<TR><TH>岩</TH>
+<TD>○</TD><TD>◎</TD><TD>○</TD><TD>○</TD><TD>○</TD><TD>○</TD><TD>△</TD>
+<TD>◎</TD><TD>◎</TD><TD>△</TD><TD>○</TD><TD>×</TD></TR>
+
+<TR><TH>地面</TH>
+<TD>○</TD><TD>◎</TD><TD>○</TD><TD>△</TD><TD>◎</TD><TD>◎</TD><TD>○</TD>
+<TD>×</TD><TD>△</TD><TD>○</TD><TD>○</TD><TD>×</TD></TR>
+
+<TR><TH>鳥</TH>
+<TD>○</TD><TD>○</TD><TD>○</TD><TD>◎</TD><TD>△</TD><TD>△</TD><TD>○</TD>
+<TD>○</TD><TD>◎</TD><TD>◎</TD><TD>○</TD><TD>×</TD></TR>
+
+<TR><TH>虫</TH>
+<TD>○</TD><TD>△</TD><TD>○</TD><TD>◎</TD><TD>○</TD><TD>○</TD><TD>○</TD>
+<TD>△</TD><TD>○</TD><TD>△</TD><TD>◎</TD><TD>×</TD></TR>
+
+<TR><TH>格闘</TH>
+<TD>◎</TD><TD>○</TD><TD>○</TD><TD>○</TD><TD>○</TD><TD>◎</TD><TD>○</TD>
+<TD>△</TD><TD>△</TD><TD>○</TD><TD>△</TD><TD>×</TD></TR>
+
+<TR><TH>エスパー</TH>
+<TD>○</TD><TD>○</TD><TD>○</TD><TD>○</TD><TD>○</TD><TD>○</TD><TD>○</TD>
+<TD>○</TD><TD>○</TD><TD>◎</TD><TD>△</TD><TD>○</TD></TR>
+
+<TR><TH>ゴースト</TH>
+<TD>×</TD><TD>○</TD><TD>○</TD><TD>○</TD><TD>○</TD><TD>○</TD><TD>○</TD>
+<TD>○</TD><TD>○</TD><TD>○</TD><TD>◎</TD><TD>◎</TD></TR>
+
+</TABLE>
+
+
+<P>
+◎ 効果は抜群（ダメージ２倍）<P>
+○ 普通の効果<P>
+△ 効果はいまひとつ（ダメージ１／２）<P>
+× 効果がない<P>
+
+技のタイプと、それを使うモンスターのタイプが同じ場合、威力が １．５倍になる。<P>
+
+
+<BR>
+<HR>
+
+
+<a href = "http://www.t3.rim.or.jp/~naoto/naoto.html">作者のページ</A><P>
+
+
+</BODY>
+
+
+</HTML>

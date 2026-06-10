@@ -1,0 +1,290 @@
+<HTML>
+
+
+<HEAD>
+
+
+<TITLE>ペットモン２・ペットレース ミニ</TITLE>
+
+
+</HEAD>
+
+
+<BODY BGCOLOR="gray">
+
+
+<CENTER>
+<APPLET CODE="PetMon2" WIDTH="512" HEIGHT="320" ARCHIVE="petm2_c.zip">
+
+
+<!--  システムモード    0    コンストラクション              -->
+<!--                    1    オフィシャルゲーム              -->
+<!--                    2    オフィシャルゲーム・上級編      -->
+<!--                    10   試合観戦  シングルバトル        -->
+<!--                    11   試合観戦  ダブルバトル          -->
+<!--                    20   ペットレース ミニ               -->
+<PARAM NAME="system_mode" VALUE="20">
+
+<!--  ペットレースミニ用  ペットのパスワード                 -->
+<PARAM NAME="gym_pet_password1" VALUE="396g6zpp0bi35ap">
+<PARAM NAME="gym_pet_password2" VALUE="cnxk6i7izj2lbvt">
+<PARAM NAME="gym_pet_password3" VALUE="imidr6jgbl9rc10">
+<PARAM NAME="gym_pet_password4" VALUE="omihr69ezx6lfje">
+<PARAM NAME="gym_pet_password5" VALUE="396g6zpp0bi35ap">
+<PARAM NAME="gym_pet_password6" VALUE="cnxk6i7izj2lbvt">
+<PARAM NAME="gym_pet_password7" VALUE="imidr6jgbl9rc10">
+<PARAM NAME="gym_pet_password8" VALUE="omihr69ezx6lfje">
+
+
+<!--  マップデーター         -->
+<!--  ペットレース ミニ  左側                               -->
+<!--                             0         10        20        30        40        50        60        -->
+<!--                             0123456789012345678901234567890123456789012345678901234567890123456789-->
+<PARAM NAME="race-0-0"    VALUE="......................................................................">
+<PARAM NAME="race-0-1"    VALUE="......................................................................">
+<PARAM NAME="race-0-2"    VALUE="......................................................................">
+<PARAM NAME="race-0-3"    VALUE=".................................12.....12.....12.....12..............">
+<PARAM NAME="race-0-4"    VALUE="....................................................H.................">
+<PARAM NAME="race-0-5"    VALUE="......................3..33.3.........................................">
+<PARAM NAME="race-0-6"    VALUE=".A....3..3............aaaaaaa.........................................">
+<PARAM NAME="race-0-7"    VALUE="aaaaaaaaaaa.33.3.3.33.bbbbbbb..3..33..B..3333.33.8..3.33.3.3..3..3..3.">
+<PARAM NAME="race-0-8"    VALUE="bbbbbbbbbbbaaaaaaaaaaabbbbbbbaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa">
+<PARAM NAME="race-0-9"    VALUE="bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb">
+
+<!--  ペットレース ミニ  右側                               -->
+<!--                             70        80        90        100       110       120       130       -->
+<!--                             0123456789012345678901234567890123456789012345678901234567890123456789-->
+<PARAM NAME="race-1-0"    VALUE="......................................................................">
+<PARAM NAME="race-1-1"    VALUE="......................................................................">
+<PARAM NAME="race-1-2"    VALUE="......................................................................">
+<PARAM NAME="race-1-3"    VALUE="......................................................................">
+<PARAM NAME="race-1-4"    VALUE="......................................................................">
+<PARAM NAME="race-1-5"    VALUE="......................................................................">
+<PARAM NAME="race-1-6"    VALUE="......................................................................">
+<PARAM NAME="race-1-7"    VALUE="......................................................................">
+<PARAM NAME="race-1-8"    VALUE="......................................................................">
+<PARAM NAME="race-1-9"    VALUE="......................................................................">
+
+
+<!--  ペットレースミニの背景色  光の３原色の成分で設定します -->
+<!--  赤の成分  (0-255)  -->
+<PARAM NAME="race_backcolor_red" VALUE="0">
+<!--  緑の成分  (0-255)  -->
+<PARAM NAME="race_backcolor_green" VALUE="255">
+<!--  青の成分  (0-255)  -->
+<PARAM NAME="race_backcolor_blue" VALUE="255">
+
+
+<!--  ジムリーダーの名前                                    -->
+<PARAM NAME="gym_name"      VALUE="エリコ">
+
+
+<!--  タイトル画面のファイル名                              -->
+<PARAM NAME="filename_title" VALUE="title.gif">
+
+<!--  エンディング画面のファイル名                          -->
+<PARAM NAME="filename_ending" VALUE="ending.gif">
+
+<!--  地図画面の背景のファイル名                            -->
+<PARAM NAME="filename_chizu" VALUE="chizu.gif">
+
+<!--  ジム戦の背景のファイル名                              -->
+<PARAM NAME="filename_gym" VALUE="gym.gif">
+
+<!--  キャラクターパターンのファイル名                      -->
+<PARAM NAME="filename_pattern" VALUE="pattern.gif">
+
+
+<!--  登場人物の名前    -->
+<PARAM NAME="name_kidohakase"     VALUE="キドはかせ">
+<PARAM NAME="name_jyuuisan"       VALUE="獣医さん">
+<PARAM NAME="name_teninsan"       VALUE="店員さん">
+<PARAM NAME="name_sodateyasan"    VALUE="育て屋さん">
+<PARAM NAME="name_dragontaxy"     VALUE="ドラゴンタクシー">
+<PARAM NAME="name_furuure"        VALUE="フルーレ">
+
+<!--  最初に用意されている主人公の名前
+
+      ５文字以内のカタカナ以外は、
+      正常にパスワード化されません。
+-->
+<PARAM NAME="name_boy1"   VALUE="カズホ">
+<PARAM NAME="name_boy2"   VALUE="レッド">
+<PARAM NAME="name_boy3"   VALUE="スティーヴ">
+<PARAM NAME="name_boy4"   VALUE="ユウキ">
+<PARAM NAME="name_girl1"  VALUE="ハルカ">
+<PARAM NAME="name_girl2"  VALUE="ルビー">
+<PARAM NAME="name_girl3"  VALUE="テリー">
+<PARAM NAME="name_girl4"  VALUE="サクラ">
+
+<!--  モンスターの名前    -->
+<PARAM NAME="name_fennec"        VALUE="フェネック">
+<PARAM NAME="name_kametank"      VALUE="カメタンク">
+<PARAM NAME="name_sunvista"      VALUE="サンビスタ">
+<PARAM NAME="name_butapig"       VALUE="ブタピッグ">
+<PARAM NAME="name_karara"        VALUE="カララ">
+<PARAM NAME="name_iwatops"       VALUE="イワトプス">
+<PARAM NAME="name_yachamo"       VALUE="ヤチャモ">
+<PARAM NAME="name_mariri"        VALUE="マリリ">
+<PARAM NAME="name_chireihana"    VALUE="チレイハナ">
+<PARAM NAME="name_poppie"        VALUE="ポッピー">
+<PARAM NAME="name_namakezaru"    VALUE="ナマケザル">
+<PARAM NAME="name_lunarock"      VALUE="ルナロック">
+<PARAM NAME="name_pikachii"      VALUE="ピカチー">
+<PARAM NAME="name_sungoose"      VALUE="サングース">
+<PARAM NAME="name_starnal"       VALUE="スターナル">
+<PARAM NAME="name_hercules"      VALUE="ヘラクレス">
+<PARAM NAME="name_lanster"       VALUE="ランスター">
+<PARAM NAME="name_kamalike"      VALUE="カマライク">
+<PARAM NAME="name_chirumichiru"  VALUE="チルミチル">
+<PARAM NAME="name_popony"        VALUE="ポポニィ">
+<PARAM NAME="name_yureko"        VALUE="ユレコ">
+<PARAM NAME="name_sunnyna"       VALUE="サニーナ">
+<PARAM NAME="name_bibidama"      VALUE="ビビーダマ">
+<PARAM NAME="name_pichika"       VALUE="ピチカ">
+<PARAM NAME="name_blackal"       VALUE="ブラッカル">
+<PARAM NAME="name_makkalgo"      VALUE="マッカルゴ">
+<PARAM NAME="name_rachi"         VALUE="ラーチ">
+<PARAM NAME="name_atis"          VALUE="アティス">
+<PARAM NAME="name_latis"         VALUE="ラティス">
+<PARAM NAME="name_tubomushi"     VALUE="ツボムシ">
+<PARAM NAME="name_taiking"       VALUE="タイキング">
+<PARAM NAME="name_mirocureall"   VALUE="ミロクレア">
+<PARAM NAME="name_airms"         VALUE="エアームズ">
+<PARAM NAME="name_grounder"      VALUE="グラーダ">
+<PARAM NAME="name_kaiole"        VALUE="カイオール">
+<PARAM NAME="name_senkuuza"      VALUE="センクウザ">
+
+
+</APPLET>
+</CENTER>
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+
+
+<HR>
+
+
+<H2>キーボード操作</H2>
+
+<DL>
+<DT>（←），（４）
+<DD>左へ歩く
+<DT>（→），（６）
+<DD>右へ歩く
+<DT>（Ｚ）、（スペース）
+<DD>決定ボタン、ジャンプ
+<DT>（Ｘ）
+<DD>キャンセルボタン
+<DT>（↓）、（２）
+<DD>セレクトボタン下、右
+<DT>（↑）、（８）
+<DD>セレクトボタン上、左
+<DT>（Ｔ）
+<DD>タイトル画面に戻る
+</DL>
+
+<H2>特殊キー</H2>
+
+<DL>
+<DT>（ファンクションキー）
+<DD>メニューの項目を選択する
+<DT>（Ｃ）
+<DD>主人公がジャンプする
+<DT>（Ｖ）
+<DD>選択中のペットにジャンプを命令する
+<DT>（Ａ）、（Ｓ）、（Ｄ）、（Ｆ)、（Ｇ）、（Ｈ）
+<DD>ペットボールを選択する
+</DL>
+
+<H2>パスワードの表示／入力について</H2>
+
+パスワードの表示／入力は、ダイアログ中のテキストフィールドで行います。ここでは、マウスによる、コピー＆ペーストが使えないので、キーボードから行います。 [Shift] + カーソルキーで、パスワードの範囲を指定し、 [Ctrl] + [C] でコピー、 [Ctrl] + [V] で貼り付けます。<P>
+
+
+<BR>
+<HR>
+
+
+<H2>タイプ別技効果表</H2>
+
+<TABLE BORDER="1">
+<TR><TH>使う技＼受ける側</TH>
+<TH>ノーマル</TH><TH>炎</TH><TH>水</TH><TH>草</TH><TH>電気</TH><TH>岩</TH><TH>地面</TH>
+<TH>鳥</TH><TH>虫</TH><TH>格闘</TH><TH>エスパー</TH><TH>ゴースト</TH></TR>
+
+<TR><TH>ノーマル</TH>
+<TD>○</TD><TD>○</TD><TD>○</TD><TD>○</TD><TD>○</TD><TD>△</TD><TD>○</TD>
+<TD>○</TD><TD>○</TD><TD>○</TD><TD>○</TD><TD>×</TD></TR>
+
+<TR><TH>炎</TH>
+<TD>○</TD><TD>△</TD><TD>△</TD><TD>◎</TD><TD>○</TD><TD>△</TD><TD>○</TD>
+<TD>○</TD><TD>◎</TD><TD>○</TD><TD>○</TD><TD>○</TD></TR>
+
+<TR><TH>水</TH>
+<TD>○</TD><TD>◎</TD><TD>△</TD><TD>△</TD><TD>○</TD><TD>◎</TD><TD>◎</TD>
+<TD>○</TD><TD>○</TD><TD>○</TD><TD>○</TD><TD>○</TD></TR>
+
+<TR><TH>草</TH>
+<TD>○</TD><TD>△</TD><TD>◎</TD><TD>△</TD><TD>○</TD><TD>◎</TD><TD>◎</TD>
+<TD>△</TD><TD>△</TD><TD>○</TD><TD>○</TD><TD>○</TD></TR>
+
+<TR><TH>電気</TH>
+<TD>○</TD><TD>○</TD><TD>◎</TD><TD>△</TD><TD>△</TD><TD>△</TD><TD>×</TD>
+<TD>◎</TD><TD>○</TD><TD>○</TD><TD>○</TD><TD>○</TD></TR>
+
+<TR><TH>岩</TH>
+<TD>○</TD><TD>◎</TD><TD>○</TD><TD>○</TD><TD>○</TD><TD>○</TD><TD>△</TD>
+<TD>◎</TD><TD>◎</TD><TD>△</TD><TD>○</TD><TD>×</TD></TR>
+
+<TR><TH>地面</TH>
+<TD>○</TD><TD>◎</TD><TD>○</TD><TD>△</TD><TD>◎</TD><TD>◎</TD><TD>○</TD>
+<TD>×</TD><TD>△</TD><TD>○</TD><TD>○</TD><TD>×</TD></TR>
+
+<TR><TH>鳥</TH>
+<TD>○</TD><TD>○</TD><TD>○</TD><TD>◎</TD><TD>△</TD><TD>△</TD><TD>○</TD>
+<TD>○</TD><TD>◎</TD><TD>◎</TD><TD>○</TD><TD>×</TD></TR>
+
+<TR><TH>虫</TH>
+<TD>○</TD><TD>△</TD><TD>○</TD><TD>◎</TD><TD>○</TD><TD>○</TD><TD>○</TD>
+<TD>△</TD><TD>○</TD><TD>△</TD><TD>◎</TD><TD>×</TD></TR>
+
+<TR><TH>格闘</TH>
+<TD>◎</TD><TD>○</TD><TD>○</TD><TD>○</TD><TD>○</TD><TD>◎</TD><TD>○</TD>
+<TD>△</TD><TD>△</TD><TD>○</TD><TD>△</TD><TD>×</TD></TR>
+
+<TR><TH>エスパー</TH>
+<TD>○</TD><TD>○</TD><TD>○</TD><TD>○</TD><TD>○</TD><TD>○</TD><TD>○</TD>
+<TD>○</TD><TD>○</TD><TD>◎</TD><TD>△</TD><TD>○</TD></TR>
+
+<TR><TH>ゴースト</TH>
+<TD>×</TD><TD>○</TD><TD>○</TD><TD>○</TD><TD>○</TD><TD>○</TD><TD>○</TD>
+<TD>○</TD><TD>○</TD><TD>○</TD><TD>◎</TD><TD>◎</TD></TR>
+
+</TABLE>
+
+
+<P>
+◎ 効果は抜群（ダメージ２倍）<P>
+○ 普通の効果<P>
+△ 効果はいまひとつ（ダメージ１／２）<P>
+× 効果がない<P>
+
+技のタイプと、それを使うモンスターのタイプが同じ場合、威力が １．５倍になる。<P>
+
+
+<BR>
+<HR>
+
+
+<a href = "http://www.t3.rim.or.jp/~naoto/naoto.html">作者のページ</A><P>
+
+
+</BODY>
+
+
+</HTML>

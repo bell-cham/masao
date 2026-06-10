@@ -1,0 +1,5 @@
+<script src="CanvasMasao.js"></script>
+<script src="MasaoKani2.js"></script>
+<script>
+	JSMasao.replaceAll();
+</script>

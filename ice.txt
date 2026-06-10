@@ -1,0 +1,59 @@
+<script type="text/javascript">
+init();
+function init()
+{
+	s = 0;
+}
+function shor(n)
+{
+	if(s==0)
+	{
+		if (n==0)
+			{
+		Applet1.setParamValue("map0-25","..A.ccdd44444444444X444dddd444444444ddcc..........O+cccccc..");
+		Applet1.setParamValue("map1-24",".............9..........Ecccjddd4444444444iiiiiidddj44444N44");
+		Applet1.setParamValue("map2-23","ddddddaaoa4aaaaaddddddd........h...h.j>.I.[[[[....bbbbbbbbbb");
+		Applet1.setParamValue("map2-7","ccccccjdd4444iiiiijbbb........5555.l*cccc...................");
+s=1;
+			}
+		if (n==1)
+			{
+		Applet1.setParamValue("map0-25","....ccdd44444444444X444dddd444444444ddcc..........O+cccccc..");
+		Applet1.setParamValue("map1-24",".............9......A...Ecccjddd4444444444iiiiiidddj44444N44");
+		Applet1.setParamValue("map2-23","ddddddaaoa4aaaaaddddddd........h...h.j>.I.[[[[....bbbbbbbbbb");
+		Applet1.setParamValue("map2-7","ccccccjdd4444iiiiijbbb........5555.l*cccc...................");
+s=1;
+			}
+		if (n==2)
+			{
+		Applet1.setParamValue("map0-25","....ccdd44444444444X444dddd444444444ddcc..........O+cccccc..");
+		Applet1.setParamValue("map1-24",".............9..........Ecccjddd4444444444iiiiiidddj4A444N44");
+		Applet1.setParamValue("map2-23","ddddddaaoa4aaaaaddddddd........h...h.j>.I.[[[[....bbbbbbbbbb");
+		Applet1.setParamValue("map2-7","ccccccjdd4444iiiiijbbb........5555.l*cccc...................");
+s=1;
+			}
+		if (n==3)
+			{
+		Applet1.setParamValue("map0-25","....ccdd44444444444X444dddd444444444ddcc..........O+cccccc..");
+		Applet1.setParamValue("map1-24",".............9..........Ecccjddd4444444444iiiiiidddj44444N44");
+		Applet1.setParamValue("map2-23","ddddddaaoa4aaaaaddddddd....A...h...h.j>.I.[[[[....bbbbbbbbbb");
+		Applet1.setParamValue("map2-7","ccccccjdd4444iiiiijbbb........5555.l*cccc...................");
+s=1;
+			}
+		if (n==4)
+			{
+		Applet1.setParamValue("map0-25","....ccdd44444444444X444dddd444444444ddcc..........O+cccccc..");
+		Applet1.setParamValue("map1-24",".............9..........Ecccjddd4444444444iiiiiidddj44444N44");
+		Applet1.setParamValue("map2-23","ddddddaaoa4aaaaaddddddd........h...h.j>.I.[[[[....bbbbbbbbbb");
+		Applet1.setParamValue("map2-7","ccccccjdd4444iiiiijbbb........5555Al*cccc...................");
+s=1;
+			}
+	}
+	if (s==1)
+	{
+		Applet1.restart();
+		s=0;
+	}
+
+}
+

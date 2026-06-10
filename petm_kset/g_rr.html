@@ -1,0 +1,473 @@
+<HTML>
+
+
+<HEAD>
+
+<TITLE>設定は適当です。ミストロンを倒すとあなたのモンスターをレベルアップさせられるよ！</TITLE>
+
+</HEAD>
+
+
+<BODY style="background-color: black;color: white">
+
+<CENTER>
+<APPLET CODE="PetMonster" WIDTH="512" HEIGHT="320" ARCHIVE="petm_c.zip">
+
+
+
+
+<!--  地図画面         -->
+<!--
+
+  地図画面は、 15 * 9 個のブロックで構成されていて、
+  文字の組み合わせで表現されています。
+
+
+  文字の説明
+
+  .  空白
+  a  クリス
+  b  キド研究所
+  c  ペットセンター
+  d  店
+  e  ジム
+  h  ジムリーダーに勝つと開く扉
+
+  A  ステージ１
+  B  ステージ２
+  C  ステージ３
+
+  1  中継地点
+  2  縦の道
+  3  横の道
+
+-->
+
+<!--                          0         10   -->
+<!--                          012345678901234-->
+<PARAM NAME="chizu-0"  VALUE="...............">
+<PARAM NAME="chizu-1"  VALUE=".....C33133g3D.">
+<PARAM NAME="chizu-2"  VALUE="........2......">
+<PARAM NAME="chizu-3"  VALUE="........2......">
+<PARAM NAME="chizu-4"  VALUE="........2......">
+<PARAM NAME="chizu-5"  VALUE=".f3d3144A333B..">
+<PARAM NAME="chizu-6"  VALUE="...2...........">
+<PARAM NAME="chizu-7"  VALUE="...2...........">
+<PARAM NAME="chizu-8"  VALUE="...a33c333e....">
+
+
+<!--  背景色    光の３原色の成分で設定します                 -->
+<!--  ステージ１                                             -->
+<!--  赤の成分  (0-255)  -->
+<PARAM NAME="stage1_backcolor_red" VALUE="128">
+<!--  緑の成分  (0-255)  -->
+<PARAM NAME="stage1_backcolor_green" VALUE="128">
+<!--  青の成分  (0-255)  -->
+<PARAM NAME="stage1_backcolor_blue" VALUE="128">
+
+<!--  ステージ２                                             -->
+<!--  赤の成分  (0-255)  -->
+<PARAM NAME="stage2_backcolor_red" VALUE="128">
+<!--  緑の成分  (0-255)  -->
+<PARAM NAME="stage2_backcolor_green" VALUE="64">
+<!--  青の成分  (0-255)  -->
+<PARAM NAME="stage2_backcolor_blue" VALUE="64">
+
+<!--  ステージ３                                             -->
+<!--  赤の成分  (0-255)  -->
+<PARAM NAME="stage3_backcolor_red" VALUE="50">
+<!--  緑の成分  (0-255)  -->
+<PARAM NAME="stage3_backcolor_green" VALUE="70">
+<!--  青の成分  (0-255)  -->
+<PARAM NAME="stage3_backcolor_blue" VALUE="90">
+
+
+<!--  ステージ４                                             -->
+<!--  赤の成分  (0-255)  -->
+<PARAM NAME="stage4_backcolor_red" VALUE="16">
+<!--  緑の成分  (0-255)  -->
+<PARAM NAME="stage4_backcolor_green" VALUE="16">
+<!--  青の成分  (0-255)  -->
+<PARAM NAME="stage4_backcolor_blue" VALUE="16">
+
+<!--  ピチカ（オリジナルモンスター）                         -->
+<!--  名前（全角で５文字まで）                               -->
+<PARAM NAME="pichika_name" VALUE="ジェルト">
+
+<!--  タイプ            0  地上                              -->
+<!--                    1  空中                              -->
+<PARAM NAME="pichika_type" VALUE="1">
+
+<!--  性別              0  オス                              -->
+<!--                    1  メス                              -->
+<PARAM NAME="pichika_seibetu" VALUE="1">
+
+<!--  移動速度          0  動けない                          -->
+<!--                    1  遅い                              -->
+<!--                    2  普通                              -->
+<!--                    3  速い                              -->
+<PARAM NAME="pichika_speed" VALUE="3">
+
+<!--  パスワード        0  ない                              -->
+<!--                    1  ある                              -->
+<PARAM NAME="pichika_pass" VALUE="0">
+
+<!--  最大ＨＰ (10-120)                                      -->
+<!--  デフォルトは 80                                        -->
+<PARAM NAME="pichika_hp_max" VALUE="120">
+
+<!--  最大ＰＰ (10-50)                                       -->
+<!--  デフォルトは 40                                        -->
+<PARAM NAME="pichika_pp_max" VALUE="50">
+
+<!--  体当たり技の名前                                       -->
+<PARAM NAME="pichika_waza1_name" VALUE="バードストライク">
+
+<!--  体当たり技の攻撃力 (10-80)                             -->
+<!--  デフォルトは 50                                        -->
+<PARAM NAME="pichika_waza1_ap" VALUE="60">
+
+<!--  体当たり技の消費ＰＰ (1-50)                            -->
+<!--  デフォルトは 1                                         -->
+<PARAM NAME="pichika_waza1_pp" VALUE="3">
+
+<!--  マジカルショットの名前                                 -->
+<PARAM NAME="pichika_waza2_name" VALUE="クオーツショット">
+
+<!--  マジカルショットの攻撃力 (10-50)                       -->
+<!--  デフォルトは 20                                        -->
+<PARAM NAME="pichika_waza2_ap" VALUE="30">
+
+<!--  マジカルショットの消費ＰＰ (1-50)                      -->
+<!--  デフォルトは 3                                         -->
+<PARAM NAME="pichika_waza2_pp" VALUE="4">
+
+<!--  つるぎのまいの名前                                     -->
+<PARAM NAME="pichika_waza3_name" VALUE="クオーツラッシュ">
+
+<!--  ジャンプ          0  できない                          -->
+<!--                    1  できる                            -->
+<PARAM NAME="pichika_jump" VALUE="1">
+
+
+<!--  ジム                                                   -->
+<!--  ジムリーダーの名前                                     -->
+<PARAM NAME="gym_gr_name" VALUE="オーガ">
+
+<!--  セリフ１                                               -->
+<!--  セリフの不要な行は、 "0" と指定して下さい。            -->
+<PARAM NAME="gym_serifu1-1" VALUE="Yuさんちーっす！俺と勝負するの？">
+<PARAM NAME="gym_serifu1-2" VALUE="勝っても100円しかあげられないよ。">
+<PARAM NAME="gym_serifu1-3" VALUE="100円て今時ジュースも買えねえよ、、、">
+
+<!--  セリフ２                                               -->
+<PARAM NAME="gym_serifu2-1" VALUE="勝負方法はお互いに１体ずつ出しあって戦う">
+<PARAM NAME="gym_serifu2-2" VALUE="三本勝負だよ、、、どこかのエリアに入って">
+<PARAM NAME="gym_serifu2-3" VALUE="モンスターをあと３体捕まえてきたら相手するよ。">
+<PARAM NAME="gym_serifu2-4" VALUE="0">
+
+<!--  セリフ３                                               -->
+<PARAM NAME="gym_serifu3-1" VALUE="Oh,,,Your monsters are dying,,,">
+<PARAM NAME="gym_serifu3-2" VALUE="真上にある島の一番右にある">
+<PARAM NAME="gym_serifu3-3" VALUE="ラリった人を頼るといいよ。">
+<PARAM NAME="gym_serifu3-4" VALUE="20円でみんな回復するよ。">
+
+<!--  セリフ４                                               -->
+<PARAM NAME="gym_serifu4-1" VALUE="HAHAHA!我こそ勝者なり！">
+<PARAM NAME="gym_serifu4-2" VALUE="戦車でも持ってこない限り俺は負けない！">
+<PARAM NAME="gym_serifu4-3" VALUE="あ、本当に戦車持ってくるのはやめてね。">
+
+<!--  セリフ５                                               -->
+<PARAM NAME="gym_serifu5-1" VALUE="あーあ、、、負けちゃった、、、">
+<PARAM NAME="gym_serifu5-2" VALUE="俺が直接やったほうがよかったかもね。">
+<PARAM NAME="gym_serifu5-3" VALUE="ほら、100円だよ。100均にでも行って来なさいな。">
+
+<!--  セリフ６                                               -->
+<PARAM NAME="gym_serifu6-1" VALUE="4回以上は勘弁！うちの子が死ぬ！">
+<PARAM NAME="gym_serifu6-2" VALUE="0">
+
+<!--  セリフ７                                               -->
+<PARAM NAME="gym_serifu7-1" VALUE="行け！スミロドン！">
+<PARAM NAME="gym_serifu7-2" VALUE="今日のごはんはあいつのお肉じゃ！">
+
+<!--  セリフ８                                               -->
+<PARAM NAME="gym_serifu8-1" VALUE="我が家の冷凍庫のお供、アイスエンジン！">
+<PARAM NAME="gym_serifu8-2" VALUE="うちの冷凍食品を救ってくれ！">
+
+<!--  セリフ９                                               -->
+<PARAM NAME="gym_serifu9-1" VALUE="我が最終兵器！ジェルトちゃん！">
+<PARAM NAME="gym_serifu9-2" VALUE="あ～もうかわいいなあジェルトちゃん">
+
+<!--  セリフ１０                                            -->
+<PARAM NAME="gym_serifu10-1" VALUE="この扉は、ジムリーダーに勝つと、">
+<PARAM NAME="gym_serifu10-2" VALUE="開くらしいわよ。">
+
+<!--  挑戦に必要な集めるモンスターの数 (1-12)                -->
+<!--  デフォルトは 5                                         -->
+<PARAM NAME="gym_tukamaetakazu" VALUE="4">
+
+
+<!--  ジムリーダーのペット１  種類                           -->
+<!--  A  ピカチー                                            -->
+<!--  B  チコリン                                            -->
+<!--  C  コラット                                            -->
+<!--  D  マリリ                                              -->
+<!--  E  ポッピー                                            -->
+<!--  F  ビビーダマ                                          -->
+<!--  G  チレイハナ                                          -->
+<!--  H  ポポコ                                              -->
+<!--  I  ヒノララシ                                          -->
+<!--  J  エアームズ                                          -->
+<!--  K  マメゾウ                                            -->
+<!--  L  マッカルゴ                                          -->
+<!--  M  タイキング                                          -->
+<!--  N  ピチカ（オリジナルモンスター）                      -->
+<PARAM NAME="gym_pet1" VALUE="K">
+
+<!--  ジムリーダーのペット１  ＨＰのアップ回数 (0-2)         -->
+<PARAM NAME="gym_pet1_hpup" VALUE="1">
+
+<!--  ジムリーダーのペット１  ＰＰのアップ回数 (0-2)         -->
+<PARAM NAME="gym_pet1_ppup" VALUE="1">
+
+
+<!--  ジムリーダーのペット２  種類                           -->
+<PARAM NAME="gym_pet2" VALUE="O">
+
+<!--  ジムリーダーのペット２  ＨＰのアップ回数 (0-2)         -->
+<PARAM NAME="gym_pet2_hpup" VALUE="1">
+
+<!--  ジムリーダーのペット２  ＰＰのアップ回数 (0-2)         -->
+<PARAM NAME="gym_pet2_ppup" VALUE="1">
+
+
+<!--  ジムリーダーのペット３  種類                           -->
+<PARAM NAME="gym_pet3" VALUE="N">
+
+<!--  ジムリーダーのペット３  ＨＰのアップ回数 (0-2)         -->
+<PARAM NAME="gym_pet3_hpup" VALUE="1">
+
+<!--  ジムリーダーのペット３  ＰＰのアップ回数 (0-2)         -->
+<PARAM NAME="gym_pet3_ppup" VALUE="1">
+
+
+<!--  モンスターの名前と技名                                 -->
+<PARAM NAME="name_pikachii"       VALUE="ビリマオン">
+<PARAM NAME="name_pikachii_w1"    VALUE="レールガン">
+<PARAM NAME="name_pikachii_w2"    VALUE="エレキクロウ">
+<PARAM NAME="name_pikachii_w3"    VALUE="神の怒り">
+
+<PARAM NAME="name_chikorin"       VALUE="さくらうさぎ">
+<PARAM NAME="name_chikorin_w1"    VALUE="葉の刃">
+<PARAM NAME="name_chikorin_w2"    VALUE="葉の刃×５">
+<PARAM NAME="name_chikorin_w3"    VALUE="自然の怒り">
+<PARAM NAME="name_chikorin_w4"    VALUE="殴打">
+
+<PARAM NAME="name_korat"          VALUE="りす">
+<PARAM NAME="name_korat_w1"       VALUE="体当たり">
+<PARAM NAME="name_korat_w2"       VALUE="突撃">
+
+<PARAM NAME="name_mariri"         VALUE="バルチルス">
+<PARAM NAME="name_mariri_w1"      VALUE="アイスカッター">
+<PARAM NAME="name_mariri_w2"      VALUE="アイスカッター×５">
+<PARAM NAME="name_mariri_w3"      VALUE="パワーヘッド">
+
+<PARAM NAME="name_poppie"         VALUE="バルンド">
+<PARAM NAME="name_poppie_w1"      VALUE="突風">
+<PARAM NAME="name_poppie_w2"      VALUE="つつく">
+
+<PARAM NAME="name_bibidama"       VALUE="マグマ">
+<PARAM NAME="name_bibidama_w1"    VALUE="散乱">
+
+<PARAM NAME="name_chireihana"     VALUE="ビーナ">
+<PARAM NAME="name_chireihana_w1"  VALUE="リーフファング">
+<PARAM NAME="name_chireihana_w2"  VALUE="自然の怒り">
+
+<PARAM NAME="name_popoko"         VALUE="チェリル">
+<PARAM NAME="name_popoko_w1"      VALUE="チェリーボム">
+<PARAM NAME="name_popoko_w2"      VALUE="おすそわけ">
+
+<PARAM NAME="name_hinorarashi"    VALUE="たまねずみ">
+<PARAM NAME="name_hinorarashi_w1" VALUE="火の吐息">
+<PARAM NAME="name_hinorarashi_w2" VALUE="砲撃">
+<PARAM NAME="name_hinorarashi_w3" VALUE="弾丸ツアー">
+
+<PARAM NAME="name_airms"          VALUE="ファイシェル">
+<PARAM NAME="name_airms_w1"       VALUE="焦土">
+<PARAM NAME="name_airms_w2"       VALUE="建造物解体">
+
+<PARAM NAME="name_mamezou"        VALUE="スミロドン">
+<PARAM NAME="name_mamezou_w1"     VALUE="かみつく">
+<PARAM NAME="name_mamezou_w2"     VALUE="かみちぎる">
+
+<PARAM NAME="name_makkalgo"       VALUE="サラマンダー">
+<PARAM NAME="name_makkalgo_w1"    VALUE="灼熱の息">
+<PARAM NAME="name_makkalgo_w2"    VALUE="お年玉">
+
+<PARAM NAME="name_taiking"        VALUE="ホーガ">
+<PARAM NAME="name_taiking_w1"     VALUE="ドリルヘッド">
+
+<PARAM NAME="name_hitodeme"       VALUE="アイスエンジン">
+<PARAM NAME="name_hitodeme_w1"    VALUE="冷気">
+<PARAM NAME="name_hitodeme_w2"    VALUE="冷気×５">
+
+<PARAM NAME="name_miu"            VALUE="幽霊王">
+<PARAM NAME="name_miu_w1"         VALUE="残留思念">
+<PARAM NAME="name_miu_w2"         VALUE="怨念">
+
+
+<!--  クリスの名前                                           -->
+<PARAM NAME="name_crys"    VALUE="ゆう">
+
+<!--  キドはかせの名前                                       -->
+<PARAM NAME="name_kidohakase"    VALUE="じじ様">
+
+<!--  獣医さんの名前                                         -->
+<PARAM NAME="name_jyuuisan"    VALUE="自称癒やしの女神ハピ子">
+
+<!--  店員さんの名前                                         -->
+<PARAM NAME="name_teninsan"    VALUE="ハピ子">
+
+<!--  ドラゴンタクシーの名前                                 -->
+<PARAM NAME="name_dragontaxy"    VALUE="自称救世主ハピ子">
+
+
+<!--  タイトル画面のファイル名                               -->
+<PARAM NAME="filename_title" VALUE="g_t.png">
+
+<!--  エンディング画面のファイル名                           -->
+<PARAM NAME="filename_ending" VALUE="clear.png">
+
+<!--  地図画面の背景のファイル名                             -->
+<PARAM NAME="filename_chizu" VALUE="gmap_rr.png">
+
+<!--  キャラクターパターンのファイル名                      -->
+<PARAM NAME="filename_pattern" VALUE="g_f.png">
+
+
+<!--  システムモード    0  コンストラクション                -->
+<!--                    1  オリジナルゲーム                  -->
+<!--                    2  ラギアス爆誕                     -->
+<PARAM NAME="system_mode" VALUE="2">
+
+<!--  ラギアス爆誕用  セリフ１                              -->
+<!--  セリフの不要な行は、 "0" と指定して下さい。           -->
+<PARAM NAME="rr_serifu1-1" VALUE="ようこそ、わが国へ。">
+<PARAM NAME="rr_serifu1-2" VALUE="最近あほ４人（４匹？）が">
+<PARAM NAME="rr_serifu1-3" VALUE="うちの子達を凶暴化させて">
+<PARAM NAME="rr_serifu1-4" VALUE="遊んでるみたいだから、">
+
+<!--  ラギアス爆誕用  セリフ２                              -->
+<PARAM NAME="rr_serifu2-1" VALUE="お仕置きしてきてちょうだいな。">
+<PARAM NAME="rr_serifu2-2" VALUE="最後の８つ足の怪物を倒した暁には">
+<PARAM NAME="rr_serifu2-3" VALUE="あなたのペットが強くなるはずよ。">
+<PARAM NAME="rr_serifu2-4" VALUE="あっちの島までは、私のペットに送らせるわ。">
+
+<!--  ラギアス爆誕用  セリフ３                              -->
+<PARAM NAME="rr_serifu3-1" VALUE="うわっ！熱っ！さすがの私でも">
+<PARAM NAME="rr_serifu3-2" VALUE="この溶岩には浸かれないわね、、、">
+
+<!--  ラギアス爆誕用  セリフ４                              -->
+<PARAM NAME="rr_serifu4-1" VALUE="ハートを３つ置きなさいな。">
+
+<!--  ラギアス爆誕用  セリフ５                              -->
+<PARAM NAME="rr_serifu5-1" VALUE="ないのね、、、">
+
+<!--  ラギアス爆誕用  セリフ６                              -->
+<PARAM NAME="rr_serifu6-1" VALUE="健闘を祈るわ。">
+
+<!--  ラギアス爆誕用  セリフ７                              -->
+<PARAM NAME="rr_serifu7-1" VALUE="お疲れ様。見事ね！">
+
+<!--  ラギアス爆誕用  セリフ８                              -->
+<PARAM NAME="rr_serifu8-1" VALUE="ふう、疲れた、、、あいつらの顔なんて">
+<PARAM NAME="rr_serifu8-2" VALUE="もう二度と見たくないわ、、、">
+
+<!--  ラギアス爆誕用  セリフ９                              -->
+<PARAM NAME="rr_serifu9-1" VALUE="もし、あいつらが来たら">
+<PARAM NAME="rr_serifu9-2" VALUE="またお願いするかも。その時はよろしくね。">
+
+<!--  ラギアス爆誕用  セリフ１０                            -->
+<PARAM NAME="rr_serifu10-1" VALUE="んん？私達の遊びを妨害しようと">
+<PARAM NAME="rr_serifu10-2" VALUE="するのはお前かい？溶岩にも">
+<PARAM NAME="rr_serifu10-3" VALE="浸かれない小娘に何ができるというの。">
+<PARAM NAME="rr_serifu10-4" VALUE="まあ、せっかくだから私と">
+
+<!--  ラギアス爆誕用  セリフ１１                            -->
+<PARAM NAME="rr_serifu11-1" VALUE="命を懸けて遊びましょうか。">
+
+<!--  ラギアス爆誕用  セリフ１２                            -->
+<PARAM NAME="rr_serifu12-1" VALUE="くそっ、昆虫界最強の私が">
+<PARAM NAME="rr_serifu12-2" VALUE="哺乳類ごときに負けるとは、、、">
+
+<!--  ラギアス爆誕用  セリフ１３                            -->
+<PARAM NAME="rr_serifu13-1" VALUE="仕方ない、これをお前にやるわ。">
+
+<!--  ラギアス爆誕用  セリフ１４                            -->
+<PARAM NAME="rr_serifu14-1" VALUE="次はどこで遊ぼうかな、、、">
+
+
+<!--  ラギアス爆誕用  名前                                  -->
+<PARAM NAME="name_furuure"     VALUE="シャナン">
+<PARAM NAME="name_figa"        VALUE="グリード">
+<PARAM NAME="name_thundaga"    VALUE="キャノン">
+<PARAM NAME="name_blizzaga"    VALUE="ハーピー">
+<PARAM NAME="name_ragias"      VALUE="ミストロン">
+<PARAM NAME="name_hoshi1"      VALUE="ハート">
+<PARAM NAME="name_hoshi2"      VALUE="ハート">
+<PARAM NAME="name_hoshi3"      VALUE="ハート">
+<PARAM NAME="name_shizuku"     VALUE="クリスタルハート">
+
+</APPLET>
+</CENTER>
+
+
+<BR>
+最終ステージの奥でなぜか高確率でフリーズしてしまいます。<BR>
+回避方法も分かりません、、、<BR>
+<BR>
+<HR>
+
+
+<H2>キーボード操作</H2>
+
+<DL>
+<DT>（←），（４）
+<DD>左へ歩く
+<DT>（→），（６）
+<DD>右へ歩く
+<DT>（Ｚ）、（スペース）
+<DD>決定ボタン／ジャンプ
+<DT>（Ｘ）
+<DD>キャンセルボタン
+<DT>（↓）、（２）
+<DD>セレクトボタン下、右
+<DT>（↑）、（８）
+<DD>セレクトボタン上、左
+<DT>（Ｊ）
+<DD>選択中のペットに、ジャンプを命令する。
+<DT>（Ｔ）
+<DD>タイトル画面に戻る
+</DL>
+<BR>
+<HR>
+<h2>登場キャラクター</h2>
+<h4>Yu</h4>
+またまた主人公です。ペットモンの主人公は女の子しか使えないし丁度いいかなと。<br>
+特に技とかはなくジャンプ力もあまりありませんが、モンスターの力を借りることができます。<br>
+<h4>グリード</h4>
+ペットモン2のボスほどは強くありません。一度に大量に飛び道具を放出する技なんかを使うと簡単に倒せます。<br>
+<h4>キャノン</h4>
+倒し方としてはグリードとほぼ同じ。しかし髪飾りが黄色に光ったあとに雷攻撃をしてくるのでそれだけには当たらないように注意。<br>
+<h4>ハーピー</h4>
+正男の流星群みたいな攻撃をしてきます。倒し方のおすすめとしては雷連発がいいと思います。<br>
+<h4>ミストロン</h4>
+赤い光線は確実に避けましょう。空中型のを相手させると当たらなくて済みます。<br>
+<hr>
+プログラムを作った人の<a href = "http://www.t3.rim.or.jp/~naoto/naoto.html">ホームページ</A><P>
+
+
+</BODY>
+
+
+</HTML>

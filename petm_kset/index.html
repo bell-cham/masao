@@ -1,0 +1,387 @@
+<HTML>
+
+
+<HEAD>
+
+<TITLE>�y�b�g�����X�^�[�E�I���W�i���Q�[��</TITLE>
+
+</HEAD>
+
+
+<BODY BGCOLOR="gray">
+
+<CENTER>
+<APPLET CODE="PetMonster" WIDTH="512" HEIGHT="320" ARCHIVE="petm_c.zip">
+
+
+<!--  �n�}���         -->
+<!--
+
+  �n�}��ʂ́A 15 * 9 �̃u���b�N�ō\������Ă��āA
+  �����̑g�ݍ��킹�ŕ\������Ă��܂��B
+
+
+  �����̐���
+
+  .  ��
+  a  �N���X
+  b  �L�h������
+  c  �y�b�g�Z���^�[
+  d  �X
+  e  �W��
+  h  �W�����[�_�[�ɏ��ƊJ����
+
+  A  �X�e�[�W�P
+  B  �X�e�[�W�Q
+  C  �X�e�[�W�R
+
+  1  ���p�n�_
+  2  �c�̓�
+  3  ���̓�
+
+-->
+
+<!--                          0         10   -->
+<!--                          012345678901234-->
+<PARAM NAME="chizu-0"  VALUE="...............">
+<PARAM NAME="chizu-1"  VALUE="....b33333d33e.">
+<PARAM NAME="chizu-2"  VALUE="....2.....2....">
+<PARAM NAME="chizu-3"  VALUE="....2.....2....">
+<PARAM NAME="chizu-4"  VALUE=".a331..B331..C.">
+<PARAM NAME="chizu-5"  VALUE=".2..2.....2..2.">
+<PARAM NAME="chizu-6"  VALUE=".2..2.....2..2.">
+<PARAM NAME="chizu-7"  VALUE=".2..A33c331331.">
+<PARAM NAME="chizu-8"  VALUE=".1.............">
+
+
+<!--  �w�i�F    ���̂R���F�̐����Őݒ肵�܂�                 -->
+<!--  �X�e�[�W�P                                             -->
+<!--  �Ԃ̐���  (0-255)  -->
+<PARAM NAME="stage1_backcolor_red" VALUE="0">
+<!--  �΂̐���  (0-255)  -->
+<PARAM NAME="stage1_backcolor_green" VALUE="255">
+<!--  �̐���  (0-255)  -->
+<PARAM NAME="stage1_backcolor_blue" VALUE="255">
+
+<!--  �X�e�[�W�Q                                             -->
+<!--  �Ԃ̐���  (0-255)  -->
+<PARAM NAME="stage2_backcolor_red" VALUE="0">
+<!--  �΂̐���  (0-255)  -->
+<PARAM NAME="stage2_backcolor_green" VALUE="255">
+<!--  �̐���  (0-255)  -->
+<PARAM NAME="stage2_backcolor_blue" VALUE="255">
+
+<!--  �X�e�[�W�R                                             -->
+<!--  �Ԃ̐���  (0-255)  -->
+<PARAM NAME="stage3_backcolor_red" VALUE="0">
+<!--  �΂̐���  (0-255)  -->
+<PARAM NAME="stage3_backcolor_green" VALUE="255">
+<!--  �̐���  (0-255)  -->
+<PARAM NAME="stage3_backcolor_blue" VALUE="255">
+
+
+<!--  �W��                                                  -->
+<!--  �W�����[�_�[�̖��O                                    -->
+<PARAM NAME="gym_gr_name" VALUE="�U�g�V">
+
+<!--  �Z���t�P                                              -->
+<!--  �Z���t�̕s�v�ȍs�́A "0" �Ǝw�肵�ĉ������B           -->
+<PARAM NAME="gym_serifu1-1" VALUE="�����́A�W���B�g���[�i�[���W���A�y�b�g���m��">
+<PARAM NAME="gym_serifu1-2" VALUE="��킹��ꏊ���B�I���́A�U�g�V�B">
+<PARAM NAME="gym_serifu1-3" VALUE="���E��̃g���[�i�[�ɂȂ�̂��A�����B">
+
+<!--  �Z���t�Q                                              -->
+<PARAM NAME="gym_serifu2-1" VALUE="�g���[�i�[�́A�����X�^�[�ɏڂ����Ȃ����">
+<PARAM NAME="gym_serifu2-2" VALUE="�Ȃ�Ȃ��B������̃����X�^�[���A�T��ވȏ��">
+<PARAM NAME="gym_serifu2-3" VALUE="�Ȃ�����A�܂����Ă���B">
+<PARAM NAME="gym_serifu2-4" VALUE="���ł��A����ɂȂ��Ă�邺�I">
+
+<!--  �Z���t�R                                              -->
+<PARAM NAME="gym_serifu3-1" VALUE="��肢�ȁB�W���ł̃o�g���ɂ́A">
+<PARAM NAME="gym_serifu3-2" VALUE="�퓬�\�ȏ�Ԃ̃y�b�g���A�R�C�ȏ�K�v">
+<PARAM NAME="gym_serifu3-3" VALUE="�Ȃ񂾁B�������ł�����A�܂����Ă����ȁI">
+<PARAM NAME="gym_serifu3-4" VALUE="���ł��A����ɂȂ��Ă�邺�B">
+
+<!--  �Z���t�S                                              -->
+<PARAM NAME="gym_serifu4-1" VALUE="�����́A�c�O�������ȁB">
+<PARAM NAME="gym_serifu4-2" VALUE="�܂��܂������ǁA�N���X�����́A">
+<PARAM NAME="gym_serifu4-3" VALUE="�����ƁA�����g���[�i�[�ɁA�Ȃ�邺�I">
+
+<!--  �Z���t�T                                              -->
+<PARAM NAME="gym_serifu5-1" VALUE="�Ȃ��Ȃ��A��邶��Ȃ����B���ꂩ��́A">
+<PARAM NAME="gym_serifu5-2" VALUE="���C�o�����m���ȁB">
+<PARAM NAME="gym_serifu5-3" VALUE="���E��̃g���[�i�[��ڎw�������I">
+
+<!--  �Z���t�U                                              -->
+<PARAM NAME="gym_serifu6-1" VALUE="�W���ł̃o�g���́A�P�Q�[�����A�R��܂�">
+<PARAM NAME="gym_serifu6-2" VALUE="�Ȃ񂾁B��肢�ȁB">
+
+<!--  �Z���t�V                                              -->
+<PARAM NAME="gym_serifu7-1" VALUE="�I���̕��́A">
+<PARAM NAME="gym_serifu7-2" VALUE="�}���]�E�A�N�Ɍ��߂��I">
+
+<!--  �Z���t�W                                              -->
+<PARAM NAME="gym_serifu8-1" VALUE="�}���]�E�A�悭������B">
+<PARAM NAME="gym_serifu8-2" VALUE="���́A�`�R�������I">
+
+<!--  �Z���t�X                                              -->
+<PARAM NAME="gym_serifu9-1" VALUE="�`�R�����A�����낤���܁B�������">
+<PARAM NAME="gym_serifu9-2" VALUE="�x��ł���B�Ō�́A�s�J�`�[���I">
+
+<!--  �Z���t�P�O                                            -->
+<PARAM NAME="gym_serifu10-1" VALUE="���̔��́A�W�����[�_�[�ɏ��ƁA">
+<PARAM NAME="gym_serifu10-2" VALUE="�J���炵�����B">
+
+<!--  ����ɕK�v�ȏW�߂郂���X�^�[�̐� (1-12)                -->
+<!--  �f�t�H���g�� 5                                         -->
+<PARAM NAME="gym_tukamaetakazu" VALUE="5">
+
+
+<!--  �W�����[�_�[�̃y�b�g�P  ���                           -->
+<!--  A  �s�J�`�[                                            -->
+<!--  B  �`�R����                                            -->
+<!--  C  �R���b�g                                            -->
+<!--  D  �}����                                              -->
+<!--  E  �|�b�s�[                                            -->
+<!--  F  �r�r�[�_�}                                          -->
+<!--  G  �`���C�n�i                                          -->
+<!--  H  �|�|�R                                              -->
+<!--  I  �q�m�����V                                          -->
+<!--  J  �G�A�[���Y                                          -->
+<!--  K  �}���]�E                                            -->
+<!--  L  �}�b�J���S                                          -->
+<!--  M  �^�C�L���O                                          -->
+<!--  N  �s�`�J�i�I���W�i�������X�^�[�j                      -->
+<PARAM NAME="gym_pet1" VALUE="K">
+
+<!--  �W�����[�_�[�̃y�b�g�P  �g�o�̃A�b�v�� (0-2)         -->
+<PARAM NAME="gym_pet1_hpup" VALUE="0">
+
+<!--  �W�����[�_�[�̃y�b�g�P  �o�o�̃A�b�v�� (0-2)         -->
+<PARAM NAME="gym_pet1_ppup" VALUE="1">
+
+
+<!--  �W�����[�_�[�̃y�b�g�Q  ���                           -->
+<PARAM NAME="gym_pet2" VALUE="B">
+
+<!--  �W�����[�_�[�̃y�b�g�Q  �g�o�̃A�b�v�� (0-2)         -->
+<PARAM NAME="gym_pet2_hpup" VALUE="1">
+
+<!--  �W�����[�_�[�̃y�b�g�Q  �o�o�̃A�b�v�� (0-2)         -->
+<PARAM NAME="gym_pet2_ppup" VALUE="0">
+
+
+<!--  �W�����[�_�[�̃y�b�g�R  ���                           -->
+<PARAM NAME="gym_pet3" VALUE="A">
+
+<!--  �W�����[�_�[�̃y�b�g�R  �g�o�̃A�b�v�� (0-2)         -->
+<PARAM NAME="gym_pet3_hpup" VALUE="0">
+
+<!--  �W�����[�_�[�̃y�b�g�R  �o�o�̃A�b�v�� (0-2)         -->
+<PARAM NAME="gym_pet3_ppup" VALUE="1">
+
+
+<!--  �s�`�J�i�I���W�i�������X�^�[�j                         -->
+<!--  ���O�i�S�p�łT�����܂Łj                               -->
+<PARAM NAME="pichika_name" VALUE="�s�`�J">
+
+<!--  �^�C�v            0  �n��                              -->
+<!--                    1  ��                              -->
+<PARAM NAME="pichika_type" VALUE="0">
+
+<!--  ����              0  �I�X                              -->
+<!--                    1  ���X                              -->
+<PARAM NAME="pichika_seibetu" VALUE="0">
+
+<!--  �ړ����x          0  �����Ȃ�                          -->
+<!--                    1  �x��                              -->
+<!--                    2  ����                              -->
+<!--                    3  ����                              -->
+<PARAM NAME="pichika_speed" VALUE="2">
+
+<!--  �p�X���[�h        0  �Ȃ�                              -->
+<!--                    1  ����                              -->
+<PARAM NAME="pichika_pass" VALUE="1">
+
+<!--  �ő�g�o (10-120)                                      -->
+<!--  �f�t�H���g�� 80                                        -->
+<PARAM NAME="pichika_hp_max" VALUE="80">
+
+<!--  �ő�o�o (10-50)                                       -->
+<!--  �f�t�H���g�� 40                                        -->
+<PARAM NAME="pichika_pp_max" VALUE="40">
+
+<!--  �̓�����Z�̖��O                                       -->
+<PARAM NAME="pichika_waza1_name" VALUE="�s�J��">
+
+<!--  �̓�����Z�̍U���� (10-80)                             -->
+<!--  �f�t�H���g�� 50                                        -->
+<PARAM NAME="pichika_waza1_ap" VALUE="50">
+
+<!--  �̓�����Z�̏���o�o (1-50)                            -->
+<!--  �f�t�H���g�� 1                                         -->
+<PARAM NAME="pichika_waza1_pp" VALUE="1">
+
+<!--  �}�W�J���V���b�g�̖��O                                 -->
+<PARAM NAME="pichika_waza2_name" VALUE="�}�W�J���V���b�g">
+
+<!--  �}�W�J���V���b�g�̍U���� (10-50)                       -->
+<!--  �f�t�H���g�� 20                                        -->
+<PARAM NAME="pichika_waza2_ap" VALUE="20">
+
+<!--  �}�W�J���V���b�g�̏���o�o (1-50)                      -->
+<!--  �f�t�H���g�� 3                                         -->
+<PARAM NAME="pichika_waza2_pp" VALUE="3">
+
+<!--  �邬�̂܂��̖��O                                     -->
+<PARAM NAME="pichika_waza3_name" VALUE="�邬�̂܂�">
+
+<!--  �W�����v          0  �ł��Ȃ�                          -->
+<!--                    1  �ł���                            -->
+<PARAM NAME="pichika_jump" VALUE="1">
+
+
+<!--  �����X�^�[�̖��O�ƋZ��                                 -->
+<PARAM NAME="name_pikachii"       VALUE="�s�J�`�[">
+<PARAM NAME="name_pikachii_w1"    VALUE="�P�O�܂�{���g">
+<PARAM NAME="name_pikachii_w2"    VALUE="�ł񂱂�������">
+<PARAM NAME="name_pikachii_w3"    VALUE="���݂Ȃ�">
+
+<PARAM NAME="name_chikorin"       VALUE="�`�R����">
+<PARAM NAME="name_chikorin_w1"    VALUE="�͂��σJ�b�^�[">
+<PARAM NAME="name_chikorin_w2"    VALUE="�͂��ϗ��ꌂ��">
+<PARAM NAME="name_chikorin_w3"    VALUE="�\�[���[�r�[��">
+<PARAM NAME="name_chikorin_w4"    VALUE="�̓�����">
+
+<PARAM NAME="name_korat"          VALUE="�R���b�g">
+<PARAM NAME="name_korat_w1"       VALUE="�̓�����">
+<PARAM NAME="name_korat_w2"       VALUE="�Ђ����O��">
+
+<PARAM NAME="name_mariri"         VALUE="�}����">
+<PARAM NAME="name_mariri_w1"      VALUE="�݂��ł��ۂ�">
+<PARAM NAME="name_mariri_w2"      VALUE="�n�C�h���|���v">
+<PARAM NAME="name_mariri_w3"      VALUE="�̓�����">
+
+<PARAM NAME="name_poppie"         VALUE="�|�b�s�[">
+<PARAM NAME="name_poppie_w1"      VALUE="����������">
+<PARAM NAME="name_poppie_w2"      VALUE="�h���������΂�">
+
+<PARAM NAME="name_bibidama"       VALUE="�r�r�[�_�}">
+<PARAM NAME="name_bibidama_w1"    VALUE="���΂�">
+
+<PARAM NAME="name_chireihana"     VALUE="�`���C�n�i">
+<PARAM NAME="name_chireihana_w1"  VALUE="�͂Ȃт�̂܂�">
+<PARAM NAME="name_chireihana_w2"  VALUE="�\�[���[�r�[��">
+
+<PARAM NAME="name_popoko"         VALUE="�|�|�R">
+<PARAM NAME="name_popoko_w1"      VALUE="���^�Q�΂�����">
+<PARAM NAME="name_popoko_w2"      VALUE="�񕜂̃��^�Q">
+
+<PARAM NAME="name_hinorarashi"    VALUE="�q�m�����V">
+<PARAM NAME="name_hinorarashi_w1" VALUE="�Ή�����">
+<PARAM NAME="name_hinorarashi_w2" VALUE="�X�s�[�h�X�^�[">
+<PARAM NAME="name_hinorarashi_w3" VALUE="�̓�����">
+
+<PARAM NAME="name_airms"          VALUE="�G�A�[���Y">
+<PARAM NAME="name_airms_w1"       VALUE="�΂�����">
+<PARAM NAME="name_airms_w2"       VALUE="�͂��˂̂΂�">
+
+<PARAM NAME="name_mamezou"        VALUE="�}���]�E">
+<PARAM NAME="name_mamezou_w1"     VALUE="�̓�����">
+<PARAM NAME="name_mamezou_w2"     VALUE="�ːi">
+
+<PARAM NAME="name_makkalgo"       VALUE="�}�b�J���S">
+<PARAM NAME="name_makkalgo_w1"    VALUE="�Ή�����">
+<PARAM NAME="name_makkalgo_w2"    VALUE="�◎��">
+
+<PARAM NAME="name_taiking"        VALUE="�^�C�L���O">
+<PARAM NAME="name_taiking_w1"     VALUE="�͂˂�">
+
+<PARAM NAME="name_hitodeme"       VALUE="�q�g�f�~�[">
+<PARAM NAME="name_hitodeme_w1"    VALUE="�݂��ł��ۂ�">
+<PARAM NAME="name_hitodeme_w2"    VALUE="�n�C�h���|���v">
+
+<PARAM NAME="name_miu"            VALUE="�~�E">
+<PARAM NAME="name_miu_w1"         VALUE="�T�C�R�L�l�V�X">
+<PARAM NAME="name_miu_w2"         VALUE="�V���h�[�{�[��">
+
+
+<!--  �N���X�̖��O                                           -->
+<PARAM NAME="name_crys"    VALUE="�N���X">
+
+<!--  �L�h�͂����̖��O                                       -->
+<PARAM NAME="name_kidohakase"    VALUE="�L�h�͂���">
+
+<!--  �b�コ��̖��O                                         -->
+<PARAM NAME="name_jyuuisan"    VALUE="�b�コ��">
+
+<!--  �X������̖��O                                         -->
+<PARAM NAME="name_teninsan"    VALUE="�X������">
+
+<!--  �h���S���^�N�V�[�̖��O                                 -->
+<PARAM NAME="name_dragontaxy"    VALUE="�h���S���^�N�V�[">
+
+
+<!--  �^�C�g����ʂ̃t�@�C����                               -->
+<PARAM NAME="filename_title" VALUE="title.gif">
+
+<!--  �G���f�B���O��ʂ̃t�@�C����                           -->
+<PARAM NAME="filename_ending" VALUE="ending.gif">
+
+<!--  �n�}��ʂ̔w�i�̃t�@�C����                             -->
+<PARAM NAME="filename_chizu" VALUE="chizu.gif">
+
+<!--  �L�����N�^�[�p�^�[���̃t�@�C����                      -->
+<PARAM NAME="filename_pattern" VALUE="pattern.gif">
+
+
+<!--  �V�X�e�����[�h    0  �R���X�g���N�V����                -->
+<!--                    1  �I���W�i���Q�[��                  -->
+<!--                    2  ���M�A�X���a                      -->
+<PARAM NAME="system_mode" VALUE="1">
+
+
+</APPLET>
+</CENTER>
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<HR>
+
+
+<H2>�L�[�{�[�h����</H2>
+
+<DL>
+<DT>�i���j�C�i�S�j
+<DD>���֕���
+<DT>�i���j�C�i�U�j
+<DD>�E�֕���
+<DT>�i�y�j�A�i�X�y�[�X�j
+<DD>����{�^���^�W�����v
+<DT>�i�w�j
+<DD>�L�����Z���{�^��
+<DT>�i���j�A�i�Q�j
+<DD>�Z���N�g�{�^�����A�E
+<DT>�i���j�A�i�W�j
+<DD>�Z���N�g�{�^����A��
+<DT>�i�i�j
+<DD>�I�𒆂̃y�b�g�ɁA�W�����v�𖽗߂���B
+<DT>�i�s�j
+<DD>�^�C�g����ʂɖ߂�
+</DL>
+
+
+<BR>
+<HR>
+
+
+�v���O������������l��<a href = "http://www.t3.rim.or.jp/~naoto/naoto.html">�z�[���y�[�W</A><P>
+
+
+</BODY>
+
+
+</HTML>

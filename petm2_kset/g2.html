@@ -1,0 +1,1011 @@
+<HTML>
+
+
+<HEAD>
+
+
+<TITLE>各ステージに隠し要素があるので探してみよう！</TITLE>
+
+
+</HEAD>
+
+
+<BODY background="h.png" bgcolor="black" text="white">
+
+
+<CENTER>
+<APPLET CODE="PetMon2" WIDTH="512" HEIGHT="320" ARCHIVE="petm2_c.zip">
+
+
+<!--  地図画面         -->
+<!--
+
+  地図画面は、 15 * 9 個のブロックで構成されていて、
+  文字の組み合わせで表現されています。
+
+
+  文字の説明
+
+  .  空白
+  A  自分
+  B  キド研究所
+  C  ペットセンター
+  D  店
+  F  ジム
+  G  フルーレの家
+  H  ステージ２つクリアーで開く扉
+  I  メッセージの人１　２号
+  J  メッセージの人２　１号
+
+  a  ステージ１
+  b  ステージ２
+  c  ステージ３
+  d  ステージ４
+
+  1  中継地点
+  2  縦の道
+  3  横の道
+
+-->
+
+<!--                          0         10   -->
+<!--                          012345678901234-->
+<PARAM NAME="chizu-0"  VALUE=".........dH313I">
+<PARAM NAME="chizu-1"  VALUE="............2..">
+<PARAM NAME="chizu-2"  VALUE=".133a.......2..">
+<PARAM NAME="chizu-3"  VALUE=".2..........2..">
+<PARAM NAME="chizu-4"  VALUE=".2..........2..">
+<PARAM NAME="chizu-5"  VALUE=".2..........2..">
+<PARAM NAME="chizu-6"  VALUE=".2..G...J.c.2..">
+<PARAM NAME="chizu-7"  VALUE=".2..2...2.2.2..">
+<PARAM NAME="chizu-8"  VALUE=".133A3C3F3D3B3b">
+
+
+<!--  ジムリーダーの名前                                     -->
+<PARAM NAME="gym_name"      VALUE="工場長">
+
+<!--  ジムリーダーのペットのパスワード                       -->
+<PARAM NAME="gym_password1" VALUE="66ac90mskcf0xf4">
+<PARAM NAME="gym_password2" VALUE="tyqugcmrwztofg3">
+<PARAM NAME="gym_password3" VALUE="e3ako6af5yblfg4">
+
+
+<!--  ジムリーダーのセリフ１                                 -->
+<!--  セリフの不要な行は、 "0" と指定して下さい。            -->
+<PARAM NAME="gym_serifu1-1" VALUE="やっと罰金支払い終わった、、、">
+<PARAM NAME="gym_serifu1-2" VALUE="よくも私を通報しやがったな！">
+<PARAM NAME="gym_serifu1-3" VALUE="モンスターバトルで決着をつけてやる！">
+
+<!--  ジムリーダーのセリフ２                                 -->
+<PARAM NAME="gym_serifu2-1" VALUE="言っておくけど私のモンスターは">
+<PARAM NAME="gym_serifu2-2" VALUE="選りすぐりの生物兵器だからな。">
+<PARAM NAME="gym_serifu2-3" VALUE="もし全部に勝てたら賞金をやるわ。">
+
+<!--  ジムリーダーのセリフ３                                 -->
+<PARAM NAME="gym_serifu3-1" VALUE="負けた、、、">
+
+<!--  ジムリーダーのセリフ４                                 -->
+<PARAM NAME="gym_serifu4-1" VALUE="一昨日来やがれ！">
+
+<!--  ジムリーダーのセリフ５                                 -->
+<PARAM NAME="gym_serifu5-1" VALUE="勝たないとダメだよ。">
+
+<!--  ジムリーダーのセリフ６                                 -->
+<PARAM NAME="gym_serifu6-1" VALUE="ちっ、しゃあねえ。">
+<PARAM NAME="gym_serifu6-2" VALUE="ほれ、賞金よ。持っていけ。">
+<PARAM NAME="gym_serifu6-3" VALUE="0">
+
+<!--  ジムリーダーのセリフ７                                 -->
+<PARAM NAME="gym_serifu7-1" VALUE="また負けたぜ、、">
+
+<!--  ジムリーダーのセリフ８                                 -->
+<PARAM NAME="gym_serifu8-1" VALUE="ボルラット、あいつの身体を">
+<PARAM NAME="gym_serifu8-2" VALUE="焼きつくしておしまい！">
+
+<!--  ジムリーダーのセリフ９                                 -->
+<PARAM NAME="gym_serifu9-1" VALUE="ユレオ、出番じゃ！">
+<PARAM NAME="gym_serifu9-2" VALUE="恨みの力は何よりも強いぜ！">
+
+<!--  ジムリーダーのセリフ１０                               -->
+<PARAM NAME="gym_serifu10-1" VALUE="植物技しかないただのさくらんぼとは">
+<PARAM NAME="gym_serifu10-2" VALUE="訳がちがうぜ！最終兵器じゃ！">
+
+<!--  ジムリーダーのセリフ１１                               -->
+<PARAM NAME="gym_serifu11-1" VALUE="モンスターの徒競走じゃ！">
+<PARAM NAME="gym_serifu11-2" VALUE="空中型は参加権ねえぞ、、、">
+<PARAM NAME="gym_serifu11-3" VALUE="0">
+
+
+<!--  メッセージの人１  名前                                 -->
+<PARAM NAME="name_message1"  VALUE="2号">
+
+<!--  メッセージの人１  セリフ１                             -->
+<PARAM NAME="serifu20-1" VALUE="やつは竜巻を起こしたあとに、">
+<PARAM NAME="serifu20-2" VALUE="プラズマ砲を浴びせてきます。">
+<PARAM NAME="serifu20-3" VALUE="植物系のモンスターを相手させると">
+<PARAM NAME="serifu20-4" VALUE="えらいことになりそうですね、、、">
+
+<!--  メッセージの人１  セリフ２                             -->
+<PARAM NAME="serifu21-1" VALUE="どの技を使っても効果はいまひとつなので">
+<PARAM NAME="serifu21-2" VALUE="技のタイプは特に気にしなくて大丈夫でしょう。">
+<PARAM NAME="serifu21-3" VALUE="くれぐれも操作ミスにはご注意くださいませ。">
+<PARAM NAME="serifu21-4" VALUE="0">
+
+
+<!--  メッセージの人２  名前                                 -->
+<PARAM NAME="name_message2"  VALUE="1号">
+
+<!--  メッセージの人２  セリフ１                             -->
+<PARAM NAME="serifu22-1" VALUE="よくここが分かりましたね。">
+<PARAM NAME="serifu22-2" VALUE="ご主人様から伝言を頂いております。">
+<PARAM NAME="serifu22-3" VALUE="「芋野郎は氷と植物に弱くて、">
+<PARAM NAME="serifu22-4" VALUE="鳥女は植物と電気に弱いって聴くわ、、、">
+
+<!--  メッセージの人２  セリフ２                             -->
+<PARAM NAME="serifu23-1" VALUE="あと、上の方にある岩は">
+<PARAM NAME="serifu23-2" VALUE="２ステージクリアすると消えるんだって。」">
+<PARAM NAME="serifu23-3" VALUE="0">
+<PARAM NAME="serifu23-4" VALUE="0">
+
+
+<!--  育て屋さんのセリフ                                     -->
+<PARAM NAME="serifu1-1" VALUE="モンスターの憩いの場です。">
+<PARAM NAME="serifu1-2" VALUE="レベルアップさせるのに最適。">
+<PARAM NAME="serifu1-3" VALUE="食料、エナジードリンク、">
+<PARAM NAME="serifu1-4" VALUE="ベッドからマッサージ器も完備。">
+
+
+<!--  キドはかせのセリフ１                                   -->
+<PARAM NAME="serifu2-1" VALUE="0">
+<PARAM NAME="serifu2-2" VALUE="0">
+<PARAM NAME="serifu2-3" VALUE="君が、今日から、モンスタートレーナーになる">
+<PARAM NAME="serifu2-4" VALUE="君じゃな。">
+
+<!--  キドはかせのセリフ２                                   -->
+<PARAM NAME="serifu3-1" VALUE="品種改良で強くなったうさぎを３種類">
+<PARAM NAME="serifu3-2" VALUE="用意しておいたから、どれかを選んでくれたまえ。">
+<PARAM NAME="serifu3-3" VALUE="0">
+<PARAM NAME="serifu3-4" VALUE="0">
+
+<!--  キドはかせのセリフ３                                   -->
+<PARAM NAME="serifu4-1" VALUE="そいつは、最高のモンスターじゃ。">
+<PARAM NAME="serifu4-2" VALUE="0">
+
+<!--  キドはかせのセリフ４                                   -->
+<PARAM NAME="serifu5-1" VALUE="君が持っている、モンスター図鑑は、">
+<PARAM NAME="serifu5-2" VALUE="見つけたり、捕まえたりすると、自動的に">
+<PARAM NAME="serifu5-3" VALUE="データーが記録される。モンスターの研究に">
+<PARAM NAME="serifu5-4" VALUE="役立つので、がんばっくれたまえよ。">
+
+<!--  キドはかせのセリフ５                                   -->
+<PARAM NAME="serifu6-1" VALUE="ところで、モンスターは全部で、">
+<PARAM NAME="serifu6-2" VALUE=" 種類いる事が、最近の研究により、">
+<PARAM NAME="serifu6-3" VALUE="明らかになった。全部集めたとしたら、君は、">
+<PARAM NAME="serifu6-4" VALUE="モンスターマスターじゃな。">
+
+<!--  キドはかせのセリフ６                                   -->
+<PARAM NAME="serifu7-1" VALUE="初心者トレーナーとして、ここを訪れた">
+<PARAM NAME="serifu7-2" VALUE="君が、今では、図鑑を完成させる程とは。">
+<PARAM NAME="serifu7-3" VALUE="成長とは、早いものじゃな。">
+<PARAM NAME="serifu7-4" VALUE="今日から、君は、モンスターマスターじゃ。">
+
+
+<!--  フルーレのセリフ１                                     -->
+<PARAM NAME="serifu10-1" VALUE="ようこそ、わが国へ。">
+<PARAM NAME="serifu10-2" VALUE="最近あほ３人（３匹？）が">
+<PARAM NAME="serifu10-3" VALUE="うちの子達を凶暴化させて">
+<PARAM NAME="serifu10-4" VALUE="遊んでるみたいだから、">
+
+<!--  フルーレのセリフ２                                     -->
+<PARAM NAME="serifu11-1" VALUE="お仕置きしてきてちょうだいな。">
+<PARAM NAME="serifu11-2" VALUE="終わったらまた私のところに来てね。">
+<PARAM NAME="serifu11-3" VALUE="褒めてつかわすわよ。">
+<PARAM NAME="serifu11-4" VALUE="私のペットにしてあげてもいいわ。">
+
+<!--  フルーレのセリフ３                                     -->
+<PARAM NAME="serifu12-1" VALUE="もう全部やっつけたの？">
+<PARAM NAME="serifu12-2" VALUE="やるわね、、、">
+<PARAM NAME="serifu12-3" VALUE="">
+<PARAM NAME="serifu12-4" VALUE="0">
+
+<!--  フルーレのセリフ４                                     -->
+<PARAM NAME="serifu13-1" VALUE="任務達成よ、おめでとう。">
+<PARAM NAME="serifu13-2" VALUE="これからの活躍を祈ってるわ。">
+<PARAM NAME="serifu13-3" VALUE="0">
+<PARAM NAME="serifu13-4" VALUE="0">
+
+
+<!--
+
+  ゲーム内容の変更は、 PARAM タグ の、 "" 内の書き替えによって
+  行います。
+
+  各ステージのマップは、 140 * 20 個のブロックで構成されていて、
+  文字の組み合わせで表現されています。
+
+
+  文字の説明
+
+  .  空白
+  A  自分
+  B  ブタピッグ			全部
+  C  カララ			2,3
+  D  イワトプス			1
+  E  ヤチャモ　ピカチー		1
+  F  マリリ　　　チコリン	全部
+  G  チレイハナ			1
+  H  ポッピー	ポッピー上下	全部
+  I  ナマケザル			2
+  J  ルナロック			1,3
+  K  ピカチー	動く床上下	2
+  L  サングース			1
+  M  スターナル			3
+  N  ヘラクレス　ドッスン	3
+  O  ランスター			1
+  P  カマライク			3,4
+  Q  チルミチル			2
+  R  ポポニィ			3
+  S  ユレコ　　　グラーダ	3,4
+  T  サニーナ			1,3
+  U  ビビーダマ			1,2,4
+  V  ピチカ			1
+  W  ブラッカル			2,4
+  X  マッカルゴ			2
+  Y  ツボムシ　　ワカメ		4
+  Z  エアームズ			1,3
+
+  a  ブロック１　黒い結晶に紫		茶色の煉瓦
+  b  ブロック２　黒い結晶
+  c  ブロック３　赤い結晶
+  d  ブロック４　紫の煉瓦
+  e  ブロック５　紫の煉瓦に髑髏		×印
+  f  ブロック６　黒ブロック
+  g  ブロック７　×型の鉄
+  h  ブロック８　□型の鉄
+  i  ブロック９　青の縦縞
+  j  ブロック１０　黒の縦縞
+  k  ブロック１１　黒の斜め縞		コイン
+  l  ブロック１２　黒の岩石		コイン３
+  m  ブロック１３　□型の鉄に放射能
+  n  ブロック１４　青い結晶
+  o  ブロック１５　黒の煉瓦
+  p  ブロック１６　黒の煉瓦		ジェット
+  q  グラーダ      （ボス）
+  r  カイオール    （ボス）
+  s  センクウザ    （ボス）		ドリル
+
+  1  雲の左側　モノアイ（休止中）
+  2  雲の右側　鎖
+  3  草　　　　星
+  5  木の実
+  6  どくきのこ
+  8  ゴール
+  9  きんのたま
+
+-->
+
+<!--  マップデーター         -->
+<!--  ステージ１  左側       -->
+<!--                             0         10        20        30        40        50        60        -->
+<!--                             0123456789012345678901234567890123456789012345678901234567890123456789-->
+<PARAM NAME="stage1-0-0"  VALUE="...........22.........3.......................3...................22..">
+<PARAM NAME="stage1-0-1"  VALUE=".........3.22....3............3..........................3........22.3">
+<PARAM NAME="stage1-0-2"  VALUE="...9.......22.............3.....................3....3........3...22..">
+<PARAM NAME="stage1-0-3"  VALUE=".....3.....223........................3....3......................22..">
+<PARAM NAME="stage1-0-4"  VALUE="...........22.....................3.......................3.......22..">
+<PARAM NAME="stage1-0-5"  VALUE="...........22......3...3.....3...................3................22..">
+<PARAM NAME="stage1-0-6"  VALUE=".....G.....22........................Z...3.............3.....3....22V.">
+<PARAM NAME="stage1-0-7"  VALUE="..3pppp...322..hhh...55.T....T......3.........3.................ppppp.">
+<PARAM NAME="stage1-0-8"  VALUE="...pppp....22..hhh..ppppp....ppp....................3..........ppppppp">
+<PARAM NAME="stage1-0-9"  VALUE="...pppp....22B.222..ppppp....ppp3..55............H.......3.....ppppppp">
+<PARAM NAME="stage1-0-10" VALUE="...2..23..pppp.222..ppppp.3..ppp..hhh.......3............55.B..ppppppp">
+<PARAM NAME="stage1-0-11" VALUE="...2..2...pppp.222..ppppp....ppp..hhh..3.....H....3.....fffff..ppppppp">
+<PARAM NAME="stage1-0-12" VALUE="...2..2...pppp.222..ppppp....ppp..222...................fffff...22....">
+<PARAM NAME="stage1-0-13" VALUE="..A2..2...pppp.222.Bppppp....ppp..222....H.....3......3ffffff..322....">
+<PARAM NAME="stage1-0-14" VALUE="..bbbbbbbbbbbbbbbbbbbbbbb...3bbbb.222.............E....ffffff...22....">
+<PARAM NAME="stage1-0-15" VALUE="..bbbbbbbbbbbbbbbbbbbbbbb....bbbb.222.........ffffff...ffffff...22.3..">
+<PARAM NAME="stage1-0-16" VALUE="..bbbbbbbbbbbbbbbbbbbbbbb....bbbbb222...3.....ffffff3..ffffffbb.22....">
+<PARAM NAME="stage1-0-17" VALUE="..bbbbbbbbbbbbbbbbbbbbbbb3...bbbbbbb2.........222222...ffffffbbb22....">
+<PARAM NAME="stage1-0-18" VALUE=".....3......3..D...3...5.....bbbbbbbbb......E.222222..Lffffffbbbb2.55.">
+<PARAM NAME="stage1-0-19" VALUE=".bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb">
+
+<!--  ステージ１  右側       -->
+<!--                             70        80        90        100       110       120       130       -->
+<!--                             0123456789012345678901234567890123456789012345678901234567890123456789-->
+<PARAM NAME="stage1-1-0"  VALUE="....22.............3..........3.......................................">
+<PARAM NAME="stage1-1-1"  VALUE="....22.........3..1...3...............................................">
+<PARAM NAME="stage1-1-2"  VALUE="....22.................1......................O.......55.T.....D......">
+<PARAM NAME="stage1-1-3"  VALUE="....22.....3...............3.1...3..................pppppppppppp......">
+<PARAM NAME="stage1-1-4"  VALUE="...322........1........3.............p......O.......pppppppppppp......">
+<PARAM NAME="stage1-1-5"  VALUE="....22.3............3....1......9..1.p............pppppppppppppppp....">
+<PARAM NAME="stage1-1-6"  VALUE="....22...............................p.........O..pppppppppppppppp....">
+<PARAM NAME="stage1-1-7"  VALUE="....22........3......1...3....1.3....p.....H..pp..pppppppppppppppp....">
+<PARAM NAME="stage1-1-8"  VALUE="p3.522V....1.....3..................pp........pp..pppppppppppppppp...G">
+<PARAM NAME="stage1-1-9"  VALUE="pppppppp..........J..3..1....3...J..ppp..pp...22.O.22.....22....22..pp">
+<PARAM NAME="stage1-1-10" VALUE="ppppppppp.......1...................ppp..pp...22...22.....22....22..pp">
+<PARAM NAME="stage1-1-11" VALUE="ppppppppp.3.....................1..pppp..22..O22...22...9.22....pp..pp">
+<PARAM NAME="stage1-1-12" VALUE="22....22.......3...........J......5pppp..22.H.22...22.....22....pp..pp">
+<PARAM NAME="stage1-1-13" VALUE="22....22.....pp...1pp..pp.3..pp..pppppp5.pp...22...22.....22G...22..22">
+<PARAM NAME="stage1-1-14" VALUE="22Z...22.....pp....pp.3pp....pp..ppppppp.pp...22...22LF...ppp...22.U22">
+<PARAM NAME="stage1-1-15" VALUE="22...322.pp..pp....pp..pp....pp..ppppppp.22...ppppppppp...ppp...22..22">
+<PARAM NAME="stage1-1-16" VALUE="22....2bbpp..pp..6.pp..pp6..Epp.6ppppppp.22...ppppppppp...ppp...228.22">
+<PARAM NAME="stage1-1-17" VALUE="22....bbbpppppp..pppp..ppppppppppppppppp.22H..ppppppppp...ppp...22LU22">
+<PARAM NAME="stage1-1-18" VALUE="22..Pbbbbpppppp55pppp.3pppppppppppppppppp22..Lppppppppp...pppppppppppp">
+<PARAM NAME="stage1-1-19" VALUE="bbbbbbbbbpppppppppppp..pppppppppppppppppppppppppppppppp...pppppppppppp">
+
+
+<!--  ステージ２  左側       -->
+<!--                             0         10        20        30        40        50        60        -->
+<!--                             0123456789012345678901234567890123456789012345678901234567890123456789-->
+<PARAM NAME="stage2-0-0"  VALUE="bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb...........">
+<PARAM NAME="stage2-0-1"  VALUE="bbbbbbb......bbbbbbbbbbbbbbbb.......Q..bbbbbbbbbbbbbbbbbb.............">
+<PARAM NAME="stage2-0-2"  VALUE="bbbbbb.........bbbbbbbbbbb..............bbbbbbbbbbbbbbb...............">
+<PARAM NAME="stage2-0-3"  VALUE="bbbbb.....A.......bbbbbb......H..........bbbbbbbbbbbbb................">
+<PARAM NAME="stage2-0-4"  VALUE="bbbb....bbbbb......bbbb.........66..Q....bbbbbbbbbbb..................">
+<PARAM NAME="stage2-0-5"  VALUE="bbb.....bbbbb.......bbb........llll.......bbbbbbbbb...................">
+<PARAM NAME="stage2-0-6"  VALUE="bb....C.bbbbb......Qbb...55.C.bllllb......bbbbbbbb..............5..X..">
+<PARAM NAME="stage2-0-7"  VALUE="bb.bbbb.2...2.......Ub..bbbbbbbbbbbbbb....bbbbbbb.............bbblllll">
+<PARAM NAME="stage2-0-8"  VALUE="bb.bbbb.2...2.......U..bbbbbbbbbbbbbbb....bbbbbb.............bbbblllll">
+<PARAM NAME="stage2-0-9"  VALUE="b..2..2.2...2..55......bbbbbbbbbbbbbbbb...bbbbbb.............bbbbblllb">
+<PARAM NAME="stage2-0-10" VALUE="b..2..bbb...2bbbb......bbbbbbbbb...bbbb....bbbb......Q.55..Wbbbbbbbbbb">
+<PARAM NAME="stage2-0-11" VALUE="b..2..bbb...2bbbb....bbbbbbbbb....9.bbb....bbbb....H..llbbbbbbbbbbbbbb">
+<PARAM NAME="stage2-0-12" VALUE="b552..2.2...22..2....bbbbbbbbb..9...bbbb...bbb...H...lllbbbbbbbbbbbbbb">
+<PARAM NAME="stage2-0-13" VALUE="bbb2..2.bbbbb2..2....bbbbbbbb......9bbbb....bb......blllbbbbbbbbbbbbbb">
+<PARAM NAME="stage2-0-14" VALUE="bbbb..2.bbbbb2..2..Cbbbbbbbbb.......bbbb......U.H..bbbbbbbbbbbbbbbbbbb">
+<PARAM NAME="stage2-0-15" VALUE="bbbb..2.2...22..bbbbbbbbbbbbb.9......bbbb.....U...bbbbbbbbbbbbbbbbbbbb">
+<PARAM NAME="stage2-0-16" VALUE="bbbb..2.2...22.bbbbbbbbbbbbbb....9....bbb.........bbbbbbbbbbbbbbbbbbbb">
+<PARAM NAME="stage2-0-17" VALUE="bbbbb.2.2...22bbbbbbbbbbbbbbb..9.........555.....bbbbbbbbbbbbbbbbbbbbb">
+<PARAM NAME="stage2-0-18" VALUE="bbbbbbb.255C2bbbbbbbbbbbbbbbbb...bbI.....lll...lllbbbbbbbbbbbbbbbbbbbb">
+<PARAM NAME="stage2-0-19" VALUE="bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb....blllb..lllbbbbbbbbbbbbbbbbbbbb">
+
+<!--  ステージ２  右側       -->
+<!--                             70        80        90        100       110       120       130       -->
+<!--                             0123456789012345678901234567890123456789012345678901234567890123456789-->
+<PARAM NAME="stage2-1-0"  VALUE="...........bbbbbbbbbbbbbbbbbbbbbbcccccc...................22....22....">
+<PARAM NAME="stage2-1-1"  VALUE=".............bbbbbbbbbbbbbbbbbbbcccc.............3........22....22....">
+<PARAM NAME="stage2-1-2"  VALUE=".......Q......bbbbbbbbbbbbbbbbbbccc..............3........22....22....">
+<PARAM NAME="stage2-1-3"  VALUE="...................222..9bbb5.22.................3........22....22....">
+<PARAM NAME="stage2-1-4"  VALUE="..........Q........222..bbbbb522.................3........22...U22....">
+<PARAM NAME="stage2-1-5"  VALUE="...................222.Cbbbbbbcc5................3........22....22....">
+<PARAM NAME="stage2-1-6"  VALUE=".X...........Q....Kbbbbbbbbbbbcccc.............Q.3..5.....22....22....">
+<PARAM NAME="stage2-1-7"  VALUE="bbbb..............bbbbbbbbbbbbcccc..................cc....22....22q...">
+<PARAM NAME="stage2-1-8"  VALUE="bbbbbb............bbbbbbbbbbbccccc......C55C.....3..cc..lll26..62lll..">
+<PARAM NAME="stage2-1-9"  VALUE="bbbbbbb.......K...bbbbbbbbbbbcccc.....cccccc........cc.lllccl..lcclll.">
+<PARAM NAME="stage2-1-10" VALUE="bbbbbbll...bbbb...bbbbbbbbbbbcccc.....ccccccc.......cc.llcccl..lcccll.">
+<PARAM NAME="stage2-1-11" VALUE="bbbbblll...bbbb....bbbbbbbbbcccc2.....ccccccc......ccc.cccccc..cccccc.">
+<PARAM NAME="stage2-1-12" VALUE="bbbbbllll..2222.....bbbbbbbbcccc2.....22..X22......ccc..ccccc..ccccc..">
+<PARAM NAME="stage2-1-13" VALUE="bbbbblllllI2222C....22bbbbbcccc22....cccccccc..5.Kcccc.cccccc..cccccc.">
+<PARAM NAME="stage2-1-14" VALUE="bbbbbblllbbbbbbb....22.Ubbbcccc22...cccccccccccccccccc.ccccc2..2ccccc.">
+<PARAM NAME="stage2-1-15" VALUE="bbbbbbbbbbbbbbbbb...22.......H222...cccccccccccccccccc.ccccc2..2ccccc.">
+<PARAM NAME="stage2-1-16" VALUE="bbbbbbbbbbbbbbbbbb..22.....H..222.......cccccccccccccc.2ccc229922ccc2.">
+<PARAM NAME="stage2-1-17" VALUE="bbbbbbbbbbbbbbbbbbI.22...H....222....55Wcccccccccccclll2ccc22ll22ccc2l">
+<PARAM NAME="stage2-1-18" VALUE="bbbbbbbbbbbbbbbbbllll2......B.lll.cccccccccccccccccllll22222llll22222l">
+<PARAM NAME="stage2-1-19" VALUE="bbbbbbbbbbbbbbbbllllllll.llll.lll.ccccccccccccccccclllllllccllllccllll">
+
+
+<!--  ステージ３  左側       -->
+<!--                             0         10        20        30        40        50        60        -->
+<!--                             0123456789012345678901234567890123456789012345678901234567890123456789-->
+<PARAM NAME="stage3-0-0"  VALUE="....g....g....g....g....g...............hggghggghggghgggh...hgggh.kkkk">
+<PARAM NAME="stage3-0-1"  VALUE="....g....g....g....g....g...............g...g...g...........g...g.kkkk">
+<PARAM NAME="stage3-0-2"  VALUE="....g....g....g....g....g............9..g.9.g.9.g...........g...g.kkkk">
+<PARAM NAME="stage3-0-3"  VALUE="....g....g....g....g....g...............g...g...g....T.5..5.g...g.kkkk">
+<PARAM NAME="stage3-0-4"  VALUE="gggghgggghgggghgggghggggh.........9.....hggghgggh...hggghggghgggh.kkkk">
+<PARAM NAME="stage3-0-5"  VALUE="....g...........Z..g....g...............g...g.......g.............kkkk">
+<PARAM NAME="stage3-0-6"  VALUE="....g..............g....g..............9g.9.g.......g.............kkkk">
+<PARAM NAME="stage3-0-7"  VALUE="....g..............g....g...............g...g.......g.............kkkk">
+<PARAM NAME="stage3-0-8"  VALUE="....g....C.........g....g...............hgggh...hgggh.................">
+<PARAM NAME="stage3-0-9"  VALUE="ggggh....hggggh....hggggh.........................................kkkk">
+<PARAM NAME="stage3-0-10" VALUE=".........g....g...................................................kkkk">
+<PARAM NAME="stage3-0-11" VALUE="......F..g....g.............5R....R6........S...S.......N..5..N...kkkk">
+<PARAM NAME="stage3-0-12" VALUE="......lllg....g...........Z.kk....kk........h...h...hggghggghgggh.kkkk">
+<PARAM NAME="stage3-0-13" VALUE=".A....lllg....gF.5..........................g...g...g...g...g...g.kkkk">
+<PARAM NAME="stage3-0-14" VALUE="gggghgggghgggghggggh........................g...g...g...g...g...g.kkkk">
+<PARAM NAME="stage3-0-15" VALUE="....g....g....g....g..........T..55.........g.55g.55g...g...g...g.kkkk">
+<PARAM NAME="stage3-0-16" VALUE="....g....g....g....g........kkkkkkkkk...hggghggghggghggghggghgggh.kkkk">
+<PARAM NAME="stage3-0-17" VALUE="....g....g....g....g..kkkkkkkkkkkkkkkk..g...g...g...g...g...g...g.....">
+<PARAM NAME="stage3-0-18" VALUE="....g....g....g....g..kkkkkkkkkkkkkkkkk.g...g...g...g...g...g...g.kkkk">
+<PARAM NAME="stage3-0-19" VALUE="gggghgggghgggghggggh..kkkkkkkkkkkkkkkkk.g...g...g...g...g...g...g.kkkk">
+
+<!--  ステージ３  右側       -->
+<!--                             70        80        90        100       110       120       130       -->
+<!--                             0123456789012345678901234567890123456789012345678901234567890123456789-->
+<PARAM NAME="stage3-1-0"  VALUE="kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkghggghggghggghggghggghgg">
+<PARAM NAME="stage3-1-1"  VALUE="kkkkk.C...55.......kkkkkkkk......Zkk.kkkkkkkkk.g...g...g...g...g...g..">
+<PARAM NAME="stage3-1-2"  VALUE="kkkkk.kkkkkkkkkkkk.kkkkk.kk....9..kk.kkkkkkkkk.g...g...g...g...g...g..">
+<PARAM NAME="stage3-1-3"  VALUE="kkkkk.kkkkkkkkkkkk.kkkkk..k.......kk.kkkkkkkkk.g...g...g...g...g...g..">
+<PARAM NAME="stage3-1-4"  VALUE="kkkkk.kkkkkkkkkkkk.kkkkk..k.......kk...........hgggh...hggghggghggghgg">
+<PARAM NAME="stage3-1-5"  VALUE="k.........P........kkkkk..kkk.....kk.kkkkkkkkk.................g...g..">
+<PARAM NAME="stage3-1-6"  VALUE="k.kkkkkkk.kkkkkkkk.kkkkk..kkk...kkkk.kkkkkkkkk.................g...g..">
+<PARAM NAME="stage3-1-7"  VALUE="k.kkkkkkk.kkkkkkkk.555..........kkkk....Tkkkkk...N.............g...g..">
+<PARAM NAME="stage3-1-8"  VALUE="..kkG.....kkkkkkkkkkkkkk..kkkkkkkkkk.kkkkkkkkk.hgggh...........hggghgg">
+<PARAM NAME="stage3-1-9"  VALUE="kkkkkkkkkkkkkkkkkkkkkkkk..kkkkkkkkkk.kkkkkkkkk.g...g..................">
+<PARAM NAME="stage3-1-10" VALUE="kkkkkkkkkkkkkkkkkkkkkkkk..kkkkk.k.......Tkkkkk.g...g..................">
+<PARAM NAME="stage3-1-11" VALUE="kkkkkkkkkkkkkkkkkkkkkkkk..kkkkk.k....kkkkkkkkk.g...g...S...S......r...">
+<PARAM NAME="stage3-1-12" VALUE="kkkkkkkkkkkkkkkkkkkkkkkk..kkkkk.k....kkkkkkkkk.hgggh...hgggh.......hgg">
+<PARAM NAME="stage3-1-13" VALUE="k................kkkkkkk......G.......55Tkkkkk.........g...g.......g..">
+<PARAM NAME="stage3-1-14" VALUE="k................kkkkkkkkkkkkkkkkkkkkkkkkkkkkk.........g...g.......g..">
+<PARAM NAME="stage3-1-15" VALUE="k................kkkkkkkkkkkkkkkkkkkkkkkkkkkkk.........g...g..N.5.5g..">
+<PARAM NAME="stage3-1-16" VALUE="k................kkkkkkkkkkkkkkkkkkkkkkkkkkkkk.hggghggghggghggghggghgg">
+<PARAM NAME="stage3-1-17" VALUE="....S.M...S..M...kkkkkkkkkkkkkkkkkkkkkkkkkkkkk.g...g...g...g...g...g..">
+<PARAM NAME="stage3-1-18" VALUE="k.kkkkk.kkkkk.....555...555......P....P........g...g...g...g...g...g..">
+<PARAM NAME="stage3-1-19" VALUE="k.kkkkk.kkkkk.kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk.g...g...g...g...g...g..">
+
+
+<!--  ステージ４  左側       -->
+<!--                             0         10        20        30        40        50        60        -->
+<!--                             0123456789012345678901234567890123456789012345678901234567890123456789-->
+<PARAM NAME="stage4-0-0"  VALUE="..........................................5..5...pppppppppp..22......2">
+<PARAM NAME="stage4-0-1"  VALUE="....9966655...............................e..e...pppppppppp..22P.S...2">
+<PARAM NAME="stage4-0-2"  VALUE="....ppppppp...............................2..2.....pppppppp..ddpppp..p">
+<PARAM NAME="stage4-0-3"  VALUE="....ppppppp...............................2..2.....pppppppp..ddpppp..p">
+<PARAM NAME="stage4-0-4"  VALUE="....22...22...............................2..2.......pppp....pp...U..p">
+<PARAM NAME="stage4-0-5"  VALUE="....22...22.S.............................2..2.......pppp..S.pp......p">
+<PARAM NAME="stage4-0-6"  VALUE="....22...22.e...S.........................2..e...pp..dded..pppp....ppd">
+<PARAM NAME="stage4-0-7"  VALUE="....22...22.2...e......S....S.........U...2..2...pp..dddd..pppp....ppd">
+<PARAM NAME="stage4-0-8"  VALUE="....22...22.2...2..S...e....e.............e..2.ppdd...22...dd22..ddddd">
+<PARAM NAME="stage4-0-9"  VALUE="....22...22.2...2..e...2....2..........S..2..2.ppdd..P22...dd22..edddd">
+<PARAM NAME="stage4-0-10" VALUE="....22...22.2.H.2..2...2....2..e.......e..2..2.pp....ddpp....pp..dd..2">
+<PARAM NAME="stage4-0-11" VALUE="....22...22.2...2..2...2....2..2.S..S..2..2..2.pp....ddpp.S..pp..dd..2">
+<PARAM NAME="stage4-0-12" VALUE="....22.H.22.2...2..2...2.5W.2..2.e..e.U2..2..2.pp..ddde..dd..pp.....Up">
+<PARAM NAME="stage4-0-13" VALUE="....22...22.2...2..2..aaaaaaaa.2.2..2..2..2.U2.pp..dddd..dd..pp..Y...p">
+<PARAM NAME="stage4-0-14" VALUE="....22...22H2...2..2W.bbbbbbbb.2.2..2..2..2..2.pp..22....22..22..ppppd">
+<PARAM NAME="stage4-0-15" VALUE="....22...22.2..aaaaaaabbbbbbbb.2.2..2..2.U2..2.pp..22P...22P.22..ppppd">
+<PARAM NAME="stage4-0-16" VALUE="..A.22...22.2..bbbbbbbbbbbbbbb.2.2552..2..2..2.ppdd22ddppddpppp.......">
+<PARAM NAME="stage4-0-17" VALUE="aaaaaaaaaaaa2..bbbbbbbbbaaaaaaaaaaaaaaaaaaaaa2.ppdd22ddppddpppp.5.Y..Y">
+<PARAM NAME="stage4-0-18" VALUE="bbbbbbbbbbbb2..bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb2.ppppppppppdeddddppppdde">
+<PARAM NAME="stage4-0-19" VALUE="bbbbbbbbbbbb2..bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb2.ppppppppppddddddppppddd">
+
+<!--  ステージ４  右側       -->
+<!--                             70        80        90        100       110       120       130       -->
+<!--                             0123456789012345678901234567890123456789012345678901234567890123456789-->
+<PARAM NAME="stage4-1-0"  VALUE="2......dd................22............22..........22.................">
+<PARAM NAME="stage4-1-1"  VALUE="2......dd................22............22..........22.................">
+<PARAM NAME="stage4-1-2"  VALUE="p......de................22............22..........22.................">
+<PARAM NAME="stage4-1-3"  VALUE="p......dd................22............22..........22.................">
+<PARAM NAME="stage4-1-4"  VALUE="p......dd..........1.....22............22..........22.................">
+<PARAM NAME="stage4-1-5"  VALUE="p....S.dd................22............22..........22.................">
+<PARAM NAME="stage4-1-6"  VALUE="ddd..dded.....1..........22............22..........22.................">
+<PARAM NAME="stage4-1-7"  VALUE="edd..dddd................22............22.........s22.................">
+<PARAM NAME="stage4-1-8"  VALUE="d22..U...................22............22..........22.................">
+<PARAM NAME="stage4-1-9"  VALUE="d22W......1.....1.Y......22............22..Y...Y...22.................">
+<PARAM NAME="stage4-1-10" VALUE="222dd............dded1...22............22..dd..dd..22.................">
+<PARAM NAME="stage4-1-11" VALUE="222dd............dddd....22............22S.dd..dd.S22.................">
+<PARAM NAME="stage4-1-12" VALUE="p2222U.pp....1...2222....22............22dddeddeddd22.................">
+<PARAM NAME="stage4-1-13" VALUE="p2222..pp....5..52222....22............22dddddddddd22.................">
+<PARAM NAME="stage4-1-14" VALUE="dedpppppp....dddd2222....22............dddeddddddeddd.................">
+<PARAM NAME="stage4-1-15" VALUE="dddppppppP...dddd2222....22Y.........Y.dddddddddddddd.................">
+<PARAM NAME="stage4-1-16" VALUE=".....ppdddedddddddd22....dddd........dddddddeddeddddddd...............">
+<PARAM NAME="stage4-1-17" VALUE=".555Wppddddddeddddd22..Y.dddd..P.5.Y.dddddddddddddddddd...............">
+<PARAM NAME="stage4-1-18" VALUE="dpppppp......dddddddd..dddedd..ddeddddddddddddddddddddd...............">
+<PARAM NAME="stage4-1-19" VALUE="dpppppp......ddddeddd..dddddd..dddddddddddddddddddddddd...............">
+
+<!--  ペットレース ミニ  左側                               -->
+<!--                             0         10        20        30        40        50        60        -->
+<!--                             0123456789012345678901234567890123456789012345678901234567890123456789-->
+<PARAM NAME="race-0-0"    VALUE="......22................22................22..........................">
+<PARAM NAME="race-0-1"    VALUE="......22................22................22..........................">
+<PARAM NAME="race-0-2"    VALUE="......22................22................22..........................">
+<PARAM NAME="race-0-3"    VALUE="......22................22.......1......J.22...1......1...............">
+<PARAM NAME="race-0-4"    VALUE="......22................22................22........H.................">
+<PARAM NAME="race-0-5"    VALUE="......22................22................22..........................">
+<PARAM NAME="race-0-6"    VALUE=".A....22..............aaaaaaa.............22..........................">
+<PARAM NAME="race-0-7"    VALUE="aaaaaaaaaaa...........bbbbbbb.........B...22.....8....................">
+<PARAM NAME="race-0-8"    VALUE="bbbbbbbbbbbaaaaaaaaaaabbbbbbbaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa">
+<PARAM NAME="race-0-9"    VALUE="bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb">
+
+<!--  ペットレース ミニ  右側                               -->
+<!--                             70        80        90        100       110       120       130       -->
+<!--                             0123456789012345678901234567890123456789012345678901234567890123456789-->
+<PARAM NAME="race-1-0"    VALUE="......................................................................">
+<PARAM NAME="race-1-1"    VALUE="......................................................................">
+<PARAM NAME="race-1-2"    VALUE="......................................................................">
+<PARAM NAME="race-1-3"    VALUE="......................................................................">
+<PARAM NAME="race-1-4"    VALUE="......................................................................">
+<PARAM NAME="race-1-5"    VALUE="......................................................................">
+<PARAM NAME="race-1-6"    VALUE="......................................................................">
+<PARAM NAME="race-1-7"    VALUE="......................................................................">
+<PARAM NAME="race-1-8"    VALUE="......................................................................">
+<PARAM NAME="race-1-9"    VALUE="......................................................................">
+
+
+
+<!--  背景色    光の３原色の成分で設定します                 -->
+<!--  ステージ１                                             -->
+<!--  赤の成分  (0-255)  -->
+<PARAM NAME="stage1_backcolor_red" VALUE="0">
+<!--  緑の成分  (0-255)  -->
+<PARAM NAME="stage1_backcolor_green" VALUE="0">
+<!--  青の成分  (0-255)  -->
+<PARAM NAME="stage1_backcolor_blue" VALUE="64">
+
+<!--  ステージ２                                             -->
+<!--  赤の成分  (0-255)  -->
+<PARAM NAME="stage2_backcolor_red" VALUE="32">
+<!--  緑の成分  (0-255)  -->
+<PARAM NAME="stage2_backcolor_green" VALUE="32">
+<!--  青の成分  (0-255)  -->
+<PARAM NAME="stage2_backcolor_blue" VALUE="32">
+
+<!--  ステージ３                                             -->
+<!--  赤の成分  (0-255)  -->
+<PARAM NAME="stage3_backcolor_red" VALUE="16">
+<!--  緑の成分  (0-255)  -->
+<PARAM NAME="stage3_backcolor_green" VALUE="16">
+<!--  青の成分  (0-255)  -->
+<PARAM NAME="stage3_backcolor_blue" VALUE="16">
+
+<!--  ステージ４                                             -->
+<!--  赤の成分  (0-255)  -->
+<PARAM NAME="stage4_backcolor_red" VALUE="0">
+<!--  緑の成分  (0-255)  -->
+<PARAM NAME="stage4_backcolor_green" VALUE="0">
+<!--  青の成分  (0-255)  -->
+<PARAM NAME="stage4_backcolor_blue" VALUE="0">
+
+
+<!--  何種類捕まえれば図鑑完成か                             -->
+<!--                    2-                                   -->
+<PARAM NAME="zukan_kansei" VALUE="21">
+
+<!--  デバッグモード    0    通常                            -->
+<!--                    1-4  そのステージから開始            -->
+<!--                    5    地図画面から開始                -->
+<PARAM NAME="debug_mode" VALUE="0">
+
+<!--  システムモード    0    コンストラクション              -->
+<!--                    1    オフィシャルゲーム              -->
+<!--                    2    オフィシャルゲーム・上級編      -->
+<PARAM NAME="system_mode" VALUE="0">
+
+
+<!--  タイトル画面のファイル名                              -->
+<PARAM NAME="filename_title" VALUE="t.png">
+
+<!--  エンディング画面のファイル名                          -->
+<PARAM NAME="filename_ending" VALUE="clear.png">
+
+<!--  地図画面の背景のファイル名                            -->
+<PARAM NAME="filename_chizu" VALUE="g_map.png">
+
+<!--  ジム戦の背景のファイル名                              -->
+<PARAM NAME="filename_gym" VALUE="g_gym.gif">
+
+<!--  キャラクターパターンのファイル名                      -->
+<PARAM NAME="filename_pattern" VALUE="g.gif">
+
+
+<!--  アイテムの名前  -->
+<PARAM NAME="name_kizugusuri"     VALUE="治療薬">
+<PARAM NAME="name_petdrink"       VALUE="エナジードリンク">
+<PARAM NAME="name_kinomi"         VALUE="おいも">
+<PARAM NAME="name_dokukinoko"     VALUE="テトロドトキシン">
+<PARAM NAME="name_upball"         VALUE="五芒星（上昇）">
+<PARAM NAME="name_lineball"       VALUE="五芒星（直進）">
+<PARAM NAME="name_powerball"      VALUE="五芒星（弱体化不要）">
+<PARAM NAME="name_kinnotama"      VALUE="クリスタル">
+<PARAM NAME="name_wazamachine01"  VALUE="レーザーポインタ">
+<PARAM NAME="name_wazamachine02"  VALUE="神経毒発射機">
+
+
+<!--  セリフ中のどくきのこの名前  -->
+<PARAM NAME="name_dokukinoko_s"        VALUE="テトロドトキシン">
+
+<!--  どくきのこの説明            -->
+<PARAM NAME="name_dokukinoko_setumei"  VALUE="駆除すると３０円もらえます。">
+
+<!--  セリフ中のきんのたまの名前  -->
+<PARAM NAME="name_kinnotama_s"         VALUE="クリスタル">
+
+<!--  きんのたまの説明            -->
+<PARAM NAME="name_kinnotama_setumei"   VALUE="あなたの身体と懐を温めます。">
+
+
+<!--  アイテムの値段                -->
+<!--  店に売る時は半額です          -->
+<PARAM NAME="teika_kizugusuri"     VALUE="20">
+<PARAM NAME="teika_petdrink"       VALUE="30">
+<PARAM NAME="teika_kinomi"         VALUE="10">
+<PARAM NAME="teika_dokukinoko"     VALUE="60">
+<PARAM NAME="teika_upball"         VALUE="60">
+<PARAM NAME="teika_lineball"       VALUE="60">
+<PARAM NAME="teika_powerball"      VALUE="60">
+<PARAM NAME="teika_kinnotama"      VALUE="500">
+<PARAM NAME="teika_wazamachine01"  VALUE="300">
+<PARAM NAME="teika_wazamachine02"  VALUE="400">
+
+
+<!--  グラーダのＨＰ    -->
+<PARAM NAME="grounder_hp"  VALUE="880">
+
+<!--  カイオールのＨＰ  -->
+<PARAM NAME="kaiole_hp"    VALUE="700">
+
+<!--  センクウザのＨＰ  -->
+<PARAM NAME="senkuuza_hp"  VALUE="550">
+
+
+<!--  登場人物の名前    -->
+<PARAM NAME="name_kidohakase"     VALUE="じじ様">
+<PARAM NAME="name_jyuuisan"       VALUE="Auto Aid System">
+<PARAM NAME="name_teninsan"       VALUE="Auto Shopping System">
+<PARAM NAME="name_sodateyasan"    VALUE="モンスターズホテル">
+<PARAM NAME="name_dragontaxy"     VALUE="ハピ子">
+<PARAM NAME="name_furuure"        VALUE="シャナン">
+
+<!--  最初に用意されている主人公の名前
+
+      ５文字以内のカタカナ以外は、
+      正常にパスワード化されません。
+-->
+<PARAM NAME="name_boy1"   VALUE="オーガ">
+<PARAM NAME="name_boy2"   VALUE="タロウ">
+<PARAM NAME="name_boy3"   VALUE="ボビー">
+<PARAM NAME="name_boy4"   VALUE="ハンス">
+<PARAM NAME="name_girl1"  VALUE="ユー">
+<PARAM NAME="name_girl2"  VALUE="ハナコ">
+<PARAM NAME="name_girl3"  VALUE="メリー">
+<PARAM NAME="name_girl4"  VALUE="エリーゼ">
+
+<!--  モンスターの名前    -->
+<PARAM NAME="name_fennec"        VALUE="ソーファ">
+<PARAM NAME="name_kametank"      VALUE="ホーリー">
+<PARAM NAME="name_sunvista"      VALUE="チェリー">
+<PARAM NAME="name_butapig"       VALUE="スクアル">
+<PARAM NAME="name_karara"        VALUE="パンチユウ">
+<PARAM NAME="name_iwatops"       VALUE="マガルデ">
+<PARAM NAME="name_yachamo"       VALUE="ボルラット">
+<PARAM NAME="name_mariri"        VALUE="バルチルス">
+<PARAM NAME="name_chireihana"    VALUE="ビーナ">
+<PARAM NAME="name_poppie"        VALUE="バルンド">
+<PARAM NAME="name_namakezaru"    VALUE="ケムリュウ">
+<PARAM NAME="name_lunarock"      VALUE="モノアイ">
+<PARAM NAME="name_pikachii"      VALUE="ビリマオン">
+<PARAM NAME="name_sungoose"      VALUE="スミロドン">
+<PARAM NAME="name_starnal"       VALUE="アイゼル">
+<PARAM NAME="name_hercules"      VALUE="フォックス">
+<PARAM NAME="name_lanster"       VALUE="キャナビー">
+<PARAM NAME="name_kamalike"      VALUE="タラチュン">
+<PARAM NAME="name_chirumichiru"  VALUE="エアバード">
+<PARAM NAME="name_popony"        VALUE="チェリル">
+<PARAM NAME="name_yureko"        VALUE="ユレオ">
+<PARAM NAME="name_sunnyna"       VALUE="ネオクロウ">
+<PARAM NAME="name_bibidama"      VALUE="マグマ">
+<PARAM NAME="name_pichika"       VALUE="サタリン">
+<PARAM NAME="name_blackal"       VALUE="ドラーゴ">
+<PARAM NAME="name_makkalgo"      VALUE="サラマンダ">
+<PARAM NAME="name_rachi"         VALUE="デュウム">
+<PARAM NAME="name_atis"          VALUE="グラーソル">
+<PARAM NAME="name_latis"         VALUE="フェーゴ">
+<PARAM NAME="name_tubomushi"     VALUE="タラキシン">
+<PARAM NAME="name_taiking"       VALUE="ホーガ">
+<PARAM NAME="name_mirocureall"   VALUE="シードラゴ">
+<PARAM NAME="name_airms"         VALUE="ファイセル">
+<PARAM NAME="name_grounder"      VALUE="グリード">
+<PARAM NAME="name_kaiole"        VALUE="ハーピー">
+<PARAM NAME="name_senkuuza"      VALUE="ミストロン">
+
+
+<!--  技の名前の変更    0    オフィシャルの名前                     -->
+<!--                    1    変更する                               -->
+<!--  変更する場合、モンスター特有の技が、下記の名前に              -->
+<!--  置き換わる為、全てを設定し直さないと、不自然になります。      -->
+<PARAM NAME="waza_name_hf"       VALUE="1">
+
+<!--  技の名前                                                      -->
+<PARAM NAME="waza_name1"         VALUE="ジャンプ">
+<PARAM NAME="waza_name2"         VALUE="体当たり">
+<PARAM NAME="waza_name3"         VALUE="火の粉">
+<PARAM NAME="waza_name4"         VALUE="火の粉×５">
+<PARAM NAME="waza_name5"         VALUE="冷凍ミサイル">
+<PARAM NAME="waza_name6"         VALUE="アイスカッター×５">
+<PARAM NAME="waza_name7"         VALUE="葉の刃">
+<PARAM NAME="waza_name8"         VALUE="葉の刃×５">
+<PARAM NAME="waza_name9"         VALUE="中高一本拳">
+<PARAM NAME="waza_name10"        VALUE="つつく">
+<PARAM NAME="waza_name11"        VALUE="大地の怒り">
+<PARAM NAME="waza_name12"        VALUE="レールガン">
+<PARAM NAME="waza_name13"        VALUE="追尾弾">
+<PARAM NAME="waza_name14"        VALUE="かみちぎる">
+<PARAM NAME="waza_name15"        VALUE="猛禽狩り">
+<PARAM NAME="waza_name16"        VALUE="膝蹴り">
+<PARAM NAME="waza_name17"        VALUE="自然の怒り">
+<PARAM NAME="waza_name18"        VALUE="レーザー">
+<PARAM NAME="waza_name19"        VALUE="神の怒り">
+<PARAM NAME="waza_name20"        VALUE="突風">
+<PARAM NAME="waza_name21"        VALUE="ドリルショット">
+<PARAM NAME="waza_name22"        VALUE="お年玉">
+<PARAM NAME="waza_name23"        VALUE="もやっとボール×５">
+<PARAM NAME="waza_name24"        VALUE="天使の悦び">
+<PARAM NAME="waza_name25"        VALUE="リーフファング">
+<PARAM NAME="waza_name26"        VALUE="竜巻">
+<PARAM NAME="waza_name27"        VALUE="ポルターガイスト">
+<PARAM NAME="waza_name28"        VALUE="チェリーボム">
+<PARAM NAME="waza_name29"        VALUE="おすそわけ">
+<PARAM NAME="waza_name30"        VALUE="アロエカッター">
+<PARAM NAME="waza_name31"        VALUE="肉体の悦び">
+<PARAM NAME="waza_name32"        VALUE="砲撃">
+<PARAM NAME="waza_name33"        VALUE="毒霧">
+<PARAM NAME="waza_name34"        VALUE="背水の陣">
+<PARAM NAME="waza_name35"        VALUE="さそりの針">
+<PARAM NAME="waza_name36"        VALUE="怨念">
+<PARAM NAME="waza_name37"        VALUE="散乱">
+<PARAM NAME="waza_name38"        VALUE="プラズマ砲">
+<PARAM NAME="waza_name39"        VALUE="神様からのお年玉">
+<PARAM NAME="waza_name40"        VALUE="炎の怒り">
+<PARAM NAME="waza_name41"        VALUE="追尾弾×２">
+<PARAM NAME="waza_name42"        VALUE="悪霊召喚">
+<PARAM NAME="waza_name43"        VALUE="魔界旅行">
+<PARAM NAME="waza_name44"        VALUE="悪魔の怒り">
+<PARAM NAME="waza_name45"        VALUE="太陽の悦び">
+<PARAM NAME="waza_name46"        VALUE="豪雪">
+<PARAM NAME="waza_name47"        VALUE="ドリルヘッド">
+<PARAM NAME="waza_name48"        VALUE="焦土">
+<PARAM NAME="waza_name49"        VALUE="建造物解体">
+<PARAM NAME="waza_name50"        VALUE="冷気">
+<PARAM NAME="waza_name51"        VALUE="バトラコトキシン">
+<PARAM NAME="waza_name52"        VALUE="特攻">
+<PARAM NAME="waza_name53"        VALUE="血潮の悦び">
+<PARAM NAME="waza_name54"        VALUE="大山鳴動">
+<PARAM NAME="waza_name55"        VALUE="エネルギー砲">
+<PARAM NAME="waza_name56"        VALUE="芋の怒り">
+<PARAM NAME="waza_name57"        VALUE="忍び寄る手">
+
+
+</APPLET>
+</CENTER>
+
+
+<BR>
+開始直後にプレイヤーのパスワードを入力すると挙動がおかしくなることがあります。<BR>
+その場合、F5キーを押すなどしてページを更新してください。<BR>
+<BR>
+
+
+<HR>
+
+
+<H2>キーボード操作</H2>
+
+<DL>
+<DT>（←），（４）
+<DD>左へ歩く
+<DT>（→），（６）
+<DD>右へ歩く
+<DT>（Ｚ）、（スペース）
+<DD>決定ボタン、ジャンプ
+<DT>（Ｘ）
+<DD>キャンセルボタン
+<DT>（↓）、（２）
+<DD>セレクトボタン下、右
+<DT>（↑）、（８）
+<DD>セレクトボタン上、左
+<DT>（Ｔ）
+<DD>タイトル画面に戻る
+</DL>
+
+<H2>特殊キー</H2>
+
+<DL>
+<DT>（ファンクションキー）
+<DD>メニューの項目を選択する
+<DT>（Ｃ）
+<DD>主人公がジャンプする
+<DT>（Ｖ）
+<DD>選択中のペットにジャンプを命令する
+<DT>（Ａ）、（Ｓ）、（Ｄ）、（Ｆ)、（Ｇ）、（Ｈ）
+<DD>ペットボールを選択する
+</DL>
+
+<H2>パスワードの表示／入力について</H2>
+
+パスワードの表示／入力は、ダイアログ中のテキストフィールドで行います。ここでは、マウスによる、コピー＆ペーストが使えないので、キーボードから行います。 [Shift] + カーソルキーで、パスワードの範囲を指定し、 [Ctrl] + [C] でコピー、 [Ctrl] + [V] で貼り付けます。<P>
+<hr>
+<h2>概要</h2>
+昔々あるところに、ド派手な髪型の男の子と薬中の女の子がいました。<br>
+ある日、とある地方で３匹の怪物が暴れまわっているという話をききつけ、<br>
+とりあえず王女様に媚びを売ることに。<br>
+<hr>
+<h2>アイテム解説</h2>
+<h4>治療薬</h4>
+はじめに２つ持っています。HPが全回復します。<br>
+<h4>エナジードリンク</h4>
+はじめに２つ持っています。PPが全回復します。怪しい副作用とかはありません。また、プレイヤーは飲めません。<br>
+<h4>おいも</h4>
+ステージ内に落ちています。食べるとHPとPPがかなり回復します。<br>
+<h4>テトロドトキシン</h4>
+猛毒なので食べないよう。お店に持って行くとそこそこ高値で引き取ってくれます。<br>
+<h4>五芒星（上昇）</h4>
+上へ飛ぶ五芒星です。高いところにいるモンスターを捕まえる時などにおすすめです。<br>
+<h4>五芒星（直進）</h4>
+直進する五芒星です。それ以上でもそれ以下でもありません。<br>
+<h4>五芒星（弱体化不要）</h4>
+ダメージを与えなくても捕まえられます。ボスは捕まえられません。<br>
+<h4>クリスタル</h4>
+ステージ内にあります。お店に持って行くとかなり高値で売れます。<br>
+<h4>レーザーポインタ</h4>
+モンスターにレーザーを覚えさせられる、所謂わざマシンです。プレイヤーが技を使えるようにするものではありません。<br>
+<h4>神経毒発射機</h4>
+モンスターに”さそりの針”を発射できるようにできる、所謂わざマシンです。同じくプレイヤーが技を使えるようにするものではありません。<br>
+
+<hr>
+<h2>登場キャラクター</h2>
+<h4>男の子</h4>
+ガングロの男の子。今回は名前を選べます。いつでもどこでもパンクファッション。<br>
+<h4>女の子</h4>
+小麦肌の女の子。今回は名前を選べます。いつでもどこでも露出狂。<br>
+<h4>硫黄うさぎ</h4>
+本編ではソーファっていう名前になっています。小さい身体からパワフルな技を繰り出します。<br>
+<h4>ゆきうさぎ</h4>
+本編ではホーリー。アイスカッターは空中型に接近した状態で使うと便利。<br>
+<h4>さくらうさぎ</h4>
+本編ではチェリー。グリードとハーピーと戦うことを考えるとこの子を選んだほうがいいかも。<br>
+<h4>りす</h4>
+本編ではスクアル。THE 雑魚キャラ。しかし倒しにくい場所にいると厄介です。<br>
+<h4>バルンド</h4>
+基本的にはハンティングツアー篇と一緒。HPが少なめなので倒しやすいですね。突風は避けるの難しいかも。<br>
+<h4>たまねずみ</h4>
+本編ではボルラット。追尾型の火球は重宝します。キャナビーを倒す時に便利。でもあいつ飛ぶスピード速いんだよね。<br>
+<h4>バルチルス</h4>
+ハンティングツアー篇とは違い、前方への攻撃手段を持っています。体当たり技ももちろん標準搭載。<br>
+<h4>ビーナ</h4>
+”自然の怒り”は前方の敵を一度に蹴散らすことができます。野生のビーナを見たらとりあえずジャンプ！<br>
+<h4>ビリマオン</h4>
+こちらもハンティングツアー篇と同じです。たまに強烈な打撃技を覚えていることもあるみたい。野生のビリマオンは地震を使えば一撃。<br>
+<h4>サタリン</h4>
+ノーマルタイプ。火球を覚えていることもあるらしいよ。<br>
+<h4>マグマ</h4>
+やはり散乱します。しかし今回は動きが速い。ボスと接触させた状態で使えばかなり有利に。<br>
+<h4>マガルデ</h4>
+サタリンの色違い。華奢な見た目に反し身体はかなり丈夫。サイケデリックな見た目ですが岩タイプです。<br>
+<h4>パンチユウ</h4>
+格闘タイプになったYuです。見たらわかると思いますがパチモンくさい見た目です。かなりの厨二病。扱いとしては普通のモンスターと同じ。エスパータイプの技に弱いです。やはり人間。<br>
+<h4>けむりの竜</h4>
+本編ではケムリュウ。ノーマルタイプで炎攻撃も植物攻撃も覚えていますが、たまに爆睡します。<br>
+<h4>モノアイ</h4>
+鉄っぽい見た目ですが岩タイプ。自機を追い回したりはしません。休止中のもいますが捕獲はできません。<br>
+<h4>スミロドン</h4>
+今回は空中型への攻撃手段を持っています。ノーマルタイプなのでパンチユウを差し向けるのがおすすめ。<br>
+<h4>アイスエンジン</h4>
+本編ではアイゼル。空中型なので、かなり高いところにいる敵を倒すのに便利かも。レールガンも使えます。<br>
+<h4>キャナビー</h4>
+腹の穴からドリルのようなものを発射します。虫なので、やっぱり火には弱い。<br>
+<h4>タラチュン</h4>
+サソリですが毒は持っていません。ミストロンの下半身とそっくりですが、システム上の関係性はありません。<br>
+<h4>ネオクロウ</h4>
+バルチルスとの違いは、空中型への攻撃手段は持っていないが自己再生ができるということ。PPを削って捕獲しましょう。<br>
+<h4>やまぎつね</h4>
+本編ではフォックス。ビリマオンに出くわしたらこの子で倒そう！<br>
+<h4>チェリル</h4>
+今回、赤いほうは向こうをむいたままです。回復技を持っているので天井の高いところでは重宝します。<br>
+<h4>幽霊王</h4>
+本編ではユレオ。唯一のゴーストタイプです。肉体派の技は効きません。モンスターを出した途端攻撃してきます。<br>
+<h4>エアバード</h4>
+小さい身体で竜巻を起こせます。壁を隔てたところにいる敵を倒すのにおすすめ。<br>
+<h4>ドラーゴ</h4>
+こいつも壁を隔てて攻撃できます。申し訳程度に体当たり技も。<br>
+<h4>サラマンダー</h4>
+本編ではサラマンダ。追尾型の火球が使えます。<br>
+<h4>タラキシン</h4>
+有毒です。タラチュンとの関係は特にありません。<br>
+<h4>ファイシェル</h4>
+本編ではファイセル。内容はハンティングツアー篇とは違いますが、地面を焦土にする技を持っています。唯一の鉄タイプ。<br>
+
+<h3>パスワード入力でのみ出現するモンスター一覧</h3>
+<h4>デュウム</h4>
+空から光る粉を降らせて味方のHPを回復させることができるので、屋外では大活躍です。<br>
+<h4>ホーガ</h4>
+ハンティングツアー篇との違いは、レベル３以上に上げると進化すること。<br>
+<h4>シードラゴ</h4>
+消費PP最大級を誇る大技”豪雪”が使えます。回復技も。<br>
+<h4>グラーソル</h4>
+♀しかいません。悪魔を召喚して攻撃します。一時的に魔界へ旅立つこともできます。どちらもPP消費が高いですが、、、<br>
+<h4>フェーゴ</h4>
+♂しかいません。というより♂と♀で名前が変わる。神話にも登場する悪魔・ベルフェゴールの幼体。の割に使い道は限られます。<br>
+
+<h3>登場人物</h3>
+<h4>じじ様</h4>
+彼の元へ行くと、３種類のうさぎのうちどれか１体のみもらえます。<br>
+<h4>工場長</h4>
+今回ジムリーダーとして登場します。どれもレベル高めなので、他所で育てたモンスターを連れて来て戦いに望むべし！<br>
+<h4>ハピ子</h4>
+ハンティングツアー篇以来の再登場。ハーピーとはメイクの趣味が少し違い、赤のアイシャドーを愛用しています。姉とは仲が悪いですが、姉と同じく金の亡者です。<br>
+<h4>シャナン</h4>
+この地域の王女。なんでも他人頼み。甘やかされて育ったため、技は持っていません。ペット募集中。</br>
+<h4>シャナンのペット１号</h4>
+仕事は主に伝言。わりと役にたつことを言ってくれるはず。<br>
+<h4>シャナンのペット２号</h4>
+仕事は主に思考。倒し方とか教えてくれるよ。<br>
+<h4>グリード</h4>
+第２ステージの奥に出現します。捕獲不可能。地面タイプです。<br>
+<h4>ハーピー</h4>
+第３ステージの奥に出現します。彼女も捕獲不可能。氷タイプです。システム上の性別は♂になっています。<br>
+<h4>ミストロン</h4>
+第４ステージの奥に出現。実は上２体は特殊な方法で捕獲することができますが、こいつは本当に捕獲できないようです。<br>
+パターン画像の、岩石の下の画像、何に使うんでしょうね、、、<br>
+
+
+
+
+<BR>
+<HR>
+
+
+<H2>タイプ別技効果表</H2>
+
+<TABLE BORDER="1">
+<TR><TH>使う技＼受ける側</TH>
+<TH>ノーマル</TH><TH>炎</TH><TH>氷</TH><TH>草</TH><TH>電気</TH><TH>岩</TH><TH>地面</TH>
+<TH>鳥</TH><TH>虫</TH><TH>格闘</TH><TH>エスパー</TH><TH>ゴースト</TH></TR>
+
+<TR><TH>ノーマル</TH>
+<TD>○</TD><TD>○</TD><TD>○</TD><TD>○</TD><TD>○</TD><TD>△</TD><TD>○</TD>
+<TD>○</TD><TD>○</TD><TD>○</TD><TD>○</TD><TD>×</TD></TR>
+
+<TR><TH>炎</TH>
+<TD>○</TD><TD>△</TD><TD>△</TD><TD>◎</TD><TD>○</TD><TD>△</TD><TD>○</TD>
+<TD>○</TD><TD>◎</TD><TD>○</TD><TD>○</TD><TD>○</TD></TR>
+
+<TR><TH>氷</TH>
+<TD>○</TD><TD>◎</TD><TD>△</TD><TD>△</TD><TD>○</TD><TD>◎</TD><TD>◎</TD>
+<TD>○</TD><TD>○</TD><TD>○</TD><TD>○</TD><TD>○</TD></TR>
+
+<TR><TH>草</TH>
+<TD>○</TD><TD>△</TD><TD>◎</TD><TD>△</TD><TD>○</TD><TD>◎</TD><TD>◎</TD>
+<TD>△</TD><TD>△</TD><TD>○</TD><TD>○</TD><TD>○</TD></TR>
+
+<TR><TH>電気</TH>
+<TD>○</TD><TD>○</TD><TD>◎</TD><TD>△</TD><TD>△</TD><TD>△</TD><TD>×</TD>
+<TD>◎</TD><TD>○</TD><TD>○</TD><TD>○</TD><TD>○</TD></TR>
+
+<TR><TH>岩</TH>
+<TD>○</TD><TD>◎</TD><TD>○</TD><TD>○</TD><TD>○</TD><TD>○</TD><TD>△</TD>
+<TD>◎</TD><TD>◎</TD><TD>△</TD><TD>○</TD><TD>×</TD></TR>
+
+<TR><TH>地面</TH>
+<TD>○</TD><TD>◎</TD><TD>○</TD><TD>△</TD><TD>◎</TD><TD>◎</TD><TD>○</TD>
+<TD>×</TD><TD>△</TD><TD>○</TD><TD>○</TD><TD>×</TD></TR>
+
+<TR><TH>鳥</TH>
+<TD>○</TD><TD>○</TD><TD>○</TD><TD>◎</TD><TD>△</TD><TD>△</TD><TD>○</TD>
+<TD>○</TD><TD>◎</TD><TD>◎</TD><TD>○</TD><TD>×</TD></TR>
+
+<TR><TH>虫</TH>
+<TD>○</TD><TD>△</TD><TD>○</TD><TD>◎</TD><TD>○</TD><TD>○</TD><TD>○</TD>
+<TD>△</TD><TD>○</TD><TD>△</TD><TD>◎</TD><TD>×</TD></TR>
+
+<TR><TH>格闘</TH>
+<TD>◎</TD><TD>○</TD><TD>○</TD><TD>○</TD><TD>○</TD><TD>◎</TD><TD>○</TD>
+<TD>△</TD><TD>△</TD><TD>○</TD><TD>△</TD><TD>×</TD></TR>
+
+<TR><TH>エスパー</TH>
+<TD>○</TD><TD>○</TD><TD>○</TD><TD>○</TD><TD>○</TD><TD>○</TD><TD>○</TD>
+<TD>○</TD><TD>○</TD><TD>◎</TD><TD>△</TD><TD>○</TD></TR>
+
+<TR><TH>ゴースト</TH>
+<TD>×</TD><TD>○</TD><TD>○</TD><TD>○</TD><TD>○</TD><TD>○</TD><TD>○</TD>
+<TD>○</TD><TD>○</TD><TD>○</TD><TD>◎</TD><TD>◎</TD></TR>
+
+</TABLE>
+
+
+<P>
+◎ 効果は抜群（ダメージ２倍）<P>
+○ 普通の効果<P>
+△ 効果はいまひとつ（ダメージ１／２）<P>
+× 効果がない<P>
+
+技のタイプと、それを使うモンスターのタイプが同じ場合、威力が １．５倍になる。<P>
+
+
+<BR>
+<HR>
+
+
+<a href = "http://www.t3.rim.or.jp/~naoto/naoto.html">作者のページ</A><P>
+
+
+</BODY>
+
+
+</HTML>

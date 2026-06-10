@@ -1,0 +1,560 @@
+//Ç±Ç¡ÇøÇ…ìdåÇÇï˙Ç¬ìG
+
+var Applet1;		//  JavaApplet
+
+var teki_id = new array();
+var teki_x = new array();
+var teki_y = new array();
+var teki_c = new array();//çUåÇÉJÉEÉìÉ^Å[
+var teki_n;//ìGÇÃêî
+
+function onLoadJS() {
+    Applet1 = document.getElementById("applet1");
+    timerID = setInterval("mainLoop()", 100);
+}
+
+function init() {
+    /*ìG(ÉÑÉ`ÉÉÉÇ)ÇÃèÍèäÇîcà¨*/
+
+
+}
+
+function mainLoop() {
+    if (Applet1.getMode() < 1) {
+        return;
+    }
+    if (Applet1.getJSMes() >= 1) {
+        Applet1.setJSMes(0);
+        init();
+    }
+
+    my_x = Applet1.getMyX();
+    my_y = Applet1.getMyY();
+    my_xr = Applet1.getMyXReal();
+    my_yr = Applet1.getMyYReal();
+    mcc = Applet1.getMapChip(my_x, my_y);
+    mcc2 = Applet1.getMapChip2(my_x, my_y);
+    boss_x = boss_x + boss_vx;
+    boss_y = boss_y + boss_vy;
+    boss_ax = Math.floor(boss_x / 32) - 1;
+    boss_ay = Math.floor(boss_y / 32) - 10;
+    view_xr = Applet1.getViewXReal();
+    view_yr = Applet1.getViewYReal();
+    Applet1.showRect(10, 0, 0, 512, 320);
+
+    if (boss_j > 0) {
+        if (boss_img == 0) {
+            if (boss_m == 0) {
+                Applet1.showImage(100, boss_x - view_xr, boss_y - view_yr, "konkondol/konkondol_dl.gif");
+            }
+            else {
+                Applet1.showImage(100, boss_x - view_xr, boss_y - view_yr, "konkondol/konkondol_dr.gif");
+            }
+        }
+        else if (boss_img == 1) {
+            if (boss_m == 0) {
+                Applet1.showImage(100, boss_x - view_xr, boss_y - view_yr, "konkondol/konkondol_nl.gif");
+            }
+            else {
+                Applet1.showImage(100, boss_x - view_xr, boss_y - view_yr, "konkondol/konkondol_nr.gif");
+            }
+        }
+        else if (boss_img == 2) {
+            if (boss_m == 0) {
+                Applet1.showImage(100, boss_x - view_xr, boss_y - view_yr, "konkondol/konkondol_il1.gif");
+            }
+            else {
+                Applet1.showImage(100, boss_x - view_xr, boss_y - view_yr, "konkondol/konkondol_ir1.gif");
+            }
+        }
+        else if (boss_img == 3) {
+            if (boss_m == 0) {
+                Applet1.showImage(100, boss_x - view_xr, boss_y - view_yr, "konkondol/konkondol_il2.gif");
+            }
+            else {
+                Applet1.showImage(100, boss_x - view_xr, boss_y - view_yr, "konkondol/konkondol_ir2.gif");
+            }
+        }
+        else if (boss_img == 4) {
+            if (boss_m == 0) {
+                Applet1.showImage(100, boss_x - view_xr, boss_y - view_yr, "konkondol/konkondol_al.gif");
+            }
+            else {
+                Applet1.showImage(100, boss_x - view_xr, boss_y - view_yr, "konkondol/konkondol_ar.gif");
+            }
+        }
+        else if (boss_img == 5) {
+            if (boss_m == 0) {
+                Applet1.showImage(100, boss_x - view_xr, boss_y - view_yr, "konkondol/konkondol_al1.gif");
+            }
+            else {
+                Applet1.showImage(100, boss_x - view_xr, boss_y - view_yr, "konkondol/konkondol_ar1.gif");
+            }
+        }
+        else if (boss_img == 6) {
+            if (boss_m == 0) {
+                Applet1.showImage(100, boss_x - view_xr, boss_y - view_yr, "konkondol/konkondol_al2.gif");
+            }
+            else {
+                Applet1.showImage(100, boss_x - view_xr, boss_y - view_yr, "konkondol/konkondol_ar2.gif");
+            }
+        }
+        else if (boss_img == 7) {
+            if (boss_m == 0) {
+                Applet1.showImage(100, boss_x - view_xr, boss_y - view_yr, "konkondol/konkondol_al3.gif");
+            }
+            else {
+                Applet1.showImage(100, boss_x - view_xr, boss_y - view_yr, "konkondol/konkondol_ar3.gif");
+            }
+        }
+        else if (boss_img == 8) {
+            if (boss_m == 0) {
+                Applet1.showImage(100, boss_x - view_xr, boss_y - view_yr, "konkondol/konkondol_kl1.gif");
+            }
+            else {
+                Applet1.showImage(100, boss_x - view_xr, boss_y - view_yr, "konkondol/konkondol_kr1.gif");
+            }
+        }
+        else if (boss_img == 9) {
+            if (boss_m == 0) {
+                Applet1.showImage(100, boss_x - view_xr, boss_y - view_yr, "konkondol/konkondol_kl2.gif");
+            }
+            else {
+                Applet1.showImage(100, boss_x - view_xr, boss_y - view_yr, "konkondol/konkondol_kr2.gif");
+            }
+        }
+    }
+    if (boss_img > 0) {
+        if (my_xr >= boss_x - 8 && my_xr <= boss_x + 40) {
+            if (my_yr >= boss_y && my_yr <= boss_y + 48) {
+                if (boss_img == 8) {
+                    if (Applet1.getMyVY() > 10) {
+                        Applet1.setMyPress(2);
+                        Applet1.setMyYReal(boss_y);
+                        boss_j = 20;
+                        boss_img = 0;
+                        boss_tc = 20;
+                        boss_hp--;
+                    }
+                    else {
+                        Applet1.setMyHPDamage(1);
+                    }
+                }
+                else {
+                    Applet1.setMyHPDamage(1);
+                }
+            }
+        }
+    }
+    if (Applet1.getMyHP() == 0) {
+        Applet1.setMyMiss(2);
+    }
+    if (boss_j >= 10) {
+        boss_ac--;
+        Applet1.showGauge(Math.floor(boss_hp * 200 / boss_hp_max), "ÉRÉìÉRÉìÉhÉã" + boss_hp + "/" + boss_hp_max);
+    }
+    if (boss_j == 10) {
+        if (boss_x + 32 >= my_xr) {
+            boss_m = 0;
+        }
+        if (boss_x + 32 < my_xr) {
+            boss_m = 1;
+        }
+        if (boss_akc <= 0) {
+            boss_j = 19;
+            boss_wj = 1;
+            boss_vy = 8;
+        }
+        if (boss_ac <= 0) {
+            waza = Math.floor(Math.random() * 99);
+            if (waza >= 0 && waza < 20) {
+                boss_j = 11;
+                if (boss_hp < 3) {
+                    boss_wj = 2;
+                    boss_vy = -8;
+                    boss_ac = 55;
+                }
+                else {
+                    boss_wj = 1;
+                    boss_ac = 15;
+                    boss_img = 4;
+                }
+            }
+            else if (waza >= 20 && waza < 40) {
+                boss_j = 12;
+                boss_wj = 1;
+                boss_vy = -8;
+                if (boss_hp < 3) {
+                    boss_akc2 = 1 + Math.floor(Math.random() * 3);
+                }
+                else {
+                    boss_akc2 = 1;
+                }
+            }
+            else if (waza >= 40 && waza < 60) {
+                boss_j = 13;
+                boss_wj = 1;
+                boss_ak = 10;
+                if (boss_hp < 3) {
+                    boss_akc2 = 1 + Math.floor(Math.random() * 3);
+                }
+                else {
+                    boss_akc2 = 1;
+                }
+                if (boss_x <= view_xr + 224) {
+                    boss_m = 0;
+                    boss_vx = -8;
+                }
+                else {
+                    boss_m = 1;
+                    boss_vx = 8;
+                }
+            }
+            else {
+                waza2 = Math.floor(Math.random() * 99);
+                boss_j = 14;
+                if (waza2 >= 80) {
+                    boss_vy = 36;
+                }
+                else {
+                    boss_vy = 18;
+                }
+                if (boss_x <= view_xr + 224) {
+                    boss_m = 1;
+                    boss_vx = 32;
+                }
+                else {
+                    boss_m = 0;
+                    boss_vx = -32;
+                }
+            }
+        }
+    }
+    else if (boss_j == 11) {
+        if (boss_x + 32 >= my_xr) {
+            boss_m = 0;
+        }
+        if (boss_x + 32 < my_xr) {
+            boss_m = 1;
+        }
+        if (boss_wj == 1) {
+            if (boss_ac <= 10 && boss_ac > 0) {
+                if (boss_m == 0) {
+                    Applet1.setEnemy(boss_ax, boss_ay + 1, 16);
+                }
+                else {
+                    Applet1.setEnemy(boss_ax + 1, boss_ay + 1, 16);
+                }
+            }
+            else if (boss_ac <= 0) {
+                boss_j = 10;
+                boss_ac = 15;
+                boss_img = 1;
+                boss_akc--;
+            }
+        }
+        else if (boss_wj == 2) {
+            if (boss_y == (20 + 10) * 32 + 16) {
+                boss_wj = 3;
+                boss_vy = 2;
+                boss_ac = 56;
+                boss_img = 4;
+                if (boss_m == 0) {
+                    boss_vx = -8;
+                }
+                else {
+                    boss_vx = 8;
+                }
+            }
+        }
+        else if (boss_wj == 3) {
+            if (boss_x <= view_xr) {
+                boss_vx = 8;
+            }
+            if (boss_x >= view_xr + 448) {
+                boss_vx = -8;
+            }
+            if (boss_ac <= 50 && boss_ac > 35) {
+                if (boss_m == 0) {
+                    Applet1.setEnemy(boss_ax, boss_ay + 1, 16);
+                }
+                else {
+                    Applet1.setEnemy(boss_ax + 1, boss_ay + 1, 16);
+                }
+            }
+            if (boss_ac <= 25 && boss_ac > 10) {
+                if (boss_m == 0) {
+                    Applet1.setEnemy(boss_ax, boss_ay + 1, 16);
+                }
+                else {
+                    Applet1.setEnemy(boss_ax + 1, boss_ay + 1, 16);
+                }
+            }
+            if (boss_y == (24 + 10) * 32) {
+                boss_j = 10;
+                boss_vx = 0;
+                boss_vy = 0;
+                boss_ac = 15;
+                boss_img = 1;
+                boss_akc--;
+            }
+        }
+    }
+    else if (boss_j == 12) {
+        if (boss_wj == 1) {
+            if (boss_y <= view_yr + 32) {
+                boss_wj = 2;
+                boss_vy = 0;
+                boss_ac = 28;
+                boss_akc--;
+                if (boss_m == 0) {
+                    boss_vx = -16;
+                }
+                else {
+                    boss_vx = 16;
+                }
+            }
+        }
+        else if (boss_wj == 2) {
+            waza = Math.floor(Math.random() * 2);
+            if (boss_ac == 28 || boss_ac == 24 || boss_ac == 20 || boss_ac == 16 || boss_ac == 16 || boss_ac == 12 || boss_ac == 8 || boss_ac == 4) {
+                if (boss_m == 0) {
+                    Applet1.setEnemy(boss_ax + waza, boss_ay, 25);
+                }
+                else {
+                    Applet1.setEnemy(boss_ax + 1 - waza, boss_ay, 25);
+                }
+            }
+            if (boss_x <= view_xr) {
+                boss_m = 1;
+                boss_vx = 16;
+            }
+            else if (boss_x >= view_xr + 448) {
+                boss_m = 0;
+                boss_vx = -16;
+            }
+            if (boss_ac <= 0) {
+                if (boss_akc2 > 0) {
+                    boss_ac = 28;
+                    boss_akc2--;
+                }
+                else {
+                    boss_wj = 3;
+                    boss_vx = 0;
+                    boss_vy = 8;
+                }
+            }
+        }
+        else if (boss_wj == 3) {
+            if (boss_y >= view_yr + 128) {
+                boss_j = 10;
+                boss_wj = 0;
+                boss_vy = 0;
+                boss_ac = 20;
+                boss_akc--;
+                boss_akc2 = 1;
+            }
+        }
+    }
+    else if (boss_j == 13) {
+        if (boss_wj == 1) {
+            waza = 0;
+            if (boss_m == 0) {
+                if (boss_x <= view_xr - 64) {
+                    boss_wj = 2;
+                    boss_vx = 0;
+                    boss_ac = 15;
+                    boss_m = 1;
+                }
+            }
+            else {
+                if (boss_x >= view_xr + 512) {
+                    boss_wj = 2;
+                    boss_vx = 0;
+                    boss_ac = 15;
+                    boss_m = 0;
+                }
+            }
+        }
+        else if (boss_wj == 2) {
+            boss_y = my_yr - 32;
+            if (boss_ac <= 0) {
+                boss_wj = 3;
+                boss_img = 6;
+                if (boss_m == 0) {
+                    boss_vx = -32;
+                }
+                else {
+                    boss_vx = 32;
+                }
+                if (my_y == 28) {
+                    waza = 1 + Math.floor(Math.random() * 2);
+                    if (waza == 1) {
+                        boss_y = view_yr + 128;
+                        boss_vy = 18;
+                    }
+                    else if (waza == 2) {
+                        boss_y = view_yr + 48;
+                        boss_vy = 36;
+                    }
+                }
+            }
+        }
+        else if (boss_wj == 3) {
+            if (waza == 1) {
+                boss_vy = boss_vy - 2;
+            }
+            else if (waza == 2) {
+                boss_vy = boss_vy - 4;
+            }
+            if (boss_m == 0) {
+                if (boss_x <= view_xr - 64) {
+                    boss_vx = 0;
+                    boss_m = 1;
+                    if (boss_akc2 > 0) {
+                        boss_wj = 2;
+                        boss_ac = boss_ak;
+                        boss_vy = 0;
+                        boss_ak = boss_ak - 2;
+                        boss_akc2--;
+                        waza = 0;
+                    }
+                    else {
+                        boss_wj = 4;
+                        boss_x = view_xr - 192;
+                        boss_y = view_yr + 128;
+                        boss_vx = 8;
+                        boss_vy = 0;
+                        boss_img = 1;
+                    }
+                }
+            }
+            else {
+                if (boss_x >= view_xr + 512) {
+                    boss_vx = 0;
+                    boss_m = 0;
+                    if (boss_akc2 > 0) {
+                        boss_wj = 2;
+                        boss_ac = boss_ak;
+                        boss_vy = 0;
+                        boss_ak = boss_ak - 2;
+                        boss_akc2--;
+                        waza = 0;
+                    }
+                    else {
+                        boss_wj = 4;
+                        boss_x = view_xr + 512 + 128;
+                        boss_y = view_yr + 128;
+                        boss_vx = -8;
+                        boss_vy = 0;
+                        boss_img = 1;
+                    }
+                }
+            }
+        }
+        else if (boss_wj == 4) {
+            if (boss_m == 0) {
+                if (boss_x <= view_xr + 512 - 128) {
+                    boss_j = 10;
+                    boss_wj = 0;
+                    boss_vx = 0;
+                    boss_ac = 20;
+                    boss_akc--;
+                }
+            }
+            else {
+                if (boss_x >= view_xr + 64) {
+                    boss_j = 10;
+                    boss_wj = 0;
+                    boss_vx = 0;
+                    boss_ac = 15;
+                    boss_akc--;
+                }
+            }
+        }
+    }
+    else if (boss_j == 14) {
+        if (waza2 >= 80) {
+            boss_vy = boss_vy - 8;
+        }
+        else {
+            boss_vy = boss_vy - 4;
+        }
+        if (boss_y <= view_yr + 128) {
+            boss_j = 10;
+            boss_vx = 0;
+            boss_vy = 0;
+            if (waza2 >= 80) {
+                boss_ac = 10;
+            }
+            else {
+                boss_ac = 2;
+            }
+        }
+    }
+    else if (boss_j == 19) {
+        if (boss_wj == 1) {
+            if (boss_y >= view_yr + 192) {
+                boss_wj = 2;
+                boss_vy = 0;
+                boss_ac = 60;
+                boss_img = 8;
+            }
+        }
+        else if (boss_wj == 2) {
+            if (boss_x + 32 >= my_xr) {
+                boss_m = 0;
+            }
+            if (boss_x + 32 < my_xr) {
+                boss_m = 1;
+            }
+            if (boss_ac == 36) {
+                boss_img = 9;
+            }
+            else if (boss_ac <= 35 && boss_ac > 25) {
+                if (boss_m == 0) {
+                    Applet1.setEnemy(boss_ax, boss_ay + 1, 19);
+                }
+                else {
+                    Applet1.setEnemy(boss_ax + 1, boss_ay + 1, 20);
+                }
+            }
+            else if (boss_ac == 24) {
+                boss_img = 8;
+            }
+            else if (boss_ac <= 0) {
+                boss_wj = 3;
+                boss_img = 1;
+                boss_vy = -8;
+                boss_akc = 1 + Math.floor(Math.random() * 1);
+            }
+        }
+        else if (boss_wj == 3) {
+            if (boss_y <= view_yr + 128) {
+                boss_j = 10;
+                boss_vy = 0;
+                boss_ac = 15;
+            }
+        }
+    }
+    else if (boss_j == 20) {
+        boss_tc--;
+        if (boss_tc <= 0) {
+            if (boss_hp > 0) {
+                boss_j = 19;
+                boss_wj = 3;
+                boss_img = 1;
+                boss_vy = -8;
+                boss_akc = 2 + Math.floor(Math.random() * 2);
+            }
+            else {
+                boss_j = 0;
+                boss_img = 0;
+                Applet1.showImage(0, boss_x - view_xr, boss_y - view_yr, "konkondol/konkondol_nothing.gif");
+                Applet1.hideGauge();
+                Applet1.setStageClear();
+            }
+        }
+    }
+}
+

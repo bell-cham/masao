@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <draw>
+    <ZoomIndex>1</ZoomIndex>
+    <DrawGrid>true</DrawGrid>
+    <StageInterpolation>false</StageInterpolation>
+    <ClassicChipListInterpolation>true</ClassicChipListInterpolation>
+    <PageScroll>false</PageScroll>
+    <RightClickMenu>true</RightClickMenu>
+    <ExtendDraw>true</ExtendDraw>
+    <AlphaBlending>true</AlphaBlending>
+    <UseBufferingDraw>true</UseBufferingDraw>
+    <UseBufferingMemoryDraw>true</UseBufferingMemoryDraw>
+    <SelDrawMode>SideOriginal</SelDrawMode>
+    <SkipFirstChip>true</SkipFirstChip>
+    <SkipBufferedDraw>false</SkipBufferedDraw>
+    <StartUpWithClassicCL>true</StartUpWithClassicCL>
+    <HScrollDefault>false</HScrollDefault>
+  </draw>
+  <localSystem>
+    <FileEncStr>utf-8</FileEncStr>
+    <UsingWebBrowser />
+    <ShiftFocusShift>true</ShiftFocusShift>
+    <UpdateServer>http://update.starwing.net/side/side.xml</UpdateServer>
+    <ReverseTabView>false</ReverseTabView>
+    <CheckAutoUpdate>true</CheckAutoUpdate>
+    <TextEditorGDIMode>true</TextEditorGDIMode>
+    <IntegrateEditorId>true</IntegrateEditorId>
+    <UsePropExTextEditor>true</UsePropExTextEditor>
+    <WrapPropText>false</WrapPropText>
+  </localSystem>
+  <testRun>
+    <TempFile>~temp</TempFile>
+    <UseIntegratedBrowser>false</UseIntegratedBrowser>
+    <KillTestrunOnFocus>false</KillTestrunOnFocus>
+    <QuickTestrun>true</QuickTestrun>
+  </testRun>
+  <lastData>
+    <SpliterDist>0.27221074380165289</SpliterDist>
+    <WndState>Maximized</WndState>
+    <WndPoint>
+      <X>309</X>
+      <Y>123</Y>
+    </WndPoint>
+    <WndSize>
+      <Width>800</Width>
+      <Height>500</Height>
+    </WndSize>
+    <ProjDir>E:\Dropbox\Public\newgame</ProjDir>
+    <PictDir />
+    <DefaultChip>pattern.gif</DefaultChip>
+    <DefaultLayerChip>mapchip.gif</DefaultLayerChip>
+    <DefaultTitleImage>title.gif</DefaultTitleImage>
+    <DefaultGameoverImage>gameover.gif</DefaultGameoverImage>
+    <DefaultEndingImage>ending.gif</DefaultEndingImage>
+  </lastData>
+</Config>

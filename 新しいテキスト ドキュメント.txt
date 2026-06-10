@@ -1,0 +1,207 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<html lang="ja">
+<html dir="ltr">
+ <title>おおかみの森　七つの大罪　7‐4　灼熱の回廊</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+ <link href="style.css" rel="stylesheet" type="text/css">
+ <link rel="shortcut icon" href="favicon.ico">
+ <script type="text/javascript" src="CanvasMasao_v28.js"></script> 
+ <script type="text/javascript"> 
+ CanvasMasao.Game.replaceAll(); 
+</script>
+</head>
+
+<body>
+ <h1>七つの大罪　7‐4　灼熱の回廊</h1>
+
+<applet code="MasaoConstruction" archive="CanvasMasao_v28.js" wight="512" height=320"">
+<PARAM NAME="map0-0"  VALUE="hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh">
+<PARAM NAME="map0-1"  VALUE="hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh">
+<PARAM NAME="map0-2"  VALUE="hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh">
+<PARAM NAME="map0-3"  VALUE="hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh">
+<PARAM NAME="map0-4"  VALUE="hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh">
+<PARAM NAME="map0-5"  VALUE="hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh">
+<PARAM NAME="map0-6"  VALUE="hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhiiiii">
+<PARAM NAME="map0-7"  VALUE="hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhi..3..">
+<PARAM NAME="map0-8"  VALUE="hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh...3..">
+<PARAM NAME="map0-9"  VALUE="hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh..ara.">
+<PARAM NAME="map0-10" VALUE="hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh...3..">
+<PARAM NAME="map0-11" VALUE="hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhj..3..">
+<PARAM NAME="map0-12" VALUE="hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhjj3jj">
+<PARAM NAME="map0-13" VALUE="hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhi3ih">
+<PARAM NAME="map0-14" VALUE="hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh.3.h">
+<PARAM NAME="map0-15" VALUE="hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh.b.h">
+<PARAM NAME="map0-16" VALUE="hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh.3.h">
+<PARAM NAME="map0-17" VALUE="hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh.3.h">
+<PARAM NAME="map0-18" VALUE="hhhhhhhhhhhhhhhhhhhhhiiiiiiiihhhhhhhhhhhhhhhhhhhhhhhhhhh.b.h">
+<PARAM NAME="map0-19" VALUE="hhhhhhhhhhhhhhhhhhhhhbbbbbbbbhhhhhhhhhhhhhhhhhhhhhhhhhhh.3.h">
+<PARAM NAME="map0-20" VALUE="hhhhhhhhhiiiiiiiihhhhb9.....bhhhhhhhhhhhihihihhhhhhhhhhhj3jh">
+<PARAM NAME="map0-21" VALUE="hhhhhhhhh........hhhhb...9..bhhiiiiiihhi9i9i9ihiihiihhhhi3ih">
+<PARAM NAME="map0-22" VALUE="iiiiiiiii..9.....iiiib...U..bhh......hh.......h..h..iiii.3.i">
+<PARAM NAME="map0-23" VALUE=".3..3..3....9........b...b..bii......ii.......i..i..9....b.a">
+<PARAM NAME="map0-24" VALUE=".3..3..3.....9.99....b...b..b..Y.Y.Y.....5G5.........jjj.3.j">
+<PARAM NAME="map0-25" VALUE=".3..3..3......9.........9b9....aaaaaajj.bbbbb.jjjj.jjhhhj3jh">
+<PARAM NAME="map0-26" VALUE="jjbjjjbjj.....E...jjjbb.bb.bbjj999999hh.......hhhh.hhh7hhbhh">
+<PARAM NAME="map0-27" VALUE="gg2ggg2gg222222222ggg22222222gggggggggg2222222gggg2gggggg2gg">
+<PARAM NAME="map0-28" VALUE="666666666666666666666666666666666666666666666666666666666666">
+<PARAM NAME="map0-29" VALUE="66666666666666f666666666666666666666666666666666666666666666">
+
+<PARAM NAME="map1-0"  VALUE="hhhhhhhhhhhhhhhhhhhhhhhhhhhiiiiiiiiiiiiiiiiiiiihhhhhhhhhhhhh">
+<PARAM NAME="map1-1"  VALUE="hhhhhhhhhhhhhhhhhhhhhhhhhhh.........44444......hhhhhhhhhhhhh">
+<PARAM NAME="map1-2"  VALUE="hhhhhhhhhhhhhhhhhhhhhhhhhhi....................ihhhhhhhhhhhh">
+<PARAM NAME="map1-3"  VALUE="hhhhhhhhhhhhhhhhhhhhhhhhhh......bb.bb...bb.bb...hhhhhhhhhhhh">
+<PARAM NAME="map1-4"  VALUE="hhhhhhhhhhhhhhhhhhhhhhhhhh..jj..b22222222222b...hhhhhhhhhhhh">
+<PARAM NAME="map1-5"  VALUE="hhhhhhhhhhhhhhhhhhhhhhhhhh..ii..b66666666666b...hhhhhhhhhhhh">
+<PARAM NAME="map1-6"  VALUE="hhhhhhhhhhhhhhhhhhhhhhhhhhl.....bbbb66666bbbbb..hhhhhhhhhhhh">
+<PARAM NAME="map1-7"  VALUE="ihhhhhhhhhhhhhhhhhhhhhhhhh......b..bbb6bbb......hhhhhhhhhhhh">
+<PARAM NAME="map1-8"  VALUE=".hhhhhhhhhhhhhhhhhhhhhhhhh......bq....a.........hhhhhhhhhhhh">
+<PARAM NAME="map1-9"  VALUE=".hhhhhhhhhhhhhhhhhhhhhhhhh......bA....E......+jjhhhhhhhhhiii">
+<PARAM NAME="map1-10" VALUE=".hhhhhhhhhhhhhhhhhhhhhhhhhl99...bbbb.b4b.bbjjjhhhhhhhhhhh...">
+<PARAM NAME="map1-11" VALUE="jhhhhhhhhhhhhhhhhhhhhhhhhh...9....b2222222bhhhhhhhhhhhhhhjjj">
+<PARAM NAME="map1-12" VALUE="hhhhhhhhhhhhhhhhhhhhhhhhhh........b6666666bhhhhhhhhhhhhhhhhh">
+<PARAM NAME="map1-13" VALUE="hhhhhhhhhhhhhhhhhhhhhhhhhhjjj.....jjjj6jjjjhhhhhhhhhhhhhhhhh">
+<PARAM NAME="map1-14" VALUE="hhhhhhhhhhhhhhhhhhhhhhhhhhhhh.....iiih6hiiiihhhhhhhhhhhhhhhh">
+<PARAM NAME="map1-15" VALUE="hhhhhhhhhhhhhhhhhhhhhhhhhhhhh.b......iai....hhhhhhhhhhhhhhhh">
+<PARAM NAME="map1-16" VALUE="hhhhhhhhhhhhhhhhhhhhhhhhhhh7h.............bshhhhhhhhhhhhhhhh">
+<PARAM NAME="map1-17" VALUE="hhhhhhhhhhhhhhhhhhhhhhhhhhhhh.............bahhhhhhhhhhhhhhhh">
+<PARAM NAME="map1-18" VALUE="hhhhhhhhhhhhhhhhhhhhhhhhhhhhh...b...bb4bb...hhhhhhhhhhhhhhhh">
+<PARAM NAME="map1-19" VALUE="hhhhhhhhhhhhhhhhhhhhhhhhhhiii......b22222bjjhhhhhhhhhhhhhhhh">
+<PARAM NAME="map1-20" VALUE="hhhhhhhhhhihihihhhhhhhhhhh.........b66666bh7hhhhhhhhhhhhhhhh">
+<PARAM NAME="map1-21" VALUE="hhhiihiihibibibihhiiiiiihh..........bb6bbjhhhhhhhhhhhhhhhhhh">
+<PARAM NAME="map1-22" VALUE="iii5.h..h....b..hhR.....ii....E...ba..ajjhhhiiiiiiihhhhhhhhh">
+<PARAM NAME="map1-23" VALUE="..9..i..i....b..ii......aa..b222b.bbbb5iiiii.......iiiiiiiii">
+<PARAM NAME="map1-24" VALUE="jjB....G..b..aG...Y.Y.Y.jjjjb666b..............8........5...">
+<PARAM NAME="map1-25" VALUE="hhjj.jjjj.bbbbb.jjaaaaaahhhhbb6bbjjjjj.jjjjj.......b..5...5.">
+<PARAM NAME="map1-26" VALUE="7hhh.hhhh.......hh999999hhhh..f..hh7hh.hh7hhjjjjjjjjjjjjjjjj">
+<PARAM NAME="map1-27" VALUE="gggg2gggg2222222gggggggggggg22622ggggg2ggggggggggggggggggggg">
+<PARAM NAME="map1-28" VALUE="666666666666666666666666666666666666666666666666666666666666">
+<PARAM NAME="map1-29" VALUE="66666666666666666666666666666666666666f666666666666666666666">
+
+<PARAM NAME="map2-0"  VALUE="hhhhh3hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh">
+<PARAM NAME="map2-1"  VALUE="hhhhh3hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh">
+<PARAM NAME="map2-2"  VALUE="hhhhh3hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh">
+<PARAM NAME="map2-3"  VALUE="hhhhh3hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh">
+<PARAM NAME="map2-4"  VALUE="hhhhh3hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh">
+<PARAM NAME="map2-5"  VALUE="hhhhh3hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh">
+<PARAM NAME="map2-6"  VALUE="hhhhhbhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh">
+<PARAM NAME="map2-7"  VALUE="hhhhi3ihhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh">
+<PARAM NAME="map2-8"  VALUE="hhhi838ihhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh">
+<PARAM NAME="map2-9"  VALUE="iii.838.iiiiiiiiiiiiiiiihhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh">
+<PARAM NAME="map2-10" VALUE=".b..bbb..b..............hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh">
+<PARAM NAME="map2-11" VALUE="jjj..3..jjjjjjjjjjjjjjjjhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh">
+<PARAM NAME="map2-12" VALUE="hhhj.3.jhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh">
+<PARAM NAME="map2-13" VALUE="hhhhj3jhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh">
+<PARAM NAME="map2-14" VALUE="hhhhi3ihhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh">
+<PARAM NAME="map2-15" VALUE="hhhh.3.hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh">
+<PARAM NAME="map2-16" VALUE="hhhhIb.hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh">
+<PARAM NAME="map2-17" VALUE="hhhh.3.hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh">
+<PARAM NAME="map2-18" VALUE="hhhh.3.hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh">
+<PARAM NAME="map2-19" VALUE="hhhhIb.hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh">
+<PARAM NAME="map2-20" VALUE="hhhh.3.hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh">
+<PARAM NAME="map2-21" VALUE="hhhhj3jhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh">
+<PARAM NAME="map2-22" VALUE="hhhhi3ihhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh">
+<PARAM NAME="map2-23" VALUE="iiii.3.iiiiiiiiiiiiiihhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh">
+<PARAM NAME="map2-24" VALUE=".....b..b............hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh">
+<PARAM NAME="map2-25" VALUE=".bjj...jjjjjjjjjjjjjjhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh">
+<PARAM NAME="map2-26" VALUE="jjhhj.jhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh">
+<PARAM NAME="map2-27" VALUE="ggggg2gggggggggggggggggggggggggggggggggggggggggggggggggggggg">
+<PARAM NAME="map2-28" VALUE="666666666666666666666666666666666666666666666666666666666666">
+<PARAM NAME="map2-29" VALUE="666666666666666666666666666666666666666666666666666666666666">
+
+<PARAM NAME="time_max" VALUE="0">
+<PARAM NAME="scroll_mode" VALUE="1">
+<PARAM NAME="score_v" VALUE="1">
+<PARAM NAME="j_tail_type" VALUE="2">
+<PARAM NAME="j_tail_hf" VALUE="2">
+<PARAM NAME="j_fire_mkf" VALUE="2">
+<PARAM NAME="grenade_type" VALUE="1">
+<PARAM NAME="suberuyuka_hkf" VALUE="1">
+<PARAM NAME="dengeki_mkf" VALUE="2">
+<PARAM NAME="yachamo_kf" VALUE="1">
+<PARAM NAME="airms_kf" VALUE="2">
+<PARAM NAME="ugokuyuka1_type" VALUE="1">
+<PARAM NAME="ugokuyuka2_type" VALUE="1">
+<PARAM NAME="ugokuyuka3_type" VALUE="1">
+<PARAM NAME="boss_type" VALUE="1">
+<PARAM NAME="boss2_type" VALUE="1">
+<PARAM NAME="boss3_type" VALUE="1">
+<PARAM NAME="url1" VALUE="http://www.t3.rim.or.jp/~naoto/naoto.html">
+<PARAM NAME="url2" VALUE="http://www.t3.rim.or.jp/~naoto/j_con/index.html">
+<PARAM NAME="url3" VALUE="http://www.t3.rim.or.jp/~naoto/naoto.html">
+<PARAM NAME="url4" VALUE="http://www.t3.rim.or.jp/~naoto/j_con/index.html">
+<PARAM NAME="dokan_mode" VALUE="1">
+<PARAM NAME="hitokoto1_name" VALUE="城の奥にて">
+<PARAM NAME="hitokoto1-1" VALUE="浩二「兄さん、あのマグマみたいなヤツ">
+<PARAM NAME="hitokoto1-2" VALUE="　　　 を下に落とせばいいみたいだよ。」">
+<PARAM NAME="hitokoto1-3" VALUE="正男「ふーん、そうか。」">
+<PARAM NAME="hitokoto2_name" VALUE="お姫様">
+<PARAM NAME="hitokoto2-1" VALUE="ついに、ここまで来ましたね。">
+<PARAM NAME="hitokoto2-2" VALUE="ゆうきの証、ミレニアム人面星が">
+<PARAM NAME="hitokoto2-3" VALUE="あなたを、待っていますよ。">
+<PARAM NAME="hitokoto3_name" VALUE="ザトシ">
+<PARAM NAME="hitokoto3-1" VALUE="俺は、世界一になる男だ。">
+<PARAM NAME="hitokoto3-2" VALUE="ぜったい、なってやるーー。">
+<PARAM NAME="hitokoto3-3" VALUE="0">
+<PARAM NAME="hitokoto4_name" VALUE="クリス">
+<PARAM NAME="hitokoto4-1" VALUE="あたし、クリス。ペットのピカチーが、">
+<PARAM NAME="hitokoto4-2" VALUE="どこかに行っちゃったの。">
+<PARAM NAME="hitokoto4-3" VALUE="こまったわね、ぐすん。">
+<PARAM NAME="backcolor_red" VALUE="20">
+<PARAM NAME="backcolor_green" VALUE="0">
+<PARAM NAME="backcolor_blue" VALUE="0">
+<PARAM NAME="scorecolor_red" VALUE="0">
+<PARAM NAME="scorecolor_green" VALUE="0">
+<PARAM NAME="scorecolor_blue" VALUE="255">
+<PARAM NAME="grenade_red1" VALUE="255">
+<PARAM NAME="grenade_green1" VALUE="255">
+<PARAM NAME="grenade_blue1" VALUE="255">
+<PARAM NAME="grenade_red2" VALUE="255">
+<PARAM NAME="grenade_green2" VALUE="255">
+<PARAM NAME="grenade_blue2" VALUE="0">
+<PARAM NAME="mizunohadou_red" VALUE="0">
+<PARAM NAME="mizunohadou_green" VALUE="32">
+<PARAM NAME="mizunohadou_blue" VALUE="255">
+<PARAM NAME="firebar_red1" VALUE="255">
+<PARAM NAME="firebar_green1" VALUE="0">
+<PARAM NAME="firebar_blue1" VALUE="0">
+<PARAM NAME="firebar_red2" VALUE="255">
+<PARAM NAME="firebar_green2" VALUE="192">
+<PARAM NAME="firebar_blue2" VALUE="0">
+<PARAM NAME="moji_score" VALUE="SCORE">
+<PARAM NAME="moji_highscore" VALUE="HIGHSCORE">
+<PARAM NAME="moji_time" VALUE="TIME">
+<PARAM NAME="moji_jet" VALUE="JET">
+<PARAM NAME="moji_grenade" VALUE="GRENADE">
+<PARAM NAME="moji_left" VALUE="LEFT">
+<PARAM NAME="moji_size" VALUE="14">
+<PARAM NAME="filename_title" VALUE="title.gif">
+<PARAM NAME="filename_ending" VALUE="ending.gif">
+<PARAM NAME="filename_gameover" VALUE="gameover.png">
+<PARAM NAME="filename_pattern" VALUE="pattern.png">
+<PARAM NAME="game_speed" VALUE="70">
+</applet>
+
+ <p><strong>【ストーリー】</strong><br>
+　先へと進むにつれますます危険が増すお城の障害。<br>
+  王様のもとまでもう少し。くじけず進もう。</p>
+ <p><strong>【コメント】</strong><br>
+　とんでもない高難易度ステージ。繊細な操作を要求する場面も多いです。<br>
+  特に前半は配置が厳しい。ムチは敵に効かないので注意しましょう。<br>
+  終盤はピカチーを下に落とす感じです。レンガを壊した時に倒してしまわないよう、飛び跳ねたタイミングを狙いましょう。</p>
+<script type="text/javascript"><!--
+var fc2footerparam = 'charset=' + (document.charset ? document.charset : document.characterSet) + '&url=' + document.location + '&service=0&r=' + Math.floor(Math.random()*99999999999);
+var fc2footertag = '<' + 'script src="http://vip.chps-api.fc2.com/apis/footer/?' + fc2footerparam + '" charset="UTF-8"><' + '/script>';
+document.write(fc2footertag);
+//--></script>
+<!-- FC2, inc.-->
+<img src="http://media.fc2.com/counter_img.php?id=50" style="visibility:hidden" alt="inserted by FC2 system" width="0" height="0">
+<!-- FC2, inc.-->
+</body>
+
+<div class="modoru" style="margin: auto">
+ <a href="na7.html"><img src="back.png" alt="戻る" border="0"></a>
+</div>
+</html>
