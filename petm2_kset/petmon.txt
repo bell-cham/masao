@@ -1,5 +1,6 @@
 サンダラ３１０４
 スイクウ4724
+ミウ　4416
 
 主人公
 fm00i867wm
@@ -75,6 +76,9 @@ a66ia0dpkcl1rdm 噴火ハイドロポンプ♂lv1
 49coq67dtlcmf4m lv2
 7urufcdpkx6sfa7 lv3
 
+ピカチー
+knicr6wcz98rkdc　lv1
+
 ブラッカル
 oded60tp2iuaoeu　回復の綿毛、かみなり♂
 
@@ -86,10 +90,14 @@ tyqudcmrwz5rfg3
 hakrbial5k599g3　電磁砲♀lv2
 q1hor6gf5nzifgi 電磁砲破壊光線♀lv2
 tyqugcmrwztofg3 電磁砲破壊光線♀lv4
-hakx8ial5kt69g3電磁砲破壊光線♀lv最大
+hakx8ial5kt69g3 電磁砲破壊光線♀lv最大
 kpqugomine949ai　電磁砲ナイトヘッドlv2♀
 ユレコ　kpqugomine949ai　電磁砲ナイトヘッドlv2♀
 ユレコ　5snotxylkq9s91x　電磁砲ナイトヘッドlv3♀
+qa6ia0kowel5rrc　噴火・つつく lv1
+qdccr68c5n0nfec　サイコキネシス・回復の綿毛　lv1♂
+t4rigceowzutfex　サイコキネシス・回復の綿毛　lv2♂
+hgll8i2i5kub9ex　サイコキネシス・回復の綿毛　lv3♂
 
 綿毛爆弾・かみなり♀
 
@@ -103,7 +111,12 @@ egml6i8j5kt7fg3
 w4ui6i2kthzkivn　１０万ボルト・ハリケンブラスト♂
 
 ラーチ
-vb8c60lp2qr3rto　大地の力・１０万ボルト♀
+vb8c60lp2qr3rto 大地の力・１０万ボルト♀
+avegpxxjqq1o953 大地の力・１０万ボルト♀lv2
+v72g80lp2ep3rto 大地の力・１０万ボルト♀lv3
 wj0g60eo2ed0rpc  lv1
 
+
 ツボムシ　lv1 57udoxeiqtnxe3r
+
+ビビーダマ　ba3mfcmp2v5lt97
