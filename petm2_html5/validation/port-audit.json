@@ -1,0 +1,3516 @@
+{
+  "original_archive": "petm2_kset(2).zip / petm2_kset/petm2_c.zip",
+  "method_count": 183,
+  "method_declarations_verified": 183,
+  "class_count": 12,
+  "fields_verified": 355,
+  "classes": [
+    {
+      "class": "CharacterObject",
+      "methods": 2,
+      "fields": 25,
+      "field_descriptors": [
+        {
+          "name": "c",
+          "descriptor": "I"
+        },
+        {
+          "name": "x",
+          "descriptor": "I"
+        },
+        {
+          "name": "y",
+          "descriptor": "I"
+        },
+        {
+          "name": "vx",
+          "descriptor": "I"
+        },
+        {
+          "name": "vy",
+          "descriptor": "I"
+        },
+        {
+          "name": "wx",
+          "descriptor": "I"
+        },
+        {
+          "name": "wy",
+          "descriptor": "I"
+        },
+        {
+          "name": "c1",
+          "descriptor": "I"
+        },
+        {
+          "name": "c2",
+          "descriptor": "I"
+        },
+        {
+          "name": "c3",
+          "descriptor": "I"
+        },
+        {
+          "name": "c4",
+          "descriptor": "I"
+        },
+        {
+          "name": "c5",
+          "descriptor": "I"
+        },
+        {
+          "name": "pt",
+          "descriptor": "I"
+        },
+        {
+          "name": "pth",
+          "descriptor": "I"
+        },
+        {
+          "name": "muki",
+          "descriptor": "I"
+        },
+        {
+          "name": "ac",
+          "descriptor": "I"
+        },
+        {
+          "name": "jimen_f",
+          "descriptor": "Z"
+        },
+        {
+          "name": "score",
+          "descriptor": "I"
+        },
+        {
+          "name": "gf",
+          "descriptor": "Z"
+        },
+        {
+          "name": "team",
+          "descriptor": "I"
+        },
+        {
+          "name": "fc",
+          "descriptor": "I"
+        },
+        {
+          "name": "zokusei",
+          "descriptor": "I"
+        },
+        {
+          "name": "ap",
+          "descriptor": "I"
+        },
+        {
+          "name": "dp",
+          "descriptor": "I"
+        },
+        {
+          "name": "mid",
+          "descriptor": "I"
+        }
+      ],
+      "classfile_sha256": "fd453538aa543cb8cc64744ff2912bff830b557c53fe431690a87401a62ba084",
+      "javascript_sha256": "cd0271028bcffd5d8a103a4d1573135909b0003d9bc7cbb01f10f0a6dffd2fb5"
+    },
+    {
+      "class": "GameGraphics",
+      "methods": 12,
+      "fields": 19,
+      "field_descriptors": [
+        {
+          "name": "spt_kazu_x",
+          "descriptor": "I"
+        },
+        {
+          "name": "spt_kazu_y",
+          "descriptor": "I"
+        },
+        {
+          "name": "spt_kazu",
+          "descriptor": "I"
+        },
+        {
+          "name": "spt_h_kijyun",
+          "descriptor": "I"
+        },
+        {
+          "name": "ap",
+          "descriptor": "Ljava/applet/Applet;"
+        },
+        {
+          "name": "di",
+          "descriptor": "Ljava/awt/Dimension;"
+        },
+        {
+          "name": "mt",
+          "descriptor": "Ljava/awt/MediaTracker;"
+        },
+        {
+          "name": "backcolor",
+          "descriptor": "Ljava/awt/Color;"
+        },
+        {
+          "name": "os_img",
+          "descriptor": "Ljava/awt/Image;"
+        },
+        {
+          "name": "os_g",
+          "descriptor": "Ljava/awt/Graphics;"
+        },
+        {
+          "name": "os2_img",
+          "descriptor": "Ljava/awt/Image;"
+        },
+        {
+          "name": "os2_g",
+          "descriptor": "Ljava/awt/Graphics;"
+        },
+        {
+          "name": "apt_img",
+          "descriptor": "Ljava/awt/Image;"
+        },
+        {
+          "name": "pg",
+          "descriptor": "Ljava/awt/image/PixelGrabber;"
+        },
+        {
+          "name": "li",
+          "descriptor": "[Ljava/awt/Image;"
+        },
+        {
+          "name": "spt_img",
+          "descriptor": "[[Ljava/awt/Image;"
+        },
+        {
+          "name": "spt_pa",
+          "descriptor": "[[[I"
+        },
+        {
+          "name": "hi",
+          "descriptor": "[Ljava/awt/Image;"
+        },
+        {
+          "name": "toumeishoku",
+          "descriptor": "I"
+        }
+      ],
+      "classfile_sha256": "4ef026ae3cb2fa99078385d4ce363b22ca200f3ada7e670a53a7ca4319e15576",
+      "javascript_sha256": "05c08e25ab02a1bcaadf65ed731304d592acf590419556b57630d8f0d2c9bc54"
+    },
+    {
+      "class": "GameKey",
+      "methods": 6,
+      "fields": 16,
+      "field_descriptors": [
+        {
+          "name": "key_code",
+          "descriptor": "I"
+        },
+        {
+          "name": "key_char",
+          "descriptor": "C"
+        },
+        {
+          "name": "up_f",
+          "descriptor": "Z"
+        },
+        {
+          "name": "down_f",
+          "descriptor": "Z"
+        },
+        {
+          "name": "left_f",
+          "descriptor": "Z"
+        },
+        {
+          "name": "right_f",
+          "descriptor": "Z"
+        },
+        {
+          "name": "tr1_f",
+          "descriptor": "Z"
+        },
+        {
+          "name": "tr2_f",
+          "descriptor": "Z"
+        },
+        {
+          "name": "tr3_f",
+          "descriptor": "Z"
+        },
+        {
+          "name": "start_f",
+          "descriptor": "Z"
+        },
+        {
+          "name": "tr1_c",
+          "descriptor": "I"
+        },
+        {
+          "name": "tr2_c",
+          "descriptor": "I"
+        },
+        {
+          "name": "up_c",
+          "descriptor": "I"
+        },
+        {
+          "name": "down_c",
+          "descriptor": "I"
+        },
+        {
+          "name": "left_c",
+          "descriptor": "I"
+        },
+        {
+          "name": "right_c",
+          "descriptor": "I"
+        }
+      ],
+      "classfile_sha256": "3d98f4c1930ef16ef78cf7f4bc8583763be8fdcbedc34e82e3ce5105b85a7ee0",
+      "javascript_sha256": "37c79ba88edcef00a2787bf3f6d91ef9249205dd6c29d5a44f4678a3eb73e0ee"
+    },
+    {
+      "class": "GameMouse",
+      "methods": 4,
+      "fields": 3,
+      "field_descriptors": [
+        {
+          "name": "button_f",
+          "descriptor": "Z"
+        },
+        {
+          "name": "click_x",
+          "descriptor": "I"
+        },
+        {
+          "name": "click_y",
+          "descriptor": "I"
+        }
+      ],
+      "classfile_sha256": "bc50391880369204cc272eaad65e783d4c75e2537166967d7d8c6df00e41b47c",
+      "javascript_sha256": "8eecacc45abe811a31a899f276662a8af3cd1094deb050894a50a2da47683000"
+    },
+    {
+      "class": "IdouGamen",
+      "methods": 24,
+      "fields": 42,
+      "field_descriptors": [
+        {
+          "name": "gk",
+          "descriptor": "LGameKey;"
+        },
+        {
+          "name": "gg",
+          "descriptor": "LGameGraphics;"
+        },
+        {
+          "name": "km",
+          "descriptor": "LKeyboardMenu;"
+        },
+        {
+          "name": "mp",
+          "descriptor": "LMainProgram;"
+        },
+        {
+          "name": "ap",
+          "descriptor": "Ljava/applet/Applet;"
+        },
+        {
+          "name": "co_j",
+          "descriptor": "LCharacterObject;"
+        },
+        {
+          "name": "co_p",
+          "descriptor": "LCharacterObject;"
+        },
+        {
+          "name": "map_string",
+          "descriptor": "[Ljava/lang/String;"
+        },
+        {
+          "name": "map_bg",
+          "descriptor": "[[I"
+        },
+        {
+          "name": "stage_c",
+          "descriptor": "[I"
+        },
+        {
+          "name": "stage_x",
+          "descriptor": "[I"
+        },
+        {
+          "name": "stage_y",
+          "descriptor": "[I"
+        },
+        {
+          "name": "stage_cf",
+          "descriptor": "[Z"
+        },
+        {
+          "name": "kinnotama_f",
+          "descriptor": "[Z"
+        },
+        {
+          "name": "ie_c",
+          "descriptor": "[I"
+        },
+        {
+          "name": "ie_x",
+          "descriptor": "[I"
+        },
+        {
+          "name": "ie_y",
+          "descriptor": "[I"
+        },
+        {
+          "name": "door_koID",
+          "descriptor": "I"
+        },
+        {
+          "name": "boss_taosukazu",
+          "descriptor": "I"
+        },
+        {
+          "name": "zure_x",
+          "descriptor": "I"
+        },
+        {
+          "name": "zure_y",
+          "descriptor": "I"
+        },
+        {
+          "name": "mode",
+          "descriptor": "I"
+        },
+        {
+          "name": "cc_hankei",
+          "descriptor": "I"
+        },
+        {
+          "name": "cc_kakudo",
+          "descriptor": "I"
+        },
+        {
+          "name": "cc_p1_x",
+          "descriptor": "[I"
+        },
+        {
+          "name": "cc_p1_y",
+          "descriptor": "[I"
+        },
+        {
+          "name": "cc_p2_x",
+          "descriptor": "[I"
+        },
+        {
+          "name": "cc_p2_y",
+          "descriptor": "[I"
+        },
+        {
+          "name": "pm_x",
+          "descriptor": "[I"
+        },
+        {
+          "name": "pm_y",
+          "descriptor": "[I"
+        },
+        {
+          "name": "pm_p",
+          "descriptor": "I"
+        },
+        {
+          "name": "zukan_mituketa_f",
+          "descriptor": "[Z"
+        },
+        {
+          "name": "zukan_tukamaeta_f",
+          "descriptor": "[Z"
+        },
+        {
+          "name": "zukan_name",
+          "descriptor": "[Ljava/lang/String;"
+        },
+        {
+          "name": "zukan_tukamaetakazu_max",
+          "descriptor": "I"
+        },
+        {
+          "name": "pass_data",
+          "descriptor": "[I"
+        },
+        {
+          "name": "pass_st",
+          "descriptor": "Ljava/lang/String;"
+        },
+        {
+          "name": "pass_char36",
+          "descriptor": "[C"
+        },
+        {
+          "name": "pass_rt",
+          "descriptor": "[[I"
+        },
+        {
+          "name": "pass_nyuuryoku_kazu",
+          "descriptor": "I"
+        },
+        {
+          "name": "pass_ch",
+          "descriptor": "I"
+        },
+        {
+          "name": "pass_error",
+          "descriptor": "I"
+        }
+      ],
+      "classfile_sha256": "525571390ed965fe9d0d7ab76e307f2690ec473f5e67bfe4b9929ff320790d06",
+      "javascript_sha256": "81efd24426ef6c503e39447fd7c61ade223f5a05ff0d7c1c2f6f13d17bf734bb"
+    },
+    {
+      "class": "KeyboardMenu",
+      "methods": 40,
+      "fields": 26,
+      "field_descriptors": [
+        {
+          "name": "gg",
+          "descriptor": "LGameGraphics;"
+        },
+        {
+          "name": "gk",
+          "descriptor": "LGameKey;"
+        },
+        {
+          "name": "mp",
+          "descriptor": "LMainProgram;"
+        },
+        {
+          "name": "kmo",
+          "descriptor": "[LKeyboardMenuObject;"
+        },
+        {
+          "name": "hi",
+          "descriptor": "[Ljava/awt/Image;"
+        },
+        {
+          "name": "hih",
+          "descriptor": "[[Ljava/awt/Image;"
+        },
+        {
+          "name": "hg",
+          "descriptor": "Ljava/awt/Graphics;"
+        },
+        {
+          "name": "ap",
+          "descriptor": "Ljava/applet/Applet;"
+        },
+        {
+          "name": "frontcolor",
+          "descriptor": "Ljava/awt/Color;"
+        },
+        {
+          "name": "backcolor",
+          "descriptor": "Ljava/awt/Color;"
+        },
+        {
+          "name": "aw",
+          "descriptor": "I"
+        },
+        {
+          "name": "fc",
+          "descriptor": "I"
+        },
+        {
+          "name": "fc2",
+          "descriptor": "I"
+        },
+        {
+          "name": "mode",
+          "descriptor": "I"
+        },
+        {
+          "name": "kettei_c",
+          "descriptor": "I"
+        },
+        {
+          "name": "cancel_c",
+          "descriptor": "I"
+        },
+        {
+          "name": "moji",
+          "descriptor": "[C"
+        },
+        {
+          "name": "moji_code_map",
+          "descriptor": "[[I"
+        },
+        {
+          "name": "cursor_x",
+          "descriptor": "I"
+        },
+        {
+          "name": "cursor_y",
+          "descriptor": "I"
+        },
+        {
+          "name": "cursor2_x",
+          "descriptor": "I"
+        },
+        {
+          "name": "name_code",
+          "descriptor": "[I"
+        },
+        {
+          "name": "kettei2_c",
+          "descriptor": "I"
+        },
+        {
+          "name": "cancel2_c",
+          "descriptor": "I"
+        },
+        {
+          "name": "idlist_item",
+          "descriptor": "[I"
+        },
+        {
+          "name": "idlist_kazu",
+          "descriptor": "I"
+        }
+      ],
+      "classfile_sha256": "f160b920d358c8f4fa6b808c6b40e3f8d0d477eee073ac970ee2de9008c22aab",
+      "javascript_sha256": "79b441798d4f6a1fa45fd5b8f09e51dd231962ea4e4c28b0c81979506bffc775"
+    },
+    {
+      "class": "KeyboardMenuObject",
+      "methods": 5,
+      "fields": 13,
+      "field_descriptors": [
+        {
+          "name": "gg",
+          "descriptor": "LGameGraphics;"
+        },
+        {
+          "name": "gk",
+          "descriptor": "LGameKey;"
+        },
+        {
+          "name": "c",
+          "descriptor": "I"
+        },
+        {
+          "name": "x",
+          "descriptor": "I"
+        },
+        {
+          "name": "y",
+          "descriptor": "I"
+        },
+        {
+          "name": "width",
+          "descriptor": "I"
+        },
+        {
+          "name": "height",
+          "descriptor": "I"
+        },
+        {
+          "name": "selectedIndex",
+          "descriptor": "I"
+        },
+        {
+          "name": "item_kazu",
+          "descriptor": "I"
+        },
+        {
+          "name": "title",
+          "descriptor": "[Ljava/lang/String;"
+        },
+        {
+          "name": "title_color",
+          "descriptor": "[Ljava/awt/Color;"
+        },
+        {
+          "name": "item",
+          "descriptor": "[Ljava/lang/String;"
+        },
+        {
+          "name": "item_int",
+          "descriptor": "[I"
+        }
+      ],
+      "classfile_sha256": "49bb617e69abc64b9bdf78ffce2b0401ba09c1a9ed71a7dad698aff4ac6e81b1",
+      "javascript_sha256": "e6e94d20029a7f7f195a99dc93fa787397622bba9654d3fe2c83e861c33521c5"
+    },
+    {
+      "class": "MainProgram",
+      "methods": 53,
+      "fields": 137,
+      "field_descriptors": [
+        {
+          "name": "gg",
+          "descriptor": "LGameGraphics;"
+        },
+        {
+          "name": "gm",
+          "descriptor": "LGameMouse;"
+        },
+        {
+          "name": "gk",
+          "descriptor": "LGameKey;"
+        },
+        {
+          "name": "maps",
+          "descriptor": "LMapSystem;"
+        },
+        {
+          "name": "km",
+          "descriptor": "LKeyboardMenu;"
+        },
+        {
+          "name": "ig",
+          "descriptor": "LIdouGamen;"
+        },
+        {
+          "name": "hi",
+          "descriptor": "[Ljava/awt/Image;"
+        },
+        {
+          "name": "hih",
+          "descriptor": "[[Ljava/awt/Image;"
+        },
+        {
+          "name": "hg",
+          "descriptor": "Ljava/awt/Graphics;"
+        },
+        {
+          "name": "ap",
+          "descriptor": "Ljava/applet/Applet;"
+        },
+        {
+          "name": "co_mon",
+          "descriptor": "[LMonsterObject;"
+        },
+        {
+          "name": "co_m",
+          "descriptor": "[LCharacterObject;"
+        },
+        {
+          "name": "co_dt",
+          "descriptor": "LCharacterObject;"
+        },
+        {
+          "name": "co_sodateya",
+          "descriptor": "[LMonsterObject;"
+        },
+        {
+          "name": "co_box",
+          "descriptor": "[LMonsterObject;"
+        },
+        {
+          "name": "co_j",
+          "descriptor": "LMonsterObject;"
+        },
+        {
+          "name": "co_p",
+          "descriptor": "[LMonsterObject;"
+        },
+        {
+          "name": "co_w",
+          "descriptor": "[LMonsterObject;"
+        },
+        {
+          "name": "ran",
+          "descriptor": "Ljava/util/Random;"
+        },
+        {
+          "name": "rgui_meirei",
+          "descriptor": "I"
+        },
+        {
+          "name": "rgui_text",
+          "descriptor": "Ljava/lang/String;"
+        },
+        {
+          "name": "rgui_name",
+          "descriptor": "Ljava/lang/String;"
+        },
+        {
+          "name": "rgui_f",
+          "descriptor": "Z"
+        },
+        {
+          "name": "mode",
+          "descriptor": "I"
+        },
+        {
+          "name": "mode_c",
+          "descriptor": "I"
+        },
+        {
+          "name": "g_c1",
+          "descriptor": "I"
+        },
+        {
+          "name": "g_c2",
+          "descriptor": "I"
+        },
+        {
+          "name": "g_c3",
+          "descriptor": "I"
+        },
+        {
+          "name": "g_ac",
+          "descriptor": "I"
+        },
+        {
+          "name": "g_ac2",
+          "descriptor": "I"
+        },
+        {
+          "name": "score",
+          "descriptor": "I"
+        },
+        {
+          "name": "highscore",
+          "descriptor": "I"
+        },
+        {
+          "name": "stage",
+          "descriptor": "I"
+        },
+        {
+          "name": "stage_cc",
+          "descriptor": "I"
+        },
+        {
+          "name": "system_mode",
+          "descriptor": "I"
+        },
+        {
+          "name": "debug_mode",
+          "descriptor": "I"
+        },
+        {
+          "name": "j_jump_level",
+          "descriptor": "I"
+        },
+        {
+          "name": "j_jump_type",
+          "descriptor": "I"
+        },
+        {
+          "name": "ochiru_y",
+          "descriptor": "I"
+        },
+        {
+          "name": "j_pt_ss",
+          "descriptor": "I"
+        },
+        {
+          "name": "j_bu_seibetu",
+          "descriptor": "I"
+        },
+        {
+          "name": "j_bu_name_id",
+          "descriptor": "I"
+        },
+        {
+          "name": "j_okozukai",
+          "descriptor": "I"
+        },
+        {
+          "name": "j_name_list",
+          "descriptor": "[[Ljava/lang/String;"
+        },
+        {
+          "name": "pn_syurui",
+          "descriptor": "I"
+        },
+        {
+          "name": "w_kazu",
+          "descriptor": "I"
+        },
+        {
+          "name": "m_kazu",
+          "descriptor": "I"
+        },
+        {
+          "name": "m_mf",
+          "descriptor": "[[Z"
+        },
+        {
+          "name": "aisyou",
+          "descriptor": "[[I"
+        },
+        {
+          "name": "zokusei_name",
+          "descriptor": "[Ljava/lang/String;"
+        },
+        {
+          "name": "item",
+          "descriptor": "[I"
+        },
+        {
+          "name": "item_kazu",
+          "descriptor": "I"
+        },
+        {
+          "name": "item_useID",
+          "descriptor": "I"
+        },
+        {
+          "name": "item_data_name",
+          "descriptor": "[Ljava/lang/String;"
+        },
+        {
+          "name": "item_data_setumei",
+          "descriptor": "[Ljava/lang/String;"
+        },
+        {
+          "name": "item_data_teika",
+          "descriptor": "[I"
+        },
+        {
+          "name": "item_data_urine",
+          "descriptor": "[I"
+        },
+        {
+          "name": "item_data_wazacode",
+          "descriptor": "[I"
+        },
+        {
+          "name": "item_motenai_x",
+          "descriptor": "I"
+        },
+        {
+          "name": "item_motenai_y",
+          "descriptor": "I"
+        },
+        {
+          "name": "jishin_c",
+          "descriptor": "I"
+        },
+        {
+          "name": "waza_dname",
+          "descriptor": "[Ljava/lang/String;"
+        },
+        {
+          "name": "waza_sk",
+          "descriptor": "[[I"
+        },
+        {
+          "name": "waza_zokusei",
+          "descriptor": "[I"
+        },
+        {
+          "name": "waza_rea",
+          "descriptor": "[[I"
+        },
+        {
+          "name": "waza_rea_kazu",
+          "descriptor": "[I"
+        },
+        {
+          "name": "vo_pa_x",
+          "descriptor": "[I"
+        },
+        {
+          "name": "vo_pa_y",
+          "descriptor": "[I"
+        },
+        {
+          "name": "de_1",
+          "descriptor": "I"
+        },
+        {
+          "name": "de_2",
+          "descriptor": "I"
+        },
+        {
+          "name": "de_st",
+          "descriptor": "Ljava/lang/String;"
+        },
+        {
+          "name": "sodateya_type",
+          "descriptor": "I"
+        },
+        {
+          "name": "sodateya_scc",
+          "descriptor": "[I"
+        },
+        {
+          "name": "gym_f",
+          "descriptor": "Z"
+        },
+        {
+          "name": "gym_p_id",
+          "descriptor": "[[I"
+        },
+        {
+          "name": "gym_waza_p",
+          "descriptor": "[[I"
+        },
+        {
+          "name": "gym_boxno",
+          "descriptor": "[[I"
+        },
+        {
+          "name": "gym_kachimake",
+          "descriptor": "I"
+        },
+        {
+          "name": "gym_double_f",
+          "descriptor": "Z"
+        },
+        {
+          "name": "gym_gr_f",
+          "descriptor": "Z"
+        },
+        {
+          "name": "gym_shiaino",
+          "descriptor": "I"
+        },
+        {
+          "name": "gym_cyousen_kazu",
+          "descriptor": "I"
+        },
+        {
+          "name": "gym_tenki",
+          "descriptor": "I"
+        },
+        {
+          "name": "gym_tenki_c",
+          "descriptor": "I"
+        },
+        {
+          "name": "sl_step",
+          "descriptor": "I"
+        },
+        {
+          "name": "sl_wx",
+          "descriptor": "I"
+        },
+        {
+          "name": "sl_wy",
+          "descriptor": "I"
+        },
+        {
+          "name": "race_f",
+          "descriptor": "Z"
+        },
+        {
+          "name": "race_time",
+          "descriptor": "I"
+        },
+        {
+          "name": "race_goal_x",
+          "descriptor": "I"
+        },
+        {
+          "name": "name_kidohakase",
+          "descriptor": "Ljava/lang/String;"
+        },
+        {
+          "name": "name_jyuuisan",
+          "descriptor": "Ljava/lang/String;"
+        },
+        {
+          "name": "name_teninsan",
+          "descriptor": "Ljava/lang/String;"
+        },
+        {
+          "name": "name_sodateyasan",
+          "descriptor": "Ljava/lang/String;"
+        },
+        {
+          "name": "name_dragontaxy",
+          "descriptor": "Ljava/lang/String;"
+        },
+        {
+          "name": "name_furuure",
+          "descriptor": "Ljava/lang/String;"
+        },
+        {
+          "name": "gym_name",
+          "descriptor": "Ljava/lang/String;"
+        },
+        {
+          "name": "name_message1",
+          "descriptor": "Ljava/lang/String;"
+        },
+        {
+          "name": "name_message2",
+          "descriptor": "Ljava/lang/String;"
+        },
+        {
+          "name": "name_dokukinoko_s",
+          "descriptor": "Ljava/lang/String;"
+        },
+        {
+          "name": "name_kinnotama_s",
+          "descriptor": "Ljava/lang/String;"
+        },
+        {
+          "name": "name_fennec",
+          "descriptor": "Ljava/lang/String;"
+        },
+        {
+          "name": "name_kametank",
+          "descriptor": "Ljava/lang/String;"
+        },
+        {
+          "name": "name_sunvista",
+          "descriptor": "Ljava/lang/String;"
+        },
+        {
+          "name": "name_butapig",
+          "descriptor": "Ljava/lang/String;"
+        },
+        {
+          "name": "name_karara",
+          "descriptor": "Ljava/lang/String;"
+        },
+        {
+          "name": "name_iwatops",
+          "descriptor": "Ljava/lang/String;"
+        },
+        {
+          "name": "name_yachamo",
+          "descriptor": "Ljava/lang/String;"
+        },
+        {
+          "name": "name_mariri",
+          "descriptor": "Ljava/lang/String;"
+        },
+        {
+          "name": "name_chireihana",
+          "descriptor": "Ljava/lang/String;"
+        },
+        {
+          "name": "name_poppie",
+          "descriptor": "Ljava/lang/String;"
+        },
+        {
+          "name": "name_namakezaru",
+          "descriptor": "Ljava/lang/String;"
+        },
+        {
+          "name": "name_lunarock",
+          "descriptor": "Ljava/lang/String;"
+        },
+        {
+          "name": "name_pikachii",
+          "descriptor": "Ljava/lang/String;"
+        },
+        {
+          "name": "name_sungoose",
+          "descriptor": "Ljava/lang/String;"
+        },
+        {
+          "name": "name_starnal",
+          "descriptor": "Ljava/lang/String;"
+        },
+        {
+          "name": "name_hercules",
+          "descriptor": "Ljava/lang/String;"
+        },
+        {
+          "name": "name_lanster",
+          "descriptor": "Ljava/lang/String;"
+        },
+        {
+          "name": "name_kamalike",
+          "descriptor": "Ljava/lang/String;"
+        },
+        {
+          "name": "name_chirumichiru",
+          "descriptor": "Ljava/lang/String;"
+        },
+        {
+          "name": "name_popony",
+          "descriptor": "Ljava/lang/String;"
+        },
+        {
+          "name": "name_yureko",
+          "descriptor": "Ljava/lang/String;"
+        },
+        {
+          "name": "name_sunnyna",
+          "descriptor": "Ljava/lang/String;"
+        },
+        {
+          "name": "name_bibidama",
+          "descriptor": "Ljava/lang/String;"
+        },
+        {
+          "name": "name_pichika",
+          "descriptor": "Ljava/lang/String;"
+        },
+        {
+          "name": "name_blackal",
+          "descriptor": "Ljava/lang/String;"
+        },
+        {
+          "name": "name_makkalgo",
+          "descriptor": "Ljava/lang/String;"
+        },
+        {
+          "name": "name_rachi",
+          "descriptor": "Ljava/lang/String;"
+        },
+        {
+          "name": "name_atis",
+          "descriptor": "Ljava/lang/String;"
+        },
+        {
+          "name": "name_latis",
+          "descriptor": "Ljava/lang/String;"
+        },
+        {
+          "name": "name_tubomushi",
+          "descriptor": "Ljava/lang/String;"
+        },
+        {
+          "name": "name_taiking",
+          "descriptor": "Ljava/lang/String;"
+        },
+        {
+          "name": "name_mirocureall",
+          "descriptor": "Ljava/lang/String;"
+        },
+        {
+          "name": "name_airms",
+          "descriptor": "Ljava/lang/String;"
+        },
+        {
+          "name": "name_grounder",
+          "descriptor": "Ljava/lang/String;"
+        },
+        {
+          "name": "name_kaiole",
+          "descriptor": "Ljava/lang/String;"
+        },
+        {
+          "name": "name_senkuuza",
+          "descriptor": "Ljava/lang/String;"
+        }
+      ],
+      "classfile_sha256": "14affecabe5a663ca3554772c5e1957fea1c8c3f0d3218f4cc93ed1d974e635b",
+      "javascript_sha256": "5f2073e5c1692c9d316c2b079c6557605a5bcc6e3e72f98334d2e847dccfa9d0"
+    },
+    {
+      "class": "MapSystem",
+      "methods": 7,
+      "fields": 17,
+      "field_descriptors": [
+        {
+          "name": "gg",
+          "descriptor": "LGameGraphics;"
+        },
+        {
+          "name": "width",
+          "descriptor": "I"
+        },
+        {
+          "name": "height",
+          "descriptor": "I"
+        },
+        {
+          "name": "map_bg",
+          "descriptor": "[[S"
+        },
+        {
+          "name": "map_string",
+          "descriptor": "[Ljava/lang/String;"
+        },
+        {
+          "name": "wx",
+          "descriptor": "I"
+        },
+        {
+          "name": "wy",
+          "descriptor": "I"
+        },
+        {
+          "name": "wx_mini",
+          "descriptor": "I"
+        },
+        {
+          "name": "wy_mini",
+          "descriptor": "I"
+        },
+        {
+          "name": "wx_max",
+          "descriptor": "I"
+        },
+        {
+          "name": "wy_max",
+          "descriptor": "I"
+        },
+        {
+          "name": "os2_wx",
+          "descriptor": "I"
+        },
+        {
+          "name": "os2_wy",
+          "descriptor": "I"
+        },
+        {
+          "name": "bg_space",
+          "descriptor": "Ljava/lang/String;"
+        },
+        {
+          "name": "hi",
+          "descriptor": "[Ljava/awt/Image;"
+        },
+        {
+          "name": "g2",
+          "descriptor": "Ljava/awt/Graphics;"
+        },
+        {
+          "name": "ap",
+          "descriptor": "Ljava/applet/Applet;"
+        }
+      ],
+      "classfile_sha256": "b1828e7ced6107b362a8c92192dc98589ea6492c04d39506b27c43267ba5e2f5",
+      "javascript_sha256": "8890ded137d29912b6916af156dfe97fad7a1ead8384b68e4b6d808e6e32e37c"
+    },
+    {
+      "class": "MessageBox",
+      "methods": 11,
+      "fields": 8,
+      "field_descriptors": [
+        {
+          "name": "bu_1",
+          "descriptor": "Ljava/awt/Button;"
+        },
+        {
+          "name": "bu_2",
+          "descriptor": "Ljava/awt/Button;"
+        },
+        {
+          "name": "pa_1",
+          "descriptor": "Ljava/awt/Panel;"
+        },
+        {
+          "name": "pa_2",
+          "descriptor": "Ljava/awt/Panel;"
+        },
+        {
+          "name": "la_1",
+          "descriptor": "Ljava/awt/Label;"
+        },
+        {
+          "name": "tf_1",
+          "descriptor": "Ljava/awt/TextField;"
+        },
+        {
+          "name": "type",
+          "descriptor": "I"
+        },
+        {
+          "name": "index",
+          "descriptor": "I"
+        }
+      ],
+      "classfile_sha256": "71c4e325f5027dc395342e12ca0c8240e8eac23fd2510f976cf850f4718945a5",
+      "javascript_sha256": "9ca1af164201e22cd651899d39c0ba2f350cc7b50d2306e493fcaf0312d5ef56"
+    },
+    {
+      "class": "MonsterObject",
+      "methods": 9,
+      "fields": 39,
+      "field_descriptors": [
+        {
+          "name": "syurui",
+          "descriptor": "I"
+        },
+        {
+          "name": "hp",
+          "descriptor": "I"
+        },
+        {
+          "name": "hp_max",
+          "descriptor": "I"
+        },
+        {
+          "name": "pp",
+          "descriptor": "I"
+        },
+        {
+          "name": "pp_max",
+          "descriptor": "I"
+        },
+        {
+          "name": "l1n_hp_max",
+          "descriptor": "I"
+        },
+        {
+          "name": "l1n_pp_max",
+          "descriptor": "I"
+        },
+        {
+          "name": "l1n_ap",
+          "descriptor": "I"
+        },
+        {
+          "name": "l1n_dp",
+          "descriptor": "I"
+        },
+        {
+          "name": "speed",
+          "descriptor": "I"
+        },
+        {
+          "name": "meirei",
+          "descriptor": "I"
+        },
+        {
+          "name": "waza_code",
+          "descriptor": "[I"
+        },
+        {
+          "name": "waza_name",
+          "descriptor": "[Ljava/lang/String;"
+        },
+        {
+          "name": "waza_kazu",
+          "descriptor": "I"
+        },
+        {
+          "name": "tuikawaza",
+          "descriptor": "[I"
+        },
+        {
+          "name": "positionX",
+          "descriptor": "I"
+        },
+        {
+          "name": "positionY",
+          "descriptor": "I"
+        },
+        {
+          "name": "c_kihon",
+          "descriptor": "I"
+        },
+        {
+          "name": "c_kihon2",
+          "descriptor": "I"
+        },
+        {
+          "name": "move_wc",
+          "descriptor": "I"
+        },
+        {
+          "name": "name",
+          "descriptor": "Ljava/lang/String;"
+        },
+        {
+          "name": "ss",
+          "descriptor": "I"
+        },
+        {
+          "name": "type",
+          "descriptor": "I"
+        },
+        {
+          "name": "taiatari_f",
+          "descriptor": "Z"
+        },
+        {
+          "name": "taiatari_type",
+          "descriptor": "I"
+        },
+        {
+          "name": "spt",
+          "descriptor": "[I"
+        },
+        {
+          "name": "seibetu",
+          "descriptor": "I"
+        },
+        {
+          "name": "mn",
+          "descriptor": "I"
+        },
+        {
+          "name": "jumpkanou_f",
+          "descriptor": "Z"
+        },
+        {
+          "name": "oya_name",
+          "descriptor": "Ljava/lang/String;"
+        },
+        {
+          "name": "level",
+          "descriptor": "I"
+        },
+        {
+          "name": "doku_c",
+          "descriptor": "I"
+        },
+        {
+          "name": "gym_wc",
+          "descriptor": "I"
+        },
+        {
+          "name": "tukauwaza",
+          "descriptor": "I"
+        },
+        {
+          "name": "name_df",
+          "descriptor": "Z"
+        },
+        {
+          "name": "pb_type",
+          "descriptor": "I"
+        },
+        {
+          "name": "kotaisa",
+          "descriptor": "I"
+        },
+        {
+          "name": "id",
+          "descriptor": "I"
+        },
+        {
+          "name": "ahs",
+          "descriptor": "I"
+        }
+      ],
+      "classfile_sha256": "ed2e2a17b88b4602592b4e61d745eb815cc46088ce5173d8d3d6e9a073bf7561",
+      "javascript_sha256": "f17be226d75ecbe4a0362f00d3e1a9a91c11840a85eeef508652816416980f25"
+    },
+    {
+      "class": "PetMon2",
+      "methods": 10,
+      "fields": 10,
+      "field_descriptors": [
+        {
+          "name": "th",
+          "descriptor": "Ljava/lang/Thread;"
+        },
+        {
+          "name": "th_interval",
+          "descriptor": "I"
+        },
+        {
+          "name": "gg",
+          "descriptor": "LGameGraphics;"
+        },
+        {
+          "name": "gm",
+          "descriptor": "LGameMouse;"
+        },
+        {
+          "name": "gk",
+          "descriptor": "LGameKey;"
+        },
+        {
+          "name": "mp",
+          "descriptor": "LMainProgram;"
+        },
+        {
+          "name": "mode",
+          "descriptor": "I"
+        },
+        {
+          "name": "mode_c",
+          "descriptor": "I"
+        },
+        {
+          "name": "mbox_1",
+          "descriptor": "LMessageBox;"
+        },
+        {
+          "name": "mbox_2",
+          "descriptor": "LMessageBox;"
+        }
+      ],
+      "classfile_sha256": "26ffdc87a136b3fdcae5723ef8e2838170ffdeea7e1fa2ade74d01068dac97b3",
+      "javascript_sha256": "4a00525f6e9300791fd6a48886145c62d75a4085061a80ff55a85f8d77cba8c0"
+    }
+  ],
+  "methods": [
+    {
+      "class": "CharacterObject",
+      "java_method": "<init>",
+      "java_descriptor": "()V",
+      "javascript_method": "constructor",
+      "file": "js/CharacterObject.js",
+      "bytecode_sha256": "e607b2825be0b5d3b84a45346e08e0c1388a068eca0dff82ed79bf4726ea7cf4",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "CharacterObject",
+      "java_method": "init",
+      "java_descriptor": "()V",
+      "javascript_method": "init$0",
+      "file": "js/CharacterObject.js",
+      "bytecode_sha256": "ad0c5c0766ed02875dd5d3cff05460a9984958df73f8dc7e7b31112afe2f7c8d",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "GameGraphics",
+      "java_method": "<init>",
+      "java_descriptor": "(Ljava/applet/Applet;)V",
+      "javascript_method": "constructor",
+      "file": "js/GameGraphics.js",
+      "bytecode_sha256": "cb576d3d48789668ee45a375f891bb0584c099b715aaa0f9e3e04b3133cc63dc",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "GameGraphics",
+      "java_method": "addListImage",
+      "java_descriptor": "(ILjava/lang/String;)V",
+      "javascript_method": "addListImage$2",
+      "file": "js/GameGraphics.js",
+      "bytecode_sha256": "b701d4cd8eeca8cf69aeb4d9c7172e56cfdf620eae9f4e6f445e27d3f9d7db2c",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "GameGraphics",
+      "java_method": "loadImage",
+      "java_descriptor": "()V",
+      "javascript_method": "loadImage$0",
+      "file": "js/GameGraphics.js",
+      "bytecode_sha256": "a378874831278d5db74322f1c213afe1223d4d42d21874ca2650ab8af280ad5d",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "GameGraphics",
+      "java_method": "copyOS",
+      "java_descriptor": "(Ljava/awt/Graphics;)V",
+      "javascript_method": "copyOS$1",
+      "file": "js/GameGraphics.js",
+      "bytecode_sha256": "d0a6fcc9f36184e05f3058960ba5ce04c723f02270008cf3c9c7d505b6df5818",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "GameGraphics",
+      "java_method": "fill",
+      "java_descriptor": "()V",
+      "javascript_method": "fill$0",
+      "file": "js/GameGraphics.js",
+      "bytecode_sha256": "8d1e69050d38eea92dcecf6499d57842b73d3ffe5cd168f5838b528d00019bf9",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "GameGraphics",
+      "java_method": "fill2",
+      "java_descriptor": "()V",
+      "javascript_method": "fill2$0",
+      "file": "js/GameGraphics.js",
+      "bytecode_sha256": "77c9e347205775491d3b13a9b1e23a9bc69ce628c0d7808f3fc4f2e7911ba498",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "GameGraphics",
+      "java_method": "setBackcolor",
+      "java_descriptor": "(Ljava/awt/Color;)V",
+      "javascript_method": "setBackcolor$1",
+      "file": "js/GameGraphics.js",
+      "bytecode_sha256": "4e3569dc8868532fb771df30aa335eb9dfcaba2cf62ae42bd91beb5d5a334682",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "GameGraphics",
+      "java_method": "drawPT",
+      "java_descriptor": "(IIII)V",
+      "javascript_method": "drawPT$4",
+      "file": "js/GameGraphics.js",
+      "bytecode_sha256": "8b7c2b1d6cefb0f5e8f049b3324550531e142f109c325a56824305e9a1b3fb24",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "GameGraphics",
+      "java_method": "drawPT2",
+      "java_descriptor": "(III)V",
+      "javascript_method": "drawPT2$3",
+      "file": "js/GameGraphics.js",
+      "bytecode_sha256": "94a367af4db732bd08867c464c3a841d0d8e2977b8ee2eb37c06379d1b1fd1df",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "GameGraphics",
+      "java_method": "drawBG2",
+      "java_descriptor": "(III)V",
+      "javascript_method": "drawBG2$3",
+      "file": "js/GameGraphics.js",
+      "bytecode_sha256": "a0bfe8b79be965d5e27ff71c430353ec4569f5649ee40f35e7fcce00e6979050",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "GameGraphics",
+      "java_method": "drawBG3",
+      "java_descriptor": "(IIILjava/awt/Color;)V",
+      "javascript_method": "drawBG3$4",
+      "file": "js/GameGraphics.js",
+      "bytecode_sha256": "6f4667be12e358f00ad277ce66e9499852bd54e492e9b75e9a014792bed89757",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "GameGraphics",
+      "java_method": "drawListImage",
+      "java_descriptor": "(III)V",
+      "javascript_method": "drawListImage$3",
+      "file": "js/GameGraphics.js",
+      "bytecode_sha256": "0cb41382716059654b3a6f3dbd7ddddcae282f4f985298d20f860a5845d55dd5",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "GameKey",
+      "java_method": "<init>",
+      "java_descriptor": "()V",
+      "javascript_method": "constructor",
+      "file": "js/GameKey.js",
+      "bytecode_sha256": "e607b2825be0b5d3b84a45346e08e0c1388a068eca0dff82ed79bf4726ea7cf4",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "GameKey",
+      "java_method": "init",
+      "java_descriptor": "()V",
+      "javascript_method": "init$0",
+      "file": "js/GameKey.js",
+      "bytecode_sha256": "c07a8c1c72079f7c48f77f79af76cae35c5851cdef80d771008ee7146bf233a4",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "GameKey",
+      "java_method": "keyPressed",
+      "java_descriptor": "(Ljava/awt/event/KeyEvent;)V",
+      "javascript_method": "keyPressed$1",
+      "file": "js/GameKey.js",
+      "bytecode_sha256": "2b0146f14c7b0a4f98682e0d6a8f428c56d2b572c4b3006686277b5b748f4fb2",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "GameKey",
+      "java_method": "keyReleased",
+      "java_descriptor": "(Ljava/awt/event/KeyEvent;)V",
+      "javascript_method": "keyReleased$1",
+      "file": "js/GameKey.js",
+      "bytecode_sha256": "25f9be615a8fd09bc455a6ab32d7f9d340b0a72bf2ab30d42dc629bd02ebd097",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "GameKey",
+      "java_method": "getKeyCode",
+      "java_descriptor": "()I",
+      "javascript_method": "getKeyCode$0",
+      "file": "js/GameKey.js",
+      "bytecode_sha256": "17d2088447ccf826ece32e30a3768849a386734ae9eaa8712655f75cd4c67385",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "GameKey",
+      "java_method": "getKeyChar",
+      "java_descriptor": "()C",
+      "javascript_method": "getKeyChar$0",
+      "file": "js/GameKey.js",
+      "bytecode_sha256": "4dd1035ec1cdb196745dea2916d5c6e3af003ec14aa125cf9edf87088b1251af",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "GameMouse",
+      "java_method": "<init>",
+      "java_descriptor": "()V",
+      "javascript_method": "constructor",
+      "file": "js/GameMouse.js",
+      "bytecode_sha256": "e607b2825be0b5d3b84a45346e08e0c1388a068eca0dff82ed79bf4726ea7cf4",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "GameMouse",
+      "java_method": "init",
+      "java_descriptor": "()V",
+      "javascript_method": "init$0",
+      "file": "js/GameMouse.js",
+      "bytecode_sha256": "59027d0bf7fcca72e4e75f5cc664143a17230b5ff06c7cb43b0814c80092d37d",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "GameMouse",
+      "java_method": "mousePressed",
+      "java_descriptor": "(Ljava/awt/event/MouseEvent;)V",
+      "javascript_method": "mousePressed$1",
+      "file": "js/GameMouse.js",
+      "bytecode_sha256": "4aba4fbec934c636a7628f0f50bf57f14295495e06dba2f2e9f3d23703ff8f61",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "GameMouse",
+      "java_method": "mouseReleased",
+      "java_descriptor": "(Ljava/awt/event/MouseEvent;)V",
+      "javascript_method": "mouseReleased$1",
+      "file": "js/GameMouse.js",
+      "bytecode_sha256": "44f4ae8d7234f64ab04689f9e2137055a4a132c4b339bfb4e57c8a870fb8dbcb",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "IdouGamen",
+      "java_method": "<init>",
+      "java_descriptor": "(LGameGraphics;LGameKey;LKeyboardMenu;LMainProgram;)V",
+      "javascript_method": "constructor",
+      "file": "js/IdouGamen.js",
+      "bytecode_sha256": "f01220e8e7f2a79fd9a166afa640b62aaec2d9607bd69185b5294e391d5e207e",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "IdouGamen",
+      "java_method": "worldInit",
+      "java_descriptor": "()V",
+      "javascript_method": "worldInit$0",
+      "file": "js/IdouGamen.js",
+      "bytecode_sha256": "b8c8f4c42756e595a897eae4e629fa96f0aa6f5e90e9605179de1ec20729d1b8",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "IdouGamen",
+      "java_method": "worldInit2",
+      "java_descriptor": "()V",
+      "javascript_method": "worldInit2$0",
+      "file": "js/IdouGamen.js",
+      "bytecode_sha256": "cf9b143c1804ad1b44036af5af0ac532ae5490ae0276b64c4c3effd8ce74541b",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "IdouGamen",
+      "java_method": "worldInit3",
+      "java_descriptor": "()V",
+      "javascript_method": "worldInit3$0",
+      "file": "js/IdouGamen.js",
+      "bytecode_sha256": "17be9cd820d1bbaa93004821ec64ea2874aa9e1e84501d9cae292404bba7b15c",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "IdouGamen",
+      "java_method": "worldInit4",
+      "java_descriptor": "()V",
+      "javascript_method": "worldInit4$0",
+      "file": "js/IdouGamen.js",
+      "bytecode_sha256": "55199d9d8917191a86cc19059f3c1aa52d5255700b4bdfce4ec719930ae783a2",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "IdouGamen",
+      "java_method": "worldInit5",
+      "java_descriptor": "()V",
+      "javascript_method": "worldInit5$0",
+      "file": "js/IdouGamen.js",
+      "bytecode_sha256": "81acd8f3b055c353b68ac32be1ee0d860c3cd49bdfa54a1223397c60156148d3",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "IdouGamen",
+      "java_method": "drawOs2",
+      "java_descriptor": "()V",
+      "javascript_method": "drawOs2$0",
+      "file": "js/IdouGamen.js",
+      "bytecode_sha256": "a06e28810a74fdffe5630e52b35481e79a0547d91581bd433c2d3def221ca3ac",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "IdouGamen",
+      "java_method": "drawMap",
+      "java_descriptor": "()V",
+      "javascript_method": "drawMap$0",
+      "file": "js/IdouGamen.js",
+      "bytecode_sha256": "1028178b253c6af5ada438756b672f48fe9cf78263a85dd8c05312a0f8c62254",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "IdouGamen",
+      "java_method": "getBGZ",
+      "java_descriptor": "(II)I",
+      "javascript_method": "getBGZ$2",
+      "file": "js/IdouGamen.js",
+      "bytecode_sha256": "ccdefaa86c1f182e07314814fc20febf9c76ec827b9c33d64a3533af143951b4",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "IdouGamen",
+      "java_method": "checkStage",
+      "java_descriptor": "()I",
+      "javascript_method": "checkStage$0",
+      "file": "js/IdouGamen.js",
+      "bytecode_sha256": "acfbec818f8516adc21fa80771090f9a90777942e139e0b70d2df72c5123e2a1",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "IdouGamen",
+      "java_method": "mainProgram",
+      "java_descriptor": "()V",
+      "javascript_method": "mainProgram$0",
+      "file": "js/IdouGamen.js",
+      "bytecode_sha256": "db87c2e1cce3af619f41e2c906d6ee4a52dbc1f989b4d539c9e5ed75a0ec5843",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "IdouGamen",
+      "java_method": "jMove",
+      "java_descriptor": "()V",
+      "javascript_method": "jMove$0",
+      "file": "js/IdouGamen.js",
+      "bytecode_sha256": "77e3384835bd1ec3e44c42690a1306dc40cc96bef764006cfb4093ca58d64063",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "IdouGamen",
+      "java_method": "getBossTaoshitakazu",
+      "java_descriptor": "()I",
+      "javascript_method": "getBossTaoshitakazu$0",
+      "file": "js/IdouGamen.js",
+      "bytecode_sha256": "026d19b26b377746e9ce2bb7f0c3c81d74ea6e063760a4b0ec69e53483e3cd62",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "IdouGamen",
+      "java_method": "circleCLS",
+      "java_descriptor": "(I)V",
+      "javascript_method": "circleCLS$1",
+      "file": "js/IdouGamen.js",
+      "bytecode_sha256": "35557a7690ee5ed4ea8b881a82ad9365fdde5316e7c8b74ec028bd83cbd2c198",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "IdouGamen",
+      "java_method": "squareCLS",
+      "java_descriptor": "(II)V",
+      "javascript_method": "squareCLS$2",
+      "file": "js/IdouGamen.js",
+      "bytecode_sha256": "5479ee6e58bd6eec640fd19a0b85bf0d23a62c5d15e10c6e51cedc9962b5dcd0",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "IdouGamen",
+      "java_method": "zukanInit",
+      "java_descriptor": "()V",
+      "javascript_method": "zukanInit$0",
+      "file": "js/IdouGamen.js",
+      "bytecode_sha256": "7a1c62f410295c829ded0de5177c921bd663ef2cdc4334a3e1ca7c32f4609900",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "IdouGamen",
+      "java_method": "zukanTourokuPet",
+      "java_descriptor": "()V",
+      "javascript_method": "zukanTourokuPet$0",
+      "file": "js/IdouGamen.js",
+      "bytecode_sha256": "7c78f88bce834796ebdce959a1928babda63771a8ae603e0538cf3c23c141760",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "IdouGamen",
+      "java_method": "zukanGetMituketakazu",
+      "java_descriptor": "()I",
+      "javascript_method": "zukanGetMituketakazu$0",
+      "file": "js/IdouGamen.js",
+      "bytecode_sha256": "2c21ee86c5f7068398e209ff280ea0ed432765d69b5dd6bc8c3133eb15594b65",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "IdouGamen",
+      "java_method": "zukanGetTukamaetakazu",
+      "java_descriptor": "()I",
+      "javascript_method": "zukanGetTukamaetakazu$0",
+      "file": "js/IdouGamen.js",
+      "bytecode_sha256": "449ac69336c598bb227c9922d0c28267913c5f39e9fc60bb6c52fd98817e542d",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "IdouGamen",
+      "java_method": "passInit",
+      "java_descriptor": "()V",
+      "javascript_method": "passInit$0",
+      "file": "js/IdouGamen.js",
+      "bytecode_sha256": "39f28238d6ad658bb4f8d1c4745591e0571b9553d33cb8b24da1fc37b6b53ecc",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "IdouGamen",
+      "java_method": "passMakePet",
+      "java_descriptor": "(I)V",
+      "javascript_method": "passMakePet$1",
+      "file": "js/IdouGamen.js",
+      "bytecode_sha256": "37cd032b8410910fd784d73f2c3d78380abb130c28efca0f8ad8835b6ac90473",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "IdouGamen",
+      "java_method": "passToujyouPet",
+      "java_descriptor": "(I)Z",
+      "javascript_method": "passToujyouPet$1",
+      "file": "js/IdouGamen.js",
+      "bytecode_sha256": "0600d6f9dc75048d827bbf441443688d401269c69650be0d9ebd33a6fa86e0d7",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "IdouGamen",
+      "java_method": "passMakeSyujinkou",
+      "java_descriptor": "(I)V",
+      "javascript_method": "passMakeSyujinkou$1",
+      "file": "js/IdouGamen.js",
+      "bytecode_sha256": "a999af6ff4300f05669045eeda0cf268764726406203ec72a79e13c49d88bc59",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "IdouGamen",
+      "java_method": "passToujyouSyujinkou",
+      "java_descriptor": "(I)Z",
+      "javascript_method": "passToujyouSyujinkou$1",
+      "file": "js/IdouGamen.js",
+      "bytecode_sha256": "b458d8596153740862dbf2922c7492b100e3a3bf81dd1656f99143358141ba1c",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "KeyboardMenu",
+      "java_method": "<init>",
+      "java_descriptor": "(LGameGraphics;LGameKey;LMainProgram;)V",
+      "javascript_method": "constructor",
+      "file": "js/KeyboardMenu.js",
+      "bytecode_sha256": "1d73153f3b8e39f3f689045bc56683b200d9fd985817d826c1057e8c1525abf8",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "KeyboardMenu",
+      "java_method": "initAll",
+      "java_descriptor": "()V",
+      "javascript_method": "initAll$0",
+      "file": "js/KeyboardMenu.js",
+      "bytecode_sha256": "e67a5de1016d0ab415d4c0ef6827f7ed082562304f31dd82449441fe1a0ca457",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "KeyboardMenu",
+      "java_method": "initIdlist",
+      "java_descriptor": "()V",
+      "javascript_method": "initIdlist$0",
+      "file": "js/KeyboardMenu.js",
+      "bytecode_sha256": "553e09fabfb068e75e3244229d75a85b2a3e42f04070212f9643aa6c7edc94c9",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "KeyboardMenu",
+      "java_method": "initCS",
+      "java_descriptor": "(I)V",
+      "javascript_method": "initCS$1",
+      "file": "js/KeyboardMenu.js",
+      "bytecode_sha256": "87af78fb58b1d3e1ea52e0fc11e0bbebf200417252e0e1fed8799cb8671e50f9",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "KeyboardMenu",
+      "java_method": "initMessagebox",
+      "java_descriptor": "(IIII)V",
+      "javascript_method": "initMessagebox$4",
+      "file": "js/KeyboardMenu.js",
+      "bytecode_sha256": "8766850a490b24da8643516765a5dff7e5944bd9ac87149d3d8985cca4af87ec",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "KeyboardMenu",
+      "java_method": "initSerifubox",
+      "java_descriptor": "(IIIILjava/lang/String;)V",
+      "javascript_method": "initSerifubox$5",
+      "file": "js/KeyboardMenu.js",
+      "bytecode_sha256": "6ec1de1eebe0b72d2ff784234e3fe82debf730737585657b7f1eceac3796c5f1",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "KeyboardMenu",
+      "java_method": "initSerifubox",
+      "java_descriptor": "(IIIILjava/lang/String;Ljava/awt/Color;)V",
+      "javascript_method": "initSerifubox$6",
+      "file": "js/KeyboardMenu.js",
+      "bytecode_sha256": "111b88d3dd396e9897d22e05e1ed800be1acd880d3946cea0fccf90b0d4ef9dc",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "KeyboardMenu",
+      "java_method": "initDoubleSerifubox",
+      "java_descriptor": "(IIIILjava/lang/String;)V",
+      "javascript_method": "initDoubleSerifubox$5",
+      "file": "js/KeyboardMenu.js",
+      "bytecode_sha256": "8322e7a082fe0db00958cd4ff3372880785e49f825a1f9f97c79607e8d2b67b9",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "KeyboardMenu",
+      "java_method": "initOyasumibox",
+      "java_descriptor": "(III)V",
+      "javascript_method": "initOyasumibox$3",
+      "file": "js/KeyboardMenu.js",
+      "bytecode_sha256": "36a90f90131e77914ca50577166218715a60beb96cee3aa9ae73998015ce06de",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "KeyboardMenu",
+      "java_method": "initZukanbox",
+      "java_descriptor": "(IIII)V",
+      "javascript_method": "initZukanbox$4",
+      "file": "js/KeyboardMenu.js",
+      "bytecode_sha256": "bb924f912228f70f3d6ade49f4e38b8bfb4e164e7b3077ec19c00a17d8f79498",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "KeyboardMenu",
+      "java_method": "initPetstatusbox",
+      "java_descriptor": "(IIIII)V",
+      "javascript_method": "initPetstatusbox$5",
+      "file": "js/KeyboardMenu.js",
+      "bytecode_sha256": "89d93fdbe89a1797769003c9cc6cd1ebd834746a53b8e41db46347726d9afbfc",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "KeyboardMenu",
+      "java_method": "initJibunstatusbox",
+      "java_descriptor": "(IIII)V",
+      "javascript_method": "initJibunstatusbox$4",
+      "file": "js/KeyboardMenu.js",
+      "bytecode_sha256": "6fd7005324ef0a9cecff6a1c6dfd4c10e6a55318db3216b870b9caa1c9cbd0bf",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "KeyboardMenu",
+      "java_method": "initPetToujyouBox",
+      "java_descriptor": "(IIII)V",
+      "javascript_method": "initPetToujyouBox$4",
+      "file": "js/KeyboardMenu.js",
+      "bytecode_sha256": "114024b8aabe73a96711e54c291d3f9740c5fbcd5d73d944cfa7e19e2842f9b0",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "KeyboardMenu",
+      "java_method": "initPetHikitoriBox",
+      "java_descriptor": "(IIII)V",
+      "javascript_method": "initPetHikitoriBox$4",
+      "file": "js/KeyboardMenu.js",
+      "bytecode_sha256": "c620081265e06ad5c0f77e3d3ab5e2046d9a0f5c16358dac12eb84f4ddf523cc",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "KeyboardMenu",
+      "java_method": "initAzuketaPetBox",
+      "java_descriptor": "(IIII)V",
+      "javascript_method": "initAzuketaPetBox$4",
+      "file": "js/KeyboardMenu.js",
+      "bytecode_sha256": "4dfbbc1f10210e41ff0f183f4458925430da3e5c0bcfb2aae64234dab594579f",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "KeyboardMenu",
+      "java_method": "initSelectbox",
+      "java_descriptor": "(IIIILjava/lang/String;)V",
+      "javascript_method": "initSelectbox$5",
+      "file": "js/KeyboardMenu.js",
+      "bytecode_sha256": "42e803044370b233abc98f929042d987a482205a659ce49d0b51f6c1a6274da6",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "KeyboardMenu",
+      "java_method": "initSelectboxSerifu",
+      "java_descriptor": "(IIIILjava/lang/String;Ljava/lang/String;)V",
+      "javascript_method": "initSelectboxSerifu$6",
+      "file": "js/KeyboardMenu.js",
+      "bytecode_sha256": "817a9e79c49329e3f886f788ba3b981ed12b19100518261ecdfadb8797a0d3b6",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "KeyboardMenu",
+      "java_method": "initSelectboxSerifu",
+      "java_descriptor": "(IIIILjava/lang/String;Ljava/lang/String;Ljava/awt/Color;)V",
+      "javascript_method": "initSelectboxSerifu$7",
+      "file": "js/KeyboardMenu.js",
+      "bytecode_sha256": "e92b46dcac0762803150c6efb633d2f96ae8449c860951565608648871978ec7",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "KeyboardMenu",
+      "java_method": "initKaimonoSelectbox",
+      "java_descriptor": "(IIIILjava/lang/String;)V",
+      "javascript_method": "initKaimonoSelectbox$5",
+      "file": "js/KeyboardMenu.js",
+      "bytecode_sha256": "4822105af5bd93c9dbeb410c0806ec31c02e06c900b340e90453daf168e6805b",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "KeyboardMenu",
+      "java_method": "openTimeMessage",
+      "java_descriptor": "(IIIILjava/lang/String;)V",
+      "javascript_method": "openTimeMessage$5",
+      "file": "js/KeyboardMenu.js",
+      "bytecode_sha256": "a39eacb998e7e46c3a85d275083b45718ad81c59d52273b29f953dfaaec41582",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "KeyboardMenu",
+      "java_method": "initNameinputbox",
+      "java_descriptor": "(IIILjava/lang/String;)V",
+      "javascript_method": "initNameinputbox$4",
+      "file": "js/KeyboardMenu.js",
+      "bytecode_sha256": "fe7aaf4040b1b287c19cb8188b624f386fe96d0ae3b84170205454b2e81fde75",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "KeyboardMenu",
+      "java_method": "addItem",
+      "java_descriptor": "(ILjava/lang/String;)V",
+      "javascript_method": "addItem$2",
+      "file": "js/KeyboardMenu.js",
+      "bytecode_sha256": "453690d0fbc72f311dbf6c714c1ac474dc92989e79134b2d824a8f839913baf7",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "KeyboardMenu",
+      "java_method": "addItem",
+      "java_descriptor": "(ILjava/lang/String;I)V",
+      "javascript_method": "addItem$3",
+      "file": "js/KeyboardMenu.js",
+      "bytecode_sha256": "f11d9f5342e4485f5710246b29e388c88aff723a3edcc7a72b52d31fb8fe07ae",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "KeyboardMenu",
+      "java_method": "addIntItem",
+      "java_descriptor": "(II)V",
+      "javascript_method": "addIntItem$2",
+      "file": "js/KeyboardMenu.js",
+      "bytecode_sha256": "f563e32e807bfbb00e6986ef7fb4865ee8ba2e0ff50c0f2f68832a89c43571f7",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "KeyboardMenu",
+      "java_method": "setTitle",
+      "java_descriptor": "(ILjava/lang/String;)V",
+      "javascript_method": "setTitle$2",
+      "file": "js/KeyboardMenu.js",
+      "bytecode_sha256": "93d161ec4adddc50ee4d3daa2c8deedebd77718dc01ca65314f8e35702680088",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "KeyboardMenu",
+      "java_method": "active",
+      "java_descriptor": "(I)V",
+      "javascript_method": "active$1",
+      "file": "js/KeyboardMenu.js",
+      "bytecode_sha256": "ad1117ed551b87234f66b6f30015f5aaed87dea5646f5afa0a612e6f0d8293a4",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "KeyboardMenu",
+      "java_method": "off",
+      "java_descriptor": "(I)V",
+      "javascript_method": "off$1",
+      "file": "js/KeyboardMenu.js",
+      "bytecode_sha256": "fbb9b4c29aa9784b55c9f13330b383b9907e5e8701c2da38f7a382158e17117f",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "KeyboardMenu",
+      "java_method": "getSelectedIndex",
+      "java_descriptor": "(I)I",
+      "javascript_method": "getSelectedIndex$1",
+      "file": "js/KeyboardMenu.js",
+      "bytecode_sha256": "1f478f07c45102b81966f698303ff989bf1e1caf891c3775479a17e5066abf64",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "KeyboardMenu",
+      "java_method": "getNameString",
+      "java_descriptor": "()Ljava/lang/String;",
+      "javascript_method": "getNameString$0",
+      "file": "js/KeyboardMenu.js",
+      "bytecode_sha256": "a5ac70eb24820b516ef84a167db890850fa0833be3e54158c8fd32e1375e12f5",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "KeyboardMenu",
+      "java_method": "openKaobox",
+      "java_descriptor": "(IIIII)V",
+      "javascript_method": "openKaobox$5",
+      "file": "js/KeyboardMenu.js",
+      "bytecode_sha256": "762ee2e82cf7646003fa0bd0fdeabb7e725621c167821fd903abf757e8fea8c2",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "KeyboardMenu",
+      "java_method": "openOkozukaibox",
+      "java_descriptor": "(IIIILjava/lang/String;I)V",
+      "javascript_method": "openOkozukaibox$6",
+      "file": "js/KeyboardMenu.js",
+      "bytecode_sha256": "45d6575a07180f8cd08831c36f5c410ef1f992fe7095b394442ed658ab19d886",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "KeyboardMenu",
+      "java_method": "openZukanbar",
+      "java_descriptor": "(IIILjava/lang/String;)V",
+      "javascript_method": "openZukanbar$4",
+      "file": "js/KeyboardMenu.js",
+      "bytecode_sha256": "d8ccdd30f5ce627dba8a104ae50dbda7be81533f97b1c04967d81e2f5ec8988b",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "KeyboardMenu",
+      "java_method": "openDialgKakuninBox",
+      "java_descriptor": "(IIIILjava/lang/String;)V",
+      "javascript_method": "openDialgKakuninBox$5",
+      "file": "js/KeyboardMenu.js",
+      "bytecode_sha256": "e8286700aaa62d512d6c68d0a2b61d1e23cb685ea769485b59900c17bea43d00",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "KeyboardMenu",
+      "java_method": "openDialgKakuninBox2",
+      "java_descriptor": "(IIII)V",
+      "javascript_method": "openDialgKakuninBox2$4",
+      "file": "js/KeyboardMenu.js",
+      "bytecode_sha256": "fe1f42ca046b93402f0a3ad747ac47f0f70733db66d6b7f64ae37d6d1444f95c",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "KeyboardMenu",
+      "java_method": "openWazaZokuseiBox",
+      "java_descriptor": "(IIIILjava/lang/String;I)V",
+      "javascript_method": "openWazaZokuseiBox$6",
+      "file": "js/KeyboardMenu.js",
+      "bytecode_sha256": "09de0a3b1bae3a9433a2236d9d513ceee1527b6265d43c2bfc356e03ee5cc902",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "KeyboardMenu",
+      "java_method": "openCharacterbox",
+      "java_descriptor": "(IIIIILjava/lang/String;)V",
+      "javascript_method": "openCharacterbox$6",
+      "file": "js/KeyboardMenu.js",
+      "bytecode_sha256": "99cae489c81e6dbff39af7f6a9039420581aac7a8d2722b871cbd354dd8d0f7d",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "KeyboardMenu",
+      "java_method": "openCharacterbox",
+      "java_descriptor": "(IIIIILjava/lang/String;I)V",
+      "javascript_method": "openCharacterbox$7",
+      "file": "js/KeyboardMenu.js",
+      "bytecode_sha256": "d4c8a406a9694320dcf1ea830c61ee09ca119fc5acd7b0adb8d7c26a963e016f",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "KeyboardMenu",
+      "java_method": "move",
+      "java_descriptor": "()V",
+      "javascript_method": "move$0",
+      "file": "js/KeyboardMenu.js",
+      "bytecode_sha256": "9960d5aa24ee49603b786a86ed7864845c0f750edbd2150420704f073ef44a7b",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "KeyboardMenu",
+      "java_method": "drawMenus",
+      "java_descriptor": "()V",
+      "javascript_method": "drawMenus$0",
+      "file": "js/KeyboardMenu.js",
+      "bytecode_sha256": "8decf85d3ced684ad09539b51ee78e971d43047ce753d8a3f9afe4b351375913",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "KeyboardMenu",
+      "java_method": "drawWindowbox",
+      "java_descriptor": "(IIII)V",
+      "javascript_method": "drawWindowbox$4",
+      "file": "js/KeyboardMenu.js",
+      "bytecode_sha256": "3ec601b9b8b62ec586ee5a190d3967a8484a003b1d9e82454ac649b13dd0a717",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "KeyboardMenuObject",
+      "java_method": "<init>",
+      "java_descriptor": "(LGameGraphics;LGameKey;)V",
+      "javascript_method": "constructor",
+      "file": "js/KeyboardMenuObject.js",
+      "bytecode_sha256": "e9b2da203b56f984f7f0d39887ec72473f628fa9bbdbb2da7194c52209ee2588",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "KeyboardMenuObject",
+      "java_method": "init",
+      "java_descriptor": "()V",
+      "javascript_method": "init$0",
+      "file": "js/KeyboardMenuObject.js",
+      "bytecode_sha256": "5f7961859ea6707c15ea34db6b1d0594cb75cf629ddb472abd132efbd33c2b89",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "KeyboardMenuObject",
+      "java_method": "addItem",
+      "java_descriptor": "(Ljava/lang/String;)V",
+      "javascript_method": "addItem$1",
+      "file": "js/KeyboardMenuObject.js",
+      "bytecode_sha256": "99cc64b8685b21a9efd1cbef0290212c621ace4bed23a1f1e13bab3d766d119d",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "KeyboardMenuObject",
+      "java_method": "addItem",
+      "java_descriptor": "(Ljava/lang/String;I)V",
+      "javascript_method": "addItem$2",
+      "file": "js/KeyboardMenuObject.js",
+      "bytecode_sha256": "cc09b469bd43d33e10d009476a2d50cb4bffb0870a02ce01ef98bbfbd85a91bc",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "KeyboardMenuObject",
+      "java_method": "addIntItem",
+      "java_descriptor": "(I)V",
+      "javascript_method": "addIntItem$1",
+      "file": "js/KeyboardMenuObject.js",
+      "bytecode_sha256": "4f9570455fabe45c12c80178efd9b41485f06149a5215308e78a1dfd7bd55bb6",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "MainProgram",
+      "java_method": "<init>",
+      "java_descriptor": "(LGameGraphics;LGameMouse;LGameKey;)V",
+      "javascript_method": "constructor",
+      "file": "js/MainProgram.js",
+      "bytecode_sha256": "d74ff8946960c418173b85d1aeade05ac242aed8c93a63779a09c3da583978c8",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "MainProgram",
+      "java_method": "ranInit",
+      "java_descriptor": "()V",
+      "javascript_method": "ranInit$0",
+      "file": "js/MainProgram.js",
+      "bytecode_sha256": "09973175cda7561f689be5d6d6bdb140e1c48c382700ac6f03a9132f2e015c47",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "MainProgram",
+      "java_method": "ranInt",
+      "java_descriptor": "(I)I",
+      "javascript_method": "ranInt$1",
+      "file": "js/MainProgram.js",
+      "bytecode_sha256": "84fdae02ec2875a79766831c47cc95b04d5f03a06fa02076b42f1ba061d68ac3",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "MainProgram",
+      "java_method": "toJS",
+      "java_descriptor": "()V",
+      "javascript_method": "toJS$0",
+      "file": "js/MainProgram.js",
+      "bytecode_sha256": "7a0e966d86a59becb863bdb50d8207c76ef08175036fbc5713299b7957659255",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "MainProgram",
+      "java_method": "paraInt",
+      "java_descriptor": "(Ljava/lang/String;)I",
+      "javascript_method": "paraInt$1",
+      "file": "js/MainProgram.js",
+      "bytecode_sha256": "c61ef0eda7407257c872aac7863064c87e921aad75c55672623de7914b293436",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "MainProgram",
+      "java_method": "paraNedan",
+      "java_descriptor": "(Ljava/lang/String;)I",
+      "javascript_method": "paraNedan$1",
+      "file": "js/MainProgram.js",
+      "bytecode_sha256": "67cc12e9770ce9ef045d883efdfff2b120d7eb4c37dda1a00862a0cc347851ec",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "MainProgram",
+      "java_method": "addScore",
+      "java_descriptor": "(I)V",
+      "javascript_method": "addScore$1",
+      "file": "js/MainProgram.js",
+      "bytecode_sha256": "15c1a9af3c061d19941f1d84727e35db30c60b215ffc07864c271d690e9a02fc",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "MainProgram",
+      "java_method": "addSerifu",
+      "java_descriptor": "(III)V",
+      "javascript_method": "addSerifu$3",
+      "file": "js/MainProgram.js",
+      "bytecode_sha256": "23b5433900c2277efe49349b262b90851f4475bfd4925d77f2c7e4a0ae41613f",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "MainProgram",
+      "java_method": "addSerifuGym",
+      "java_descriptor": "(III)V",
+      "javascript_method": "addSerifuGym$3",
+      "file": "js/MainProgram.js",
+      "bytecode_sha256": "dcc38f4ed9bfab7a818b193ce4dc72dad9a06abcc04c1acdeccde1bc919f4540",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "MainProgram",
+      "java_method": "moveGameCounter",
+      "java_descriptor": "()V",
+      "javascript_method": "moveGameCounter$0",
+      "file": "js/MainProgram.js",
+      "bytecode_sha256": "9194b534efae40b1eb96f39f899f0de77e2ef68cc2c3a60722105785fe422b0f",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "MainProgram",
+      "java_method": "mainLoop",
+      "java_descriptor": "()V",
+      "javascript_method": "mainLoop$0",
+      "file": "js/MainProgram.js",
+      "bytecode_sha256": "3f670fb53508ed3ac87b8e6e40f450ec44e7857bada8f6575c127feaa7d2c9c2",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "MainProgram",
+      "java_method": "mL100",
+      "java_descriptor": "()V",
+      "javascript_method": "mL100$0",
+      "file": "js/MainProgram.js",
+      "bytecode_sha256": "50677a4a0800362836ce1ef8bb384181c7427c195d57382cfe65ffe960822d67",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "MainProgram",
+      "java_method": "mL150",
+      "java_descriptor": "()V",
+      "javascript_method": "mL150$0",
+      "file": "js/MainProgram.js",
+      "bytecode_sha256": "433e7fc8f2660d8311350dc0ee412b70837c23d7fde36864cd9e3945445bf57d",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "MainProgram",
+      "java_method": "mL160",
+      "java_descriptor": "()V",
+      "javascript_method": "mL160$0",
+      "file": "js/MainProgram.js",
+      "bytecode_sha256": "bdbe8311cc44c1a782da46d846b5ef850feee1a04a6ebe8cd6d9ee0636b5a9f5",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "MainProgram",
+      "java_method": "init2",
+      "java_descriptor": "()V",
+      "javascript_method": "init2$0",
+      "file": "js/MainProgram.js",
+      "bytecode_sha256": "85fc65520b759b06f7f4b96cd3ec66ac95ab0cfce8f7a68cf7868226f4b512ac",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "MainProgram",
+      "java_method": "init3",
+      "java_descriptor": "()V",
+      "javascript_method": "init3$0",
+      "file": "js/MainProgram.js",
+      "bytecode_sha256": "f7580d7ce0e6bf21c61de287603a120229b7e0cdc905172af829184a19ba7597",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "MainProgram",
+      "java_method": "init4",
+      "java_descriptor": "()V",
+      "javascript_method": "init4$0",
+      "file": "js/MainProgram.js",
+      "bytecode_sha256": "38c2a9588353a5fd84b6b01cbed31c75d1de042bac11ca165269465b13f08a4b",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "MainProgram",
+      "java_method": "copyMonsterObject",
+      "java_descriptor": "(LMonsterObject;LMonsterObject;)V",
+      "javascript_method": "copyMonsterObject$2",
+      "file": "js/MainProgram.js",
+      "bytecode_sha256": "480a2874ad6f1b37760a107700db5e619786246ef268c70adb8f06485144b3eb",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "MainProgram",
+      "java_method": "mapsMakeStageData",
+      "java_descriptor": "(I)V",
+      "javascript_method": "mapsMakeStageData$1",
+      "file": "js/MainProgram.js",
+      "bytecode_sha256": "b328bbf80296a9815e0564444e6a51e000f0eea68ac08b129ace2d06cdfe856e",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "MainProgram",
+      "java_method": "setStagecolor",
+      "java_descriptor": "(I)V",
+      "javascript_method": "setStagecolor$1",
+      "file": "js/MainProgram.js",
+      "bytecode_sha256": "902adb6e71485fce95c73ae296831499a6d0e4b6340559bcfa420ac64351e0b6",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "MainProgram",
+      "java_method": "drawGamescreen",
+      "java_descriptor": "()V",
+      "javascript_method": "drawGamescreen$0",
+      "file": "js/MainProgram.js",
+      "bytecode_sha256": "ccfb26730c64b4fc4b9e20037ba2add4ace2fe156ff41ab79a8d07890d97a685",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "MainProgram",
+      "java_method": "jMove",
+      "java_descriptor": "()V",
+      "javascript_method": "jMove$0",
+      "file": "js/MainProgram.js",
+      "bytecode_sha256": "3528ece82ce29275b50b1284cc42f076969dbed4903a5592093946c70ee75f6c",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "MainProgram",
+      "java_method": "jM1000",
+      "java_descriptor": "()V",
+      "javascript_method": "jM1000$0",
+      "file": "js/MainProgram.js",
+      "bytecode_sha256": "c63d45f02a209a6d31aa70467dee3f6c5a66f90747f5e7627f6e5ba9236dcc27",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "MainProgram",
+      "java_method": "csMove",
+      "java_descriptor": "()V",
+      "javascript_method": "csMove$0",
+      "file": "js/MainProgram.js",
+      "bytecode_sha256": "e5860b0f07f2689aca550224fb8f9d17aecf58b5ea505298449999bf43e753e5",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "MainProgram",
+      "java_method": "pMove",
+      "java_descriptor": "()V",
+      "javascript_method": "pMove$0",
+      "file": "js/MainProgram.js",
+      "bytecode_sha256": "ce6cda69ccd4f12ba564ef2c8720f5445579539b3cde992819612c7ced7a9804",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "MainProgram",
+      "java_method": "pWazaC",
+      "java_descriptor": "(LMonsterObject;III)V",
+      "javascript_method": "pWazaC$4",
+      "file": "js/MainProgram.js",
+      "bytecode_sha256": "08d4c8ecb0b23a89fd19c4b4173c41050a59bfcf4eef84db0fe97324b83bab89",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "MainProgram",
+      "java_method": "pWazaK",
+      "java_descriptor": "(LMonsterObject;III)V",
+      "javascript_method": "pWazaK$4",
+      "file": "js/MainProgram.js",
+      "bytecode_sha256": "40e2cf416a19d2e3ebec7e692b9018797ec84fb7ce0ac876c1b669977755eb62",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "MainProgram",
+      "java_method": "pSearch",
+      "java_descriptor": "(III)I",
+      "javascript_method": "pSearch$3",
+      "file": "js/MainProgram.js",
+      "bytecode_sha256": "82026b6206514734685656b22f2091196abb14fcbebeeb608c2545e6f46efe84",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "MainProgram",
+      "java_method": "wSet",
+      "java_descriptor": "(III)V",
+      "javascript_method": "wSet$3",
+      "file": "js/MainProgram.js",
+      "bytecode_sha256": "d5e186b7da26c114d3d4964a8d6981b5422c5044846b90a2568621e8f8038472",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "MainProgram",
+      "java_method": "wSetGym",
+      "java_descriptor": "(IIII)V",
+      "javascript_method": "wSetGym$4",
+      "file": "js/MainProgram.js",
+      "bytecode_sha256": "5e49476d2b5ed23fd36be824163844be22684dd93d95eacfc765682bad90e04e",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "MainProgram",
+      "java_method": "wSetGymFromPet",
+      "java_descriptor": "(II)V",
+      "javascript_method": "wSetGymFromPet$2",
+      "file": "js/MainProgram.js",
+      "bytecode_sha256": "7526d7cff88e39e66d5a6d473e5ae9b14fe83025f036be5f1056b96280cd3f72",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "MainProgram",
+      "java_method": "wMove",
+      "java_descriptor": "()V",
+      "javascript_method": "wMove$0",
+      "file": "js/MainProgram.js",
+      "bytecode_sha256": "1037eaf8e489b11e4209d4e37faf480781a7bee85b1747febbf22fa70d3ef72e",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "MainProgram",
+      "java_method": "wSearch",
+      "java_descriptor": "(III)I",
+      "javascript_method": "wSearch$3",
+      "file": "js/MainProgram.js",
+      "bytecode_sha256": "ff55a4e810385eb5ca38802f93631323cd98f38bb33ca42a1e64740d23fd8f8b",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "MainProgram",
+      "java_method": "wWazaSyateiC",
+      "java_descriptor": "(IIII)I",
+      "javascript_method": "wWazaSyateiC$4",
+      "file": "js/MainProgram.js",
+      "bytecode_sha256": "c5019c65f9fa209904b944a929c2837a83c2fea9f95f9436bc2eee3f9eb21fb9",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "MainProgram",
+      "java_method": "wWazaSyateiK",
+      "java_descriptor": "(IIII)I",
+      "javascript_method": "wWazaSyateiK$4",
+      "file": "js/MainProgram.js",
+      "bytecode_sha256": "5ea13adf8d59ec759f8dfdd148b980b060f0435e46040ba6d366d117ab9b0d33",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "MainProgram",
+      "java_method": "wWazaC",
+      "java_descriptor": "(LMonsterObject;IIII)V",
+      "javascript_method": "wWazaC$5",
+      "file": "js/MainProgram.js",
+      "bytecode_sha256": "540b137bb5f886627db4d4c4bce044ae8fe082ad218426b282c478f4123d1894",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "MainProgram",
+      "java_method": "wWazaK",
+      "java_descriptor": "(LMonsterObject;IIII)V",
+      "javascript_method": "wWazaK$5",
+      "file": "js/MainProgram.js",
+      "bytecode_sha256": "a33ed67dc90c33512e96a594e82b97ab66adf5e8f564e5e4170b08f2a27b0cc4",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "MainProgram",
+      "java_method": "taiatariHantei",
+      "java_descriptor": "()V",
+      "javascript_method": "taiatariHantei$0",
+      "file": "js/MainProgram.js",
+      "bytecode_sha256": "e57a4a47be38ace0166190c47e195ea9a2501048be9bab20f187b3fc099b3b11",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "MainProgram",
+      "java_method": "aisyoukouka",
+      "java_descriptor": "(IILjava/lang/String;I)I",
+      "javascript_method": "aisyoukouka$4",
+      "file": "js/MainProgram.js",
+      "bytecode_sha256": "38b940616e5258aa36c969bec9a36b8245e33d36ccb6db4df42ad7fadfaf796e",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "MainProgram",
+      "java_method": "aisyoukoukaW",
+      "java_descriptor": "(II)I",
+      "javascript_method": "aisyoukoukaW$2",
+      "file": "js/MainProgram.js",
+      "bytecode_sha256": "ab8e3c286f4abec6d199bf69dbb9fd9de0114eabe4578f90fc4771725f8f5a04",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "MainProgram",
+      "java_method": "wHaniDmage",
+      "java_descriptor": "(IIIILjava/lang/String;I)V",
+      "javascript_method": "wHaniDmage$6",
+      "file": "js/MainProgram.js",
+      "bytecode_sha256": "0b081775ebb1a63cbd7ef9b2293f184316cec447f9b43a7dd4904884fbae1eb8",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "MainProgram",
+      "java_method": "pHaniDmage",
+      "java_descriptor": "(IIII)V",
+      "javascript_method": "pHaniDmage$4",
+      "file": "js/MainProgram.js",
+      "bytecode_sha256": "21c6b26387087f6eab2b2fc0d3c8604ab669efdc9d92748a8085d2849dccebf9",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "MainProgram",
+      "java_method": "mSet",
+      "java_descriptor": "(IIIIIIIII)V",
+      "javascript_method": "mSet$9",
+      "file": "js/MainProgram.js",
+      "bytecode_sha256": "9ce804151590f04cefe687494eea45950a9d2b9ec3220d03d969321f18b8045e",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "MainProgram",
+      "java_method": "mSetNeraiuchi",
+      "java_descriptor": "(IIIIIIIIII)V",
+      "javascript_method": "mSetNeraiuchi$10",
+      "file": "js/MainProgram.js",
+      "bytecode_sha256": "2602588c4294544b674618ec629e9d972fe42c6e351a3b6b1273fcad709cc7e8",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "MainProgram",
+      "java_method": "mSetKakudouchi",
+      "java_descriptor": "(IIIIIIIIII)V",
+      "javascript_method": "mSetKakudouchi$10",
+      "file": "js/MainProgram.js",
+      "bytecode_sha256": "a89c9bca9139b5a379d9de5940a9dcde5f059a5a7b2a8387f1f602fae8186269",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "MainProgram",
+      "java_method": "mMove",
+      "java_descriptor": "()V",
+      "javascript_method": "mMove$0",
+      "file": "js/MainProgram.js",
+      "bytecode_sha256": "5829cc7873c1e0e963fef2e54abd9a01da02bed7b698f97bfde552a72d58103e",
+      "declaration_verified": true,
+      "port_style": "direct JavaScript branch state machine"
+    },
+    {
+      "class": "MainProgram",
+      "java_method": "wDmage",
+      "java_descriptor": "(LMonsterObject;I)V",
+      "javascript_method": "wDmage$2",
+      "file": "js/MainProgram.js",
+      "bytecode_sha256": "aade54d1f486a1acd657495563cc5919d6e7d0f009061060f82d56e310e687cf",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "MainProgram",
+      "java_method": "dtMove",
+      "java_descriptor": "()V",
+      "javascript_method": "dtMove$0",
+      "file": "js/MainProgram.js",
+      "bytecode_sha256": "4d429dbb4072eb4fab1372c6b942f368c00bf588478b3711ef17f2d9c8731d36",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "MainProgram",
+      "java_method": "itemInit",
+      "java_descriptor": "()V",
+      "javascript_method": "itemInit$0",
+      "file": "js/MainProgram.js",
+      "bytecode_sha256": "d2dd14acb24c8045e0fcd68a13107e40fb248e4b680793f233374ec867771eff",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "MainProgram",
+      "java_method": "itemAddItem",
+      "java_descriptor": "(I)V",
+      "javascript_method": "itemAddItem$1",
+      "file": "js/MainProgram.js",
+      "bytecode_sha256": "5e21e829271fa152cce80d7d5533897b9c90d10d6cba4be57f8e0b43ac89ad5b",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "MainProgram",
+      "java_method": "itemDelItem",
+      "java_descriptor": "(I)V",
+      "javascript_method": "itemDelItem$1",
+      "file": "js/MainProgram.js",
+      "bytecode_sha256": "7c8d2b480c95bbe97d86b8e4008077d0c134454200f4b9194581cec48604a820",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "MainProgram",
+      "java_method": "itemNarabikae",
+      "java_descriptor": "()V",
+      "javascript_method": "itemNarabikae$0",
+      "file": "js/MainProgram.js",
+      "bytecode_sha256": "c001596de59358afb936e7c04063f06ea30e82a947726216c11acb07dfa6bc84",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "MainProgram",
+      "java_method": "itemGetKazu",
+      "java_descriptor": "()I",
+      "javascript_method": "itemGetKazu$0",
+      "file": "js/MainProgram.js",
+      "bytecode_sha256": "c9515242460197102ac0a3b0e28fc338729b1c3253994c6d8e6b00215e58d59d",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "MapSystem",
+      "java_method": "<init>",
+      "java_descriptor": "(IILGameGraphics;)V",
+      "javascript_method": "constructor",
+      "file": "js/MapSystem.js",
+      "bytecode_sha256": "f8769240daa36959391e66d457c7a63b99034d62bfae11fbdcbfae7991fa4531",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "MapSystem",
+      "java_method": "init",
+      "java_descriptor": "()V",
+      "javascript_method": "init$0",
+      "file": "js/MapSystem.js",
+      "bytecode_sha256": "e8513f9c25db5fe6a1f0732c8ab8a36e50ebcadf7bffb2087bb869bb230f7068",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "MapSystem",
+      "java_method": "setBank",
+      "java_descriptor": "(I)V",
+      "javascript_method": "setBank$1",
+      "file": "js/MapSystem.js",
+      "bytecode_sha256": "0dafe4182095bf25dafc3d2fcd98dbbed624ccf88e990813323f66c0de0e5e9b",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "MapSystem",
+      "java_method": "drawMap",
+      "java_descriptor": "(II)V",
+      "javascript_method": "drawMap$2",
+      "file": "js/MapSystem.js",
+      "bytecode_sha256": "3675414e26cb6e52c26bcbd1814b41ebf6f8d38d4dfbc0ca60ad1e4cc449c13b",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "MapSystem",
+      "java_method": "drawMapScroll",
+      "java_descriptor": "(I)V",
+      "javascript_method": "drawMapScroll$1",
+      "file": "js/MapSystem.js",
+      "bytecode_sha256": "fbde0f72aba78bf806ea70e9027feea468c0179514a74934cf4293fe95e653dd",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "MapSystem",
+      "java_method": "getBGCode",
+      "java_descriptor": "(II)I",
+      "javascript_method": "getBGCode$2",
+      "file": "js/MapSystem.js",
+      "bytecode_sha256": "b651267ff3696cba514125c93f16758add25355b7744ec219a0a79c34b1cfcc7",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "MapSystem",
+      "java_method": "putBGCode",
+      "java_descriptor": "(III)V",
+      "javascript_method": "putBGCode$3",
+      "file": "js/MapSystem.js",
+      "bytecode_sha256": "3addb3ea5d04a552691b5f13779183025d72227bafef9b7fac079cf56631d369",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "MessageBox",
+      "java_method": "<init>",
+      "java_descriptor": "(ILjava/lang/String;Ljava/awt/Frame;)V",
+      "javascript_method": "constructor",
+      "file": "js/MessageBox.js",
+      "bytecode_sha256": "c646bd566086a051eb188696c9865c53f7478f70d56f71cf337e3a6fd6dd4ccc",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "MessageBox",
+      "java_method": "open",
+      "java_descriptor": "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V",
+      "javascript_method": "open$3",
+      "file": "js/MessageBox.js",
+      "bytecode_sha256": "74d5b9bfb152a6c576a6bc15ac687f14c94adc3594de9fccd5e13770ff419561",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "MessageBox",
+      "java_method": "getSelectedIndex",
+      "java_descriptor": "()I",
+      "javascript_method": "getSelectedIndex$0",
+      "file": "js/MessageBox.js",
+      "bytecode_sha256": "a28e7b692c91b70e79af8e400c2e9b52bdbb4dceb93b8402f699cef2a52cf3aa",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "MessageBox",
+      "java_method": "actionPerformed",
+      "java_descriptor": "(Ljava/awt/event/ActionEvent;)V",
+      "javascript_method": "actionPerformed$1",
+      "file": "js/MessageBox.js",
+      "bytecode_sha256": "9893c840859f65a3b490952e10ccab3aac50dc92ac644d5d686eda1490ccc3bd",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "MessageBox",
+      "java_method": "windowOpened",
+      "java_descriptor": "(Ljava/awt/event/WindowEvent;)V",
+      "javascript_method": "windowOpened$1",
+      "file": "js/MessageBox.js",
+      "bytecode_sha256": "149488d869cbef080602a371ab0d39d97af103fb726aaeb02ccd36c06f494e5d",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "MessageBox",
+      "java_method": "windowClosed",
+      "java_descriptor": "(Ljava/awt/event/WindowEvent;)V",
+      "javascript_method": "windowClosed$1",
+      "file": "js/MessageBox.js",
+      "bytecode_sha256": "149488d869cbef080602a371ab0d39d97af103fb726aaeb02ccd36c06f494e5d",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "MessageBox",
+      "java_method": "windowIconified",
+      "java_descriptor": "(Ljava/awt/event/WindowEvent;)V",
+      "javascript_method": "windowIconified$1",
+      "file": "js/MessageBox.js",
+      "bytecode_sha256": "149488d869cbef080602a371ab0d39d97af103fb726aaeb02ccd36c06f494e5d",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "MessageBox",
+      "java_method": "windowDeiconified",
+      "java_descriptor": "(Ljava/awt/event/WindowEvent;)V",
+      "javascript_method": "windowDeiconified$1",
+      "file": "js/MessageBox.js",
+      "bytecode_sha256": "149488d869cbef080602a371ab0d39d97af103fb726aaeb02ccd36c06f494e5d",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "MessageBox",
+      "java_method": "windowActivated",
+      "java_descriptor": "(Ljava/awt/event/WindowEvent;)V",
+      "javascript_method": "windowActivated$1",
+      "file": "js/MessageBox.js",
+      "bytecode_sha256": "149488d869cbef080602a371ab0d39d97af103fb726aaeb02ccd36c06f494e5d",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "MessageBox",
+      "java_method": "windowDeactivated",
+      "java_descriptor": "(Ljava/awt/event/WindowEvent;)V",
+      "javascript_method": "windowDeactivated$1",
+      "file": "js/MessageBox.js",
+      "bytecode_sha256": "149488d869cbef080602a371ab0d39d97af103fb726aaeb02ccd36c06f494e5d",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "MessageBox",
+      "java_method": "windowClosing",
+      "java_descriptor": "(Ljava/awt/event/WindowEvent;)V",
+      "javascript_method": "windowClosing$1",
+      "file": "js/MessageBox.js",
+      "bytecode_sha256": "a0083afca0a5d45908c4eab0deed8b8c928d5ccfd219447c6e7945a4915a7186",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "MonsterObject",
+      "java_method": "<init>",
+      "java_descriptor": "()V",
+      "javascript_method": "constructor",
+      "file": "js/MonsterObject.js",
+      "bytecode_sha256": "ef6f9cc281fb9ab5a02b084c47cf54dccb428ab1b592b1398534ddb50eab204d",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "MonsterObject",
+      "java_method": "init",
+      "java_descriptor": "()V",
+      "javascript_method": "init$0",
+      "file": "js/MonsterObject.js",
+      "bytecode_sha256": "1bfd561872038fbea0fcc76160a71d12f682d013970005d8fb4774058d2fa080",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "MonsterObject",
+      "java_method": "initSyurui",
+      "java_descriptor": "(ILMainProgram;)V",
+      "javascript_method": "initSyurui$2",
+      "file": "js/MonsterObject.js",
+      "bytecode_sha256": "c8b7c2ae525fb529bbaa196d4ea1946a9db17d848cd8e631ee4e63deeeccddc9",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "MonsterObject",
+      "java_method": "addHP",
+      "java_descriptor": "(I)V",
+      "javascript_method": "addHP$1",
+      "file": "js/MonsterObject.js",
+      "bytecode_sha256": "f93691aa17ac222e3888f684426f167a662d3383fb2b5764c2d43b721083b908",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "MonsterObject",
+      "java_method": "delHP",
+      "java_descriptor": "(I)V",
+      "javascript_method": "delHP$1",
+      "file": "js/MonsterObject.js",
+      "bytecode_sha256": "92f33d71d12899fc5cf3960973b71ac068548b47f6bca711305017f4d5cc7388",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "MonsterObject",
+      "java_method": "addPP",
+      "java_descriptor": "(I)V",
+      "javascript_method": "addPP$1",
+      "file": "js/MonsterObject.js",
+      "bytecode_sha256": "debfec7b2953f0243a18e197c43628c6b9ddff235fa43f205b346c8ebb7622d0",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "MonsterObject",
+      "java_method": "delPP",
+      "java_descriptor": "(I)V",
+      "javascript_method": "delPP$1",
+      "file": "js/MonsterObject.js",
+      "bytecode_sha256": "d80942c2a899cae3bcda9c1dd4bf454ecc061883fb179583ad4827ff8fae5485",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "MonsterObject",
+      "java_method": "setLevel",
+      "java_descriptor": "(I)V",
+      "javascript_method": "setLevel$1",
+      "file": "js/MonsterObject.js",
+      "bytecode_sha256": "47763929fae1676bf4e28e2811497993bdddf0fe122555b45a1a49497f938da9",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "MonsterObject",
+      "java_method": "insertWaza",
+      "java_descriptor": "(ILjava/lang/String;)V",
+      "javascript_method": "insertWaza$2",
+      "file": "js/MonsterObject.js",
+      "bytecode_sha256": "03dad9e339b430e5b9496c657b5aef685a26e2b6c2fd6111c86eda16d4fdb904",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "PetMon2",
+      "java_method": "<init>",
+      "java_descriptor": "()V",
+      "javascript_method": "constructor",
+      "file": "js/PetMon2.js",
+      "bytecode_sha256": "f3803ce36d1489ca13a14b5edd9a29d18ae844a1dfbe77cf00f4c0f3024c1615",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "PetMon2",
+      "java_method": "init",
+      "java_descriptor": "()V",
+      "javascript_method": "init$0",
+      "file": "js/PetMon2.js",
+      "bytecode_sha256": "149488d869cbef080602a371ab0d39d97af103fb726aaeb02ccd36c06f494e5d",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "PetMon2",
+      "java_method": "start",
+      "java_descriptor": "()V",
+      "javascript_method": "start$0",
+      "file": "js/PetMon2.js",
+      "bytecode_sha256": "86c4822a2fd0535a443442bb8e57fb6bbe0f0d24f0ce865eb79c3275f8558303",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "PetMon2",
+      "java_method": "stop",
+      "java_descriptor": "()V",
+      "javascript_method": "stop$0",
+      "file": "js/PetMon2.js",
+      "bytecode_sha256": "b257748af409307c65b3acef8591df124b45eb2478c7ff28980f8284e40d3a8b",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "PetMon2",
+      "java_method": "destroy",
+      "java_descriptor": "()V",
+      "javascript_method": "destroy$0",
+      "file": "js/PetMon2.js",
+      "bytecode_sha256": "149488d869cbef080602a371ab0d39d97af103fb726aaeb02ccd36c06f494e5d",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "PetMon2",
+      "java_method": "paint",
+      "java_descriptor": "(Ljava/awt/Graphics;)V",
+      "javascript_method": "paint$1",
+      "file": "js/PetMon2.js",
+      "bytecode_sha256": "cff1ba727d6d010f029d88587507a8cb2b28ec02dbc960148f4bbb7a51e49067",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "PetMon2",
+      "java_method": "update",
+      "java_descriptor": "(Ljava/awt/Graphics;)V",
+      "javascript_method": "update$1",
+      "file": "js/PetMon2.js",
+      "bytecode_sha256": "5c1182d92c9e7df89fa333cebf10a556e22772852470103a19cdb42fdc33e6f0",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "PetMon2",
+      "java_method": "run",
+      "java_descriptor": "()V",
+      "javascript_method": "run$0",
+      "file": "js/PetMon2.js",
+      "bytecode_sha256": "f99096a602aeb95e64b153fc0f6ff377579867e44b1af1ed4518d4faf7ae142f",
+      "declaration_verified": true,
+      "port_style": "browser lifecycle adapter"
+    },
+    {
+      "class": "PetMon2",
+      "java_method": "init1",
+      "java_descriptor": "()V",
+      "javascript_method": "init1$0",
+      "file": "js/PetMon2.js",
+      "bytecode_sha256": "d0d29cff9d5731eebc15f658a5b58b35740c7b0b134535a808ab40c6f11ed6df",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    },
+    {
+      "class": "PetMon2",
+      "java_method": "rguiMove",
+      "java_descriptor": "()V",
+      "javascript_method": "rguiMove$0",
+      "file": "js/PetMon2.js",
+      "bytecode_sha256": "d19faa9582d7026d74746be6a53b15889b5b580b0e0d357befbb95f928c60617",
+      "declaration_verified": true,
+      "port_style": "direct structure-preserving JavaScript"
+    }
+  ],
+  "assets": [
+    {
+      "file": "g_map.png",
+      "sha256": "3b2a5e0fe9a863c1b9a687446cdadcb6edec3b6fcf93ebdce61ff0ff41489371",
+      "bytes": 122750
+    },
+    {
+      "file": "gym.gif",
+      "sha256": "3896168a19c4de7c6f15d70977fa9cf4fdae4fea5d60ad52b920cd92ee12e42b",
+      "bytes": 4155
+    },
+    {
+      "file": "ending.gif",
+      "sha256": "e0891c17f753ee73da9cef8dc875ad49c7c6e954a0065495fec7afccbcc7f516",
+      "bytes": 7155
+    },
+    {
+      "file": "g_.png",
+      "sha256": "914d44cb205687ad4388c841149a6952ea52f37dd6b9098ea75c9c736b5cff41",
+      "bytes": 47432
+    },
+    {
+      "file": "g_o.gif",
+      "sha256": "1928dcd82f86176ddd1c2d3232e2dfa55aed0f7be941be19c64894dbf0978179",
+      "bytes": 60754
+    },
+    {
+      "file": "pattern.bmp",
+      "sha256": "7f68b5107cd2022fa023ebf51f053a649c3ce19b2899e07a9b2f957943c9f1f8",
+      "bytes": 308278
+    },
+    {
+      "file": "clear.png",
+      "sha256": "b5a80ff2e7821fff40d228ed7fbbf17c4a5d77c717939b74d0e7ae4be4fe1c9d",
+      "bytes": 6565
+    },
+    {
+      "file": "t_.png",
+      "sha256": "d2d6859ec4d3cdf429cdfddecd928ce9313314470c189589492ed8d0d2321f02",
+      "bytes": 150472
+    },
+    {
+      "file": "clear_.png",
+      "sha256": "a52b9228895f6890c7cb9ea33ca5ff24de4262e97853d7abb8bdb6c1cfd0855f",
+      "bytes": 9212
+    },
+    {
+      "file": "g_o.png",
+      "sha256": "4cad4cbf9d7f90136a318c8cda4de7d2ad85624a358618954df6c3832534fe8e",
+      "bytes": 85244
+    },
+    {
+      "file": "title.gif",
+      "sha256": "2d19cd458b1be1154818079bcb86992d74546738cb4cb5de6cd8b11ba809c8c7",
+      "bytes": 20654
+    },
+    {
+      "file": "pattern.gif",
+      "sha256": "8f10a818f153352a0403cfd29b8207206628f4de6c24b3e68240a1c3987882ff",
+      "bytes": 40323
+    },
+    {
+      "file": "g.gif",
+      "sha256": "28d7e006bccd73611075594577e82eb724092223d77391f66086ce04e2dc7d96",
+      "bytes": 61865
+    },
+    {
+      "file": "gym2.gif",
+      "sha256": "727668fedf0bce266209ec2a445fc97d7c00c3f162fccb80be2cd8c831deca80",
+      "bytes": 47029
+    },
+    {
+      "file": "sector518887.gif",
+      "sha256": "d97cc0a24963fb1e766bb896016cbb3a99591d02467ecdee176b2c23aa04a84e",
+      "bytes": 45808
+    },
+    {
+      "file": "g_gym.gif",
+      "sha256": "052f6130a48250e2e936adc39816e525295caab64b54de3e3ef5865bfa856557",
+      "bytes": 6787
+    },
+    {
+      "file": "gameover.gif",
+      "sha256": "14bb4441e12793977f93e8f076817096049e1529a818b632e324be9b392f7eee",
+      "bytes": 5869
+    },
+    {
+      "file": "t.pdn",
+      "sha256": "e5daad8a7dae0f3f2b79fe828c398b2b4ecc0b3b4321c49a3b8209547d00ac06",
+      "bytes": 404897
+    },
+    {
+      "file": "g_gym.png",
+      "sha256": "dd1e26bf34c7d298538337c2f13be6f07a5ef68f06096db4eb2ccb187ff0787f",
+      "bytes": 5563
+    },
+    {
+      "file": "chizu.gif",
+      "sha256": "585a75cefc213e2f88c3d14fd97731ab636b26752da3dd4102bd9aae48573a09",
+      "bytes": 1742
+    },
+    {
+      "file": "petmon.txt",
+      "sha256": "156fcbb1fee02efb23081d0db20035dfdcaa1972fb700506a63fd0179b498915",
+      "bytes": 14436
+    },
+    {
+      "file": "g.png",
+      "sha256": "e148710d5583cb7fe7ecb51853010b1c636459b25cf5a8e818d091ba7e9c72c7",
+      "bytes": 86226
+    },
+    {
+      "file": "t.png",
+      "sha256": "6475afa1dd1ba7fdf1a4d16d6acd52a473f7292e265e742f8f9793bcc93d8b69",
+      "bytes": 133711
+    },
+    {
+      "file": "g_map.pdn",
+      "sha256": "053d69f2c99cf41c95866ada1fc74eae64036ec0a715c628e50f9534f59b572b",
+      "bytes": 183630
+    },
+    {
+      "file": "h.png",
+      "sha256": "39be6db7b26435f9766c81cb03be53f0f569818dd076fabdbfe8e6e554484b03",
+      "bytes": 268
+    }
+  ],
+  "params": {
+    "index.html": 188,
+    "index2.html": 188,
+    "index_con.html": 417,
+    "index_shiai2.html": 66,
+    "index_kodai.html": 410,
+    "index_race.html": 88,
+    "index_shiai.html": 66
+  },
+  "runtime_dependencies": [
+    "HTML5 Canvas",
+    "KeyboardEvent",
+    "PointerEvent",
+    "native HTML dialog",
+    "JavaScript"
+  ],
+  "external_scripts": 0,
+  "java_classes_in_distribution": 0,
+  "bytecode_loaded_at_runtime": false,
+  "mMove_original_instructions": 5780
+}
