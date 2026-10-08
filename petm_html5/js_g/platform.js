@@ -36,7 +36,7 @@ class CanvasGraphics {
  constructor(canvas){this.canvas=canvas;this.ctx=canvas.getContext('2d',{willReadFrequently:true});this.ctx.imageSmoothingEnabled=false;this.setColor(Color.black);this.setFont(new Font('Dialog',0,12));}
  setColor(c){if(!c)return;this.color=c;this.ctx.fillStyle=this.ctx.strokeStyle=c.css;}
  setFont(f){if(!f)return;this.font=f;this.ctx.font=`${f.style&2?'italic ':''}${f.style&1?'bold ':''}${f.size}px "MS Gothic", "ＭＳ ゴシック", "Noto Sans CJK JP", "PetMonsterJP", monospace`;this.ctx.textBaseline='alphabetic';}
- fillRect(x,y,w,h){this.ctx.fillRect(Math.trunc(x),Math.trunc(y),Math.trunc(w),Math.trunc(h));}
+ fillRect(x,y,w,h){w=Math.trunc(w);h=Math.trunc(h);if(w<=0||h<=0)return;this.ctx.fillRect(Math.trunc(x),Math.trunc(y),w,h);}
  drawString(s,x,y){if(s==null)throw new TypeError('Null drawString argument');this.ctx.fillText(String(s),Math.trunc(x),Math.trunc(y));}
  drawImage(img,x,y,...rest){if(!img)return false;let src=img.canvas||img;this.ctx.drawImage(src,Math.trunc(x),Math.trunc(y));return true;}
  drawOval(x,y,w,h){if(w<0||h<0)return;this.ctx.beginPath();this.ctx.ellipse(x+w/2+0.5,y+h/2+0.5,w/2,h/2,0,0,Math.PI*2);this.ctx.stroke();}
