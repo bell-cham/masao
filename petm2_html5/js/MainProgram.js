@@ -13271,29 +13271,48 @@ if ((monsterObject.c1 >= 170)) {
 (monsterObject.pth = 1);
 break;
 }
-case 15120:
-{
-(monsterObject.vy = ((monsterObject.vy + 25) | 0));
-if ((monsterObject.vy > 180)) {
-(monsterObject.vy = 180);
-}
-if (((monsterObject.vy > 0) && ((n5 = ((n5 + J.div(monsterObject.vy, 10)) | 0)) >= monsterObject.positionY))) {
-(n5 = monsterObject.positionY);
-(monsterObject.vx = 0);
-(monsterObject.c = 15100);
-(monsterObject.c1 = -20);
-(monsterObject.move_wc = 30);
-(this.jishin_c = 1);
-this.mSet$9(n4, n5, 1700, -150, 0, 1, monsterObject.zokusei, monsterObject.ap, n3);
-monsterObject.delPP$1(14);
-}
-if ((n5 >= this.ochiru_y)) {
-(monsterObject.syurui = 0);
-(monsterObject.c = 0);
-}
-(monsterObject.pt = monsterObject.spt[0]);
-(monsterObject.pth = monsterObject.muki);
-break;
+case 15120: {
+    monsterObject.vy = (monsterObject.vy + 25) | 0;
+
+    if (monsterObject.vy > 180) {
+        monsterObject.vy = 180;
+    }
+
+    // 上昇中・下降中の両方でY座標を更新する
+    n5 = (n5 + J.div(monsterObject.vy, 10)) | 0;
+
+    // 下降して元の高さに戻ったら、着地して地震を発動する
+    if (monsterObject.vy > 0 && n5 >= monsterObject.positionY) {
+        n5 = monsterObject.positionY;
+        monsterObject.vx = 0;
+        monsterObject.c = 15100;
+        monsterObject.c1 = -20;
+        monsterObject.move_wc = 30;
+        this.jishin_c = 1;
+
+        this.mSet$9(
+            n4,
+            n5,
+            1700,
+            -150,
+            0,
+            1,
+            monsterObject.zokusei,
+            monsterObject.ap,
+            n3
+        );
+
+        monsterObject.delPP$1(14);
+    }
+
+    if (n5 >= this.ochiru_y) {
+        monsterObject.syurui = 0;
+        monsterObject.c = 0;
+    }
+
+    monsterObject.pt = monsterObject.spt[0];
+    monsterObject.pth = monsterObject.muki;
+    break;
 }
 case 15200:
 {
