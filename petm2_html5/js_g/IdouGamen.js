@@ -823,7 +823,7 @@ break;
 }
 this.km.openDialgKakuninBox$5(11, 298, 104, 192, this.mp.name_jyuuisan);
 this.km.addItem$2(11, "ダイアログにモンスターの");
-this.km.addItem$2(11, "パスワードを入力して下さい。");
+this.km.addItem$2(11, "パスワードを入力してください。");
 this.km.active$1(14);
 (this.mp.rgui_text = "");
 (this.mp.rgui_f = false);

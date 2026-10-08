@@ -89,7 +89,7 @@ case 200:
 {
 this.repaint$0();
 (this.mp.rgui_f = false);
-this.mbox_2.open$3("ペットモン２", "ペットのパスワードを入力して下さい。", this.mp.rgui_text);
+this.mbox_2.open$3("ペットモン２", "モンスターのパスワードを入力してください。", this.mp.rgui_text);
 (this.mp.rgui_meirei = 210);
 break;
 }
@@ -97,7 +97,7 @@ case 205:
 {
 this.repaint$0();
 (this.mp.rgui_f = false);
-this.mbox_2.open$3("ペットモン２", "主人公のパスワードを入力して下さい。", this.mp.rgui_text);
+this.mbox_2.open$3("ペットモン２", "主人公のパスワードを入力してください。", this.mp.rgui_text);
 (this.mp.rgui_meirei = 210);
 break;
 }

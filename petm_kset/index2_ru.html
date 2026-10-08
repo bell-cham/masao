@@ -1,0 +1,396 @@
+<HTML>
+
+
+<HEAD>
+
+<TITLE>�y�b�g�����X�^�[�E�I���W�i���Q�[��</TITLE>
+
+</HEAD>
+
+
+<BODY BGCOLOR="gray">
+
+<center>
+<applet code="PetMonster" width="512" height="320" archive="petm_c_.zip" id="applet1_id" mayscript>
+<!--  地図画面         -->
+<!--
+
+  地図画面は、 15 * 9 個のブロックで構成されていて、
+  文字の組み合わせで表現されています。
+
+
+  文字の説明
+
+  .  空白
+  a  クリス
+  b  キド研究所
+  c  ペットセンター
+  d  店
+  e  ジム
+  h  ジムリーダーに勝つと開く扉
+
+  A  ステージ１
+  B  ステージ２
+  C  ステージ３
+
+  1  中継地点
+  2  縦の道
+  3  横の道
+
+-->
+
+<!--                          0         10   -->
+<!--                          012345678901234-->
+<param name="chizu-0" value="...............">
+<param name="chizu-1" value=".A..b33333d33e.">
+<param name="chizu-2" value=".2..2.....2....">
+<param name="chizu-3" value=".2..2.....2....">
+<param name="chizu-4" value=".1331..B331....">
+<param name="chizu-5" value="....2.....2....">
+<param name="chizu-6" value="....2.....2....">
+<param name="chizu-7" value=".a33133c33133C.">
+<param name="chizu-8" value="...............">
+
+
+<!--  背景色    光の３原色の成分で設定します                 -->
+<!--  ステージ１                                             -->
+<!--  赤の成分  (0-255)  -->
+<param name="stage1_backcolor_red" value="0">
+<!--  緑の成分  (0-255)  -->
+<param name="stage1_backcolor_green" value="255">
+<!--  青の成分  (0-255)  -->
+<param name="stage1_backcolor_blue" value="255">
+
+<!--  ステージ２                                             -->
+<!--  赤の成分  (0-255)  -->
+<param name="stage2_backcolor_red" value="0">
+<!--  緑の成分  (0-255)  -->
+<param name="stage2_backcolor_green" value="255">
+<!--  青の成分  (0-255)  -->
+<param name="stage2_backcolor_blue" value="255">
+
+<!--  ステージ３                                             -->
+<!--  赤の成分  (0-255)  -->
+<param name="stage3_backcolor_red" value="0">
+<!--  緑の成分  (0-255)  -->
+<param name="stage3_backcolor_green" value="255">
+<!--  青の成分  (0-255)  -->
+<param name="stage3_backcolor_blue" value="255">
+
+
+<!--  ジム                                                  -->
+<!--  ジムリーダーの名前                                    -->
+<param name="gym_gr_name" value="ダケシ">
+
+<!--  セリフ１                                              -->
+<!--  セリフの不要な行は、 "0" と指定して下さい。           -->
+<param name="gym_serifu1-1" value="オレの名は、ダケシ。石のようにかたい">
+<param name="gym_serifu1-2" value="いしを持つ男だ。">
+<param name="gym_serifu1-3" value="しゅみは、ナンパです。">
+
+<!--  セリフ２                                              -->
+<param name="gym_serifu2-1" value="トレーナーたる者、モンスターには、詳しくなけ">
+<param name="gym_serifu2-2" value="ればならない。５種類以上捕まえて、ずかんの">
+<param name="gym_serifu2-3" value="完成度が上がったら、また来てね。">
+<param name="gym_serifu2-4" value="そしたら、お相手しますよ。">
+
+<!--  セリフ３                                              -->
+<param name="gym_serifu3-1" value="ジム戦には、戦闘可能な状態のペットが、">
+<param name="gym_serifu3-2" value="３匹以上必要なんだ。">
+<param name="gym_serifu3-3" value="準備ができたら、また来てね。">
+<param name="gym_serifu3-4" value="いっしょに、戦いましょう。">
+
+<!--  セリフ４                                              -->
+<param name="gym_serifu4-1" value="今日は、オレの勝ちだったけど、">
+<param name="gym_serifu4-2" value="気を落とす事はないよ。">
+<param name="gym_serifu4-3" value="また、いっしょに戦いましょう。">
+
+<!--  セリフ５                                              -->
+<param name="gym_serifu5-1" value="おねえさん、強いですねえ。">
+<param name="gym_serifu5-2" value="今度いっしょに、ハリー・ポッターでも、">
+<param name="gym_serifu5-3" value="観に行きましょう。">
+
+<!--  セリフ６                                              -->
+<param name="gym_serifu6-1" value="ごめんねー。ジム戦は、１ゲーム中、">
+<param name="gym_serifu6-2" value="３回までなんだよ。">
+
+<!--  セリフ７                                              -->
+<param name="gym_serifu7-1" value="石をも砕く前歯、コラットだ！">
+<param name="gym_serifu7-2" value="石だって食っちゃうぞー。">
+
+<!--  セリフ８                                              -->
+<param name="gym_serifu8-1" value="次は、石よりかたい鳥だ！">
+<param name="gym_serifu8-2" value="かたいぞお。カチンカチンだぞお。">
+
+<!--  セリフ９                                              -->
+<param name="gym_serifu9-1" value="オレの、愛の炎です。">
+<param name="gym_serifu9-2" value="おねえさん、受け取って下さい。">
+
+<!--  セリフ１０                                            -->
+<param name="gym_serifu10-1" value="この扉は、ジムリーダーに勝つと、">
+<param name="gym_serifu10-2" value="開くらしいわよ。">
+
+<!--  挑戦に必要な集めるモンスターの数 (1-12)                -->
+<!--  デフォルトは 5                                         -->
+<param name="gym_tukamaetakazu" value="5">
+
+
+<!--  ジムリーダーのペット１  種類                           -->
+<!--  A  ピカチー                                            -->
+<!--  B  チコリン                                            -->
+<!--  C  コラット                                            -->
+<!--  D  マリリ                                              -->
+<!--  E  ポッピー                                            -->
+<!--  F  ビビーダマ                                          -->
+<!--  G  チレイハナ                                          -->
+<!--  H  ポポコ                                              -->
+<!--  I  ヒノララシ                                          -->
+<!--  J  エアームズ                                          -->
+<!--  K  マメゾウ                                            -->
+<!--  L  マッカルゴ                                          -->
+<!--  M  タイキング                                          -->
+<!--  N  ピチカ（オリジナルモンスター）                      -->
+<param name="gym_pet1" value="C">
+
+<!--  ジムリーダーのペット１  ＨＰのアップ回数 (0-2)         -->
+<param name="gym_pet1_hpup" value="1">
+
+<!--  ジムリーダーのペット１  ＰＰのアップ回数 (0-2)         -->
+<param name="gym_pet1_ppup" value="1">
+
+
+<!--  ジムリーダーのペット２  種類                           -->
+<param name="gym_pet2" value="J">
+
+<!--  ジムリーダーのペット２  ＨＰのアップ回数 (0-2)         -->
+<param name="gym_pet2_hpup" value="1">
+
+<!--  ジムリーダーのペット２  ＰＰのアップ回数 (0-2)         -->
+<param name="gym_pet2_ppup" value="1">
+
+
+<!--  ジムリーダーのペット３  種類                           -->
+<param name="gym_pet3" value="I">
+
+<!--  ジムリーダーのペット３  ＨＰのアップ回数 (0-2)         -->
+<param name="gym_pet3_hpup" value="1">
+
+<!--  ジムリーダーのペット３  ＰＰのアップ回数 (0-2)         -->
+<param name="gym_pet3_ppup" value="1">
+
+
+<!--  ピチカ（オリジナルモンスター）                         -->
+<!--  名前（全角で５文字まで）                               -->
+<param name="pichika_name" value="ピチカ">
+
+<!--  タイプ            0  地上                              -->
+<!--                    1  空中                              -->
+<param name="pichika_type" value="0">
+
+<!--  性別              0  オス                              -->
+<!--                    1  メス                              -->
+<param name="pichika_seibetu" value="0">
+
+<!--  移動速度          0  動けない                          -->
+<!--                    1  遅い                              -->
+<!--                    2  普通                              -->
+<!--                    3  速い                              -->
+<param name="pichika_speed" value="2">
+
+<!--  パスワード        0  ない                              -->
+<!--                    1  ある                              -->
+<param name="pichika_pass" value="1">
+
+<!--  最大ＨＰ (10-120)                                      -->
+<!--  デフォルトは 80                                        -->
+<param name="pichika_hp_max" value="80">
+
+<!--  最大ＰＰ (10-50)                                       -->
+<!--  デフォルトは 40                                        -->
+<param name="pichika_pp_max" value="40">
+
+<!--  体当たり技の名前                                       -->
+<param name="pichika_waza1_name" value="ピカ剣">
+
+<!--  体当たり技の攻撃力 (10-80)                             -->
+<!--  デフォルトは 50                                        -->
+<param name="pichika_waza1_ap" value="50">
+
+<!--  体当たり技の消費ＰＰ (1-50)                            -->
+<!--  デフォルトは 1                                         -->
+<param name="pichika_waza1_pp" value="1">
+
+<!--  マジカルショットの名前                                 -->
+<param name="pichika_waza2_name" value="マジカルショット">
+
+<!--  マジカルショットの攻撃力 (10-50)                       -->
+<!--  デフォルトは 20                                        -->
+<param name="pichika_waza2_ap" value="20">
+
+<!--  マジカルショットの消費ＰＰ (1-50)                      -->
+<!--  デフォルトは 3                                         -->
+<param name="pichika_waza2_pp" value="3">
+
+<!--  つるぎのまいの名前                                     -->
+<param name="pichika_waza3_name" value="つるぎのまい">
+
+<!--  ジャンプ          0  できない                          -->
+<!--                    1  できる                            -->
+<param name="pichika_jump" value="1">
+
+
+<!--  モンスターの名前と技名                                 -->
+<param name="name_pikachii" value="ピカチー">
+<param name="name_pikachii_w1" value="１０まんボルト">
+<param name="name_pikachii_w2" value="でんこうせっか">
+<param name="name_pikachii_w3" value="かみなり">
+
+<param name="name_chikorin" value="チコリン">
+<param name="name_chikorin_w1" value="はっぱカッター">
+<param name="name_chikorin_w2" value="はっぱ乱れ撃ち">
+<param name="name_chikorin_w3" value="ソーラービーム">
+<param name="name_chikorin_w4" value="体当たり">
+
+<param name="name_korat" value="コラット">
+<param name="name_korat_w1" value="体当たり">
+<param name="name_korat_w2" value="ひっさつ前歯">
+
+<param name="name_mariri" value="マリリ">
+<param name="name_mariri_w1" value="みずでっぽう">
+<param name="name_mariri_w2" value="ハイドロポンプ">
+<param name="name_mariri_w3" value="体当たり">
+
+<param name="name_poppie" value="ポッピー">
+<param name="name_poppie_w1" value="かぜおこし">
+<param name="name_poppie_w2" value="ドリルくちばし">
+
+<param name="name_bibidama" value="ビビーダマ">
+<param name="name_bibidama_w1" value="じばく">
+
+<param name="name_chireihana" value="チレイハナ">
+<param name="name_chireihana_w1" value="はなびらのまい">
+<param name="name_chireihana_w2" value="ソーラービーム">
+
+<param name="name_popoko" value="ポポコ">
+<param name="name_popoko_w1" value="ワタゲばくだん">
+<param name="name_popoko_w2" value="回復のワタゲ">
+
+<param name="name_hinorarashi" value="ヒノララシ">
+<param name="name_hinorarashi_w1" value="火炎放射">
+<param name="name_hinorarashi_w2" value="スピードスター">
+<param name="name_hinorarashi_w3" value="体当たり">
+
+<param name="name_airms" value="エアームズ">
+<param name="name_airms_w1" value="ばくげき">
+<param name="name_airms_w2" value="はがねのつばさ">
+
+<param name="name_mamezou" value="マメゾウ">
+<param name="name_mamezou_w1" value="体当たり">
+<param name="name_mamezou_w2" value="突進">
+
+<param name="name_makkalgo" value="マッカルゴ">
+<param name="name_makkalgo_w1" value="火炎放射">
+<param name="name_makkalgo_w2" value="岩落し">
+
+<param name="name_taiking" value="タイキング">
+<param name="name_taiking_w1" value="はねる">
+
+<param name="name_hitodeme" value="ヒトデミー">
+<param name="name_hitodeme_w1" value="みずでっぽう">
+<param name="name_hitodeme_w2" value="ハイドロポンプ">
+
+<param name="name_miu" value="ミウ">
+<param name="name_miu_w1" value="サイコキネシス">
+<param name="name_miu_w2" value="シャドーボール">
+
+
+<!--  クリスの名前                                           -->
+<param name="name_crys" value="クリス">
+
+<!--  キドはかせの名前                                       -->
+<param name="name_kidohakase" value="キドはかせ">
+
+<!--  獣医さんの名前                                         -->
+<param name="name_jyuuisan" value="獣医さん">
+
+<!--  店員さんの名前                                         -->
+<param name="name_teninsan" value="店員さん">
+
+<!--  ドラゴンタクシーの名前                                 -->
+<param name="name_dragontaxy" value="ドラゴンタクシー">
+
+
+<!--  タイトル画面のファイル名                               -->
+<param name="filename_title" value="title.gif">
+
+<!--  エンディング画面のファイル名                           -->
+<param name="filename_ending" value="ending.gif">
+
+<!--  地図画面の背景のファイル名                             -->
+<param name="filename_chizu" value="chizu.gif">
+
+<!--  キャラクターパターンのファイル名                      -->
+<param name="filename_pattern" value="pattern.gif">
+
+
+<!--  システムモード    0  コンストラクション                -->
+<!--                    1  オリジナルゲーム                  -->
+<!--                    2  ラギアス爆誕                      -->
+<param name="system_mode" value="3">
+
+
+</applet>
+</center>
+
+
+<br>
+
+
+
+
+<hr>
+
+
+<h2>キーボード操作</h2>
+
+<dl>
+<dt>（←），（４）
+<dd>左へ歩く
+<dt>（→），（６）
+<dd>右へ歩く
+<dt>（Ｚ）、（スペース）
+<dd>決定ボタン／ジャンプ
+<dt>（Ｘ）
+<dd>キャンセルボタン
+<dt>（↓）、（２）
+<dd>セレクトボタン下、右
+<dt>（↑）、（８）
+<dd>セレクトボタン上、左
+<dt>（Ｊ）
+<dd>選択中のペットに、ジャンプを命令する。
+<dt>（Ｔ）
+<dd>タイトル画面に戻る
+</dl>
+
+<p>ゲーム画面をクリックすると、ゲーム開始です。</p>
+
+<hr>
+
+
+<p>ＢＧＭ配布元</p>
+<dl>
+<dt>taitai studio
+<dd>http://www.taitaistudio.com/
+<dt>Ex-S HP
+<dd>http://page.freett.com/msks13/index.htm
+</dl>
+
+
+<hr>
+<p><a href="https://web.archive.org/web/20160726054547/http://www.t3.rim.or.jp/~naoto/naoto.html">トップページ</a></p>
+
+
+</body>
+
+
+</html>
