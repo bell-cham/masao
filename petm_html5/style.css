@@ -1,0 +1,4 @@
+@font-face{font-family:PetMonsterJP;src:url("NotoSansJP-subset.ttf") format("truetype");font-display:block}
+body{background:gray;color:black;font-family:"Times New Roman",PetMonsterJP,serif}
+canvas{display:inline-block;max-width:100%;height:auto;image-rendering:pixelated;vertical-align:top;touch-action:none;outline:none}
+#load-status:empty{display:none}

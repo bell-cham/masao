@@ -2,12 +2,21 @@
 // Browser replacements for the original Applet/AWT services. No JVM, Java bytecode,
 // WebAssembly, remote runtime, or external scripts are used at play time.
 const J = {
+ equals(s,t){if(s==null)throw new TypeError('Null string receiver');return s===t;},
+ abs(n){return n===-2147483648?n:Math.abs(n);},
+ rem(a,b){if(!b)throw new Error('Integer remainder by zero');return a%b;},
+ inc(get,set,d,post,t){const old=get();let value=(old+d)|0;if(t==='short')value=J.short(value);if(t==='byte')value=J.byte(value);if(t==='char')value&=65535;set(value);return post?old:value;},
  i(v) { if (Number.isNaN(v)) return 0; return Math.max(-2147483648, Math.min(2147483647, Math.trunc(v))); },
  short(v) { return (Math.trunc(v)<<16)>>16; },
  byte(v) { return (Math.trunc(v)<<24)>>24; },
  div(a,b) { if (!b) throw new Error('Integer division by zero'); return Math.trunc(a/b)|0; },
  charAt(s,n) { if(s==null || n<0 || n>=s.length) throw new Error('Character index out of range: '+n); return s.charCodeAt(n); },
- array(ds,value) { return Array.from({length:ds[0]},()=>ds.length>1?J.array(ds.slice(1),value):value); }
+ array(ds,value) {
+  if(ds[0]<0)throw new RangeError('Negative array size');
+  const a=Array.from({length:ds[0]},()=>ds.length>1?J.array(ds.slice(1),value):value);
+  const check=(t,p)=>{if(typeof p==='string' && /^-?\d+$/.test(p) && (Number(p)<0||Number(p)>=t.length))throw new RangeError('Array index out of bounds: '+p);};
+  return new Proxy(a,{get(t,p,r){check(t,p);return Reflect.get(t,p,r);},set(t,p,v,r){check(t,p);return Reflect.set(t,p,v,r);}});
+ }
 };
 const Integer={valueOf(s){if(s==null || !/^[+-]?\d+$/.test(s)) throw new Error('Invalid integer: '+s);const n=Number(s);if(n< -2147483648||n>2147483647)throw new Error('Integer out of range');return n;}};
 class Random {
@@ -25,11 +34,11 @@ class CanvasImage {
 }
 class CanvasGraphics {
  constructor(canvas){this.canvas=canvas;this.ctx=canvas.getContext('2d',{willReadFrequently:true});this.ctx.imageSmoothingEnabled=false;this.setColor(Color.black);this.setFont(new Font('Dialog',0,12));}
- setColor(c){if(!c)throw new Error('Missing color');this.color=c;this.ctx.fillStyle=this.ctx.strokeStyle=c.css;}
- setFont(f){this.font=f;this.ctx.font=`${f.style&2?'italic ':''}${f.style&1?'bold ':''}${f.size}px "MS Gothic", "ＭＳ ゴシック", "Noto Sans CJK JP", monospace`;this.ctx.textBaseline='alphabetic';}
+ setColor(c){if(!c)return;this.color=c;this.ctx.fillStyle=this.ctx.strokeStyle=c.css;}
+ setFont(f){if(!f)return;this.font=f;this.ctx.font=`${f.style&2?'italic ':''}${f.style&1?'bold ':''}${f.size}px "MS Gothic", "ＭＳ ゴシック", "Noto Sans CJK JP", "PetMonsterJP", monospace`;this.ctx.textBaseline='alphabetic';}
  fillRect(x,y,w,h){this.ctx.fillRect(Math.trunc(x),Math.trunc(y),Math.trunc(w),Math.trunc(h));}
- drawString(s,x,y){this.ctx.fillText(s==null?'null':String(s),Math.trunc(x),Math.trunc(y));}
- drawImage(img,x,y,...rest){if(!img)throw new Error('Missing image');let src=img.canvas||img;this.ctx.drawImage(src,Math.trunc(x),Math.trunc(y));return true;}
+ drawString(s,x,y){if(s==null)throw new TypeError('Null drawString argument');this.ctx.fillText(String(s),Math.trunc(x),Math.trunc(y));}
+ drawImage(img,x,y,...rest){if(!img)return false;let src=img.canvas||img;this.ctx.drawImage(src,Math.trunc(x),Math.trunc(y));return true;}
  drawOval(x,y,w,h){if(w<0||h<0)return;this.ctx.beginPath();this.ctx.ellipse(x+w/2+0.5,y+h/2+0.5,w/2,h/2,0,0,Math.PI*2);this.ctx.stroke();}
  fillOval(x,y,w,h){if(w<=0||h<=0)return;this.ctx.beginPath();this.ctx.ellipse(x+w/2,y+h/2,w/2,h/2,0,0,Math.PI*2);this.ctx.fill();}
  polygon(xs,ys,n,fill){this.ctx.beginPath();if(n){this.ctx.moveTo(xs[0]+(fill?0:0.5),ys[0]+(fill?0:0.5));for(let i=1;i<n;i++)this.ctx.lineTo(xs[i]+(fill?0:0.5),ys[i]+(fill?0:0.5));this.ctx.closePath();fill?this.ctx.fill():this.ctx.stroke();}}
@@ -52,27 +61,7 @@ class Applet {
  getImage(base,name){const url=new URL(name,base).href;const img=imageCache.get(url);if(!img)throw new Error('Image not preloaded: '+name);return img;}
  createImage(a,b){if(a instanceof MemoryImageSource){const c=new CanvasImage(a.w,a.h);const im=c.canvas.getContext('2d').createImageData(a.w,a.h);for(let y=0;y<a.h;y++)for(let x=0;x<a.w;x++){let v=a.arr[a.offset+y*a.stride+x],i=(y*a.w+x)*4;im.data[i]=(v>>>16)&255;im.data[i+1]=(v>>>8)&255;im.data[i+2]=v&255;im.data[i+3]=(v>>>24)&255;}c.canvas.getContext('2d').putImageData(im,0,0);return c;}return new CanvasImage(a,b);}
  repaint(){this.paint$1(this.graphics);}
- addMouseListener(gm){
-  const event=e=>{const r=this.canvas.getBoundingClientRect();return {getX:()=>Math.floor((e.clientX-r.left)*this.canvas.width/r.width),getY:()=>Math.floor((e.clientY-r.top)*this.canvas.height/r.height)};};
-  let activePointer=null;
-  const release=e=>{
-   if(activePointer===null || e.pointerId!==activePointer)return;
-   activePointer=null;
-   gm.mouseReleased$1(event(e));
-  };
-  this.canvas.addEventListener('pointerdown',e=>{
-   if(activePointer!==null)return;
-   activePointer=e.pointerId;
-   this.canvas.setPointerCapture(e.pointerId);
-   gm.mousePressed$1(event(e));
-   this.canvas.focus();
-   e.preventDefault();
-  });
-  this.canvas.addEventListener('pointerup',release);
-  this.canvas.addEventListener('pointercancel',release);
-  this.canvas.addEventListener('lostpointercapture',release);
-  window.addEventListener('blur',()=>{activePointer=null;gm.mouseReleased$1();});
- }
+ addMouseListener(gm){window.addEventListener('pointerup',()=>gm.mouseReleased$1({}));this.canvas.addEventListener('pointercancel',()=>gm.mouseReleased$1({}));this.canvas.addEventListener('pointerdown',e=>{const r=this.canvas.getBoundingClientRect();gm.mousePressed$1({getX:()=>Math.floor((e.clientX-r.left)*this.canvas.width/r.width),getY:()=>Math.floor((e.clientY-r.top)*this.canvas.height/r.height)});this.canvas.focus();e.preventDefault();});}
  addKeyListener(gk){
   const event=e=>({getKeyCode:()=>e.keyCode,getKeyChar:()=>e.key.length===1?e.key.charCodeAt(0):65535});
   window.addEventListener('keydown',e=>{if(document.querySelector('dialog[open]')||/INPUT|TEXTAREA/.test(e.target.tagName))return;gk.keyPressed$1(event(e));if([32,37,38,39,40,...Array.from({length:12},(_,i)=>112+i)].includes(e.keyCode))e.preventDefault();});
@@ -82,22 +71,8 @@ class Applet {
 }
 for(const [n,count] of [['getParameter',1],['getSize',0],['getDocumentBase',0],['getImage',2],['createImage',1],['createImage',2],['repaint',0],['addMouseListener',1],['addKeyListener',1]])Applet.prototype[n+'$'+count]=Applet.prototype[n];
 class KeyAdapter{} class MouseAdapter{} class Frame{} class BorderLayout{}
-class Widget {constructor(tag){this.el=document.createElement(tag);}setText(s){this.el.textContent=s;}setFont(f){} }
-class Label extends Widget{constructor(s){super('p');this.setText(s);}}
-class TextField extends Widget{constructor(s){super('input');this.el.type='text';this.el.spellcheck=false;this.setText(s);}setText(s){this.el.value=s;}getText(){return this.el.value;}}
-class Button extends Widget{constructor(s){super('button');this.setText(s);}addActionListener(listener){this.el.addEventListener('click',()=>listener.actionPerformed$1({getSource:()=>this}));}}
-class Panel extends Widget{constructor(){super('div');}setLayout(layout){}add(pos,component){this.el.append(component.el);}}
-class Dialog extends Widget {
- constructor(frame,title,modal){super('dialog');this.heading=document.createElement('strong');this.el.append(this.heading);this.setTitle(title);document.body.append(this.el);this.el.addEventListener('cancel',e=>{e.preventDefault();this.listener.windowClosing$1({});});}
- setTitle(s){this.heading.textContent=s;}
- setLocation(x,y){}
- setSize(w,h){this.el.style.minWidth=w+'px';}
- setVisible(f){if(f){if(!this.el.open){this._openPending=true;window.game?.gk?.init$0();this.el.showModal();const input=this.el.querySelector('input');input?.focus();input?.select();}}else {this.el.close();if(this._openPending){this._openPending=false;queueMicrotask(()=>this.index=-1);}if(window.game?.mp){window.game.mp.rgui_text=this.tf_1.getText();}window.game?.canvas.focus();}}
- add(pos,component){this.el.append(component.el);}
- addWindowListener(listener){this.listener=listener;}
-}
-for(const [n,count] of [['setTitle',1],['setFont',1],['add',2],['addWindowListener',1]])Dialog.prototype[n+'$'+count]=Dialog.prototype[n];
 class Thread {
- constructor(ap){this.ap=ap;}
- start(){this.id=setInterval(()=>{if(this.ap.th!==this){clearInterval(this.id);return;}if(document.querySelector('dialog[open]'))return;try{this.ap.run$0();}catch(e){clearInterval(this.id);window.gameError=e.stack;console.error(e);document.getElementById('load-status').textContent='エラー: '+e.message;}},this.ap.th_interval);}
+ constructor(ap){this.ap=ap;this.running=false;}
+ halt(){this.running=false;cancelAnimationFrame(this.id);}
+ start(){this.running=true;let deadline=performance.now();const frame=now=>{if(!this.running)return;if(now>=deadline){try{this.ap.run$0();deadline+=this.ap.th_interval;if(deadline<now-this.ap.th_interval)deadline=now+this.ap.th_interval;}catch(e){window.gameError=e.stack;console.error(e);document.getElementById('load-status').textContent='エラー: '+e.message;return;}}this.id=requestAnimationFrame(frame);};this.id=requestAnimationFrame(frame);}
 }
