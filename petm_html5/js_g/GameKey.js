@@ -9,6 +9,7 @@ right_f = false;
 tr1_f = false;
 tr2_f = false;
 tr3_f = false;
+c_jump_f = false; // 【追加】Cを押した瞬間を記録
 start_f = false;
 up_c = 0;
 down_c = 0;
@@ -26,6 +27,7 @@ init$0() {
 (this.tr1_f = false);
 (this.tr2_f = false);
 (this.tr3_f = false);
+(this.c_jump_f = false); // 【追加】
 (this.start_f = false);
 (this.up_c = 0);
 (this.down_c = 0);
@@ -33,6 +35,13 @@ init$0() {
 keyPressed$1(keyEvent) {
 (this.key_code = keyEvent.getKeyCode());
 (this.key_char = ((keyEvent.getKeyChar()) & 65535));
+
+// 【追加】VをJとして扱う
+if (this.key_code === 86) {
+(this.key_code = 74);
+(this.key_char = 106);
+}
+
 switch (this.key_code) {
 case 38:
 {
@@ -86,6 +95,11 @@ break;
 }
 case 67:
 {
+// 【追加】押しっぱなしによるキーリピートは除外
+if (!this.tr3_f) {
+(this.c_jump_f = true);
+}
+//追加ここまで
 (this.tr3_f = true);
 break;
 }

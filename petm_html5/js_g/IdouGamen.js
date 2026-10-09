@@ -544,7 +544,7 @@ if (((this.zukanGetTukamaetakazu$0() >= this.zukan_tukamaetakazu_max) && (this.k
 this.km.off$1(3);
 this.km.init1$1(3);
 this.km.setMessage$2(3, this.mp.name_kidohakase);
-this.km.addItem$2(3, "記念に賞状をあげよう。");
+this.km.addItem$2(3, "ゲームクリアじゃ！");
 this.km.activeSerifu$5(3, 120, 140, 272, Color.cyan);
 (this.km.mode = 250);
 }

@@ -2631,6 +2631,11 @@ if ((this.co_j.wy >= 320)) {
 }
 }
 jMove1000$0() {
+// 【追加】今回の更新でCの入力を受け取り、消費する
+var cJumpPressed = this.gk.c_jump_f;
+(this.gk.c_jump_f = false);
+//追加ここまで
+
 var s = 0;
 var s2 = 0;
 var s3 = 0;
@@ -2779,6 +2784,12 @@ if (((s5 >= 20) || (s4 >= 20))) {
 }
 if (this.co_j.jimen_f) {
 var bl = false;
+
+// 【追加】Cは選択中のモンスターに関係なく主人公をジャンプさせる
+if (this.gk.tr3_f && this.gk.key_code == 67) {
+(bl = true);
+}
+
 if (((this.km.selectedIndex[0] <= 1) && (this.gk.key_code == 74))) {
 (this.gk.key_code = 0);
 (bl = true);
