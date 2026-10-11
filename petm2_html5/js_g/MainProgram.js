@@ -3592,7 +3592,7 @@ this.gg.os_g.setColor(new Color(255, 160, 32));
 if ((characterObject.c2 == 0)) {
 (n2 = ((characterObject.vx - n4) | 0));
 (n = ((((characterObject.y - n5) | 0) + 16) | 0));
-(d2 = J.div(Math.PI, 180));
+(d2 = Math.PI / 180);
 (n6 = 0);
 while ((n6 <= 3)) {
 (d = (((characterObject.c5 + Math.imul(n6, 90)) | 0) * d2));
@@ -3609,7 +3609,7 @@ break;
 if ((characterObject.c3 > 0)) {
 (n2 = ((characterObject.vx - n4) | 0));
 (n = ((((characterObject.y - n5) | 0) + 16) | 0));
-(d2 = J.div(Math.PI, 180));
+(d2 = Math.PI / 180);
 (n6 = 0);
 while ((n6 <= 3)) {
 (d = (((characterObject.c5 + Math.imul(n6, 90)) | 0) * d2));
@@ -3636,7 +3636,7 @@ this.gg.os_g.setColor(new Color(255, 160, 32));
 if ((characterObject.c2 == 0)) {
 (n2 = ((characterObject.vx - n4) | 0));
 (n = ((((characterObject.y - n5) | 0) + 16) | 0));
-(d2 = J.div(Math.PI, 180));
+(d2 = Math.PI / 180);
 (n6 = 0);
 while ((n6 <= 3)) {
 (d = (((characterObject.c5 + Math.imul(n6, 90)) | 0) * d2));
@@ -3653,7 +3653,7 @@ break;
 if ((characterObject.c3 > 0)) {
 (n2 = ((characterObject.vx - n4) | 0));
 (n = ((((characterObject.y - n5) | 0) + 16) | 0));
-(d2 = J.div(Math.PI, 180));
+(d2 = Math.PI / 180);
 (n6 = 0);
 while ((n6 <= 3)) {
 (d = (((characterObject.c5 + Math.imul(n6, 90)) | 0) * d2));
@@ -3739,7 +3739,7 @@ this.gg.os_g.setColor(Color.white);
 if ((characterObject.c2 == 0)) {
 (n2 = ((characterObject.vx - n4) | 0));
 (n = ((((characterObject.y - n5) | 0) + 16) | 0));
-(d2 = J.div(Math.PI, 180));
+(d2 = Math.PI / 180);
 (n6 = 0);
 while ((n6 <= 3)) {
 (d = (((characterObject.c5 + Math.imul(n6, 90)) | 0) * d2));
@@ -3765,7 +3765,7 @@ this.gg.os_g.setColor(Color.white);
 if ((characterObject.c2 == 0)) {
 (n2 = ((characterObject.vx - n4) | 0));
 (n = ((((characterObject.y - n5) | 0) + 16) | 0));
-(d2 = J.div(Math.PI, 180));
+(d2 = Math.PI / 180);
 (n6 = 0);
 while ((n6 <= 3)) {
 (d = (((characterObject.c5 + Math.imul(n6, 90)) | 0) * d2));
