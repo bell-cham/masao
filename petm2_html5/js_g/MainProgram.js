@@ -10775,7 +10775,8 @@ case 200:
 if ((monsterObject.vy > 180)) {
 (monsterObject.vy = 180);
 }
-if (((monsterObject.vy > 0) && (this.maps.getBGCode$2(((n4 + 15) | 0), (((n5 = ((n5 + J.div(monsterObject.vy, 10)) | 0)) + 31) | 0)) >= 20))) {
+n5 = (n5 + J.div(monsterObject.vy, 10)) | 0;
+if (monsterObject.vy > 0 && this.maps.getBGCode$2((n4 + 15) | 0, (n5 + 31) | 0) >= 20) {
 (n5 = ((Math.imul(J.div(((n5 + 31) | 0), 32), 32) - 32) | 0));
 (monsterObject.vx = 0);
 (monsterObject.c = 1100);
@@ -10801,7 +10802,8 @@ case 210:
 if ((monsterObject.vy > 180)) {
 (monsterObject.vy = 180);
 }
-if (((monsterObject.vy > 0) && (this.maps.getBGCode$2(((n4 + 15) | 0), (((n5 = ((n5 + J.div(monsterObject.vy, 10)) | 0)) + 25) | 0)) >= 20))) {
+n5 = (n5 + J.div(monsterObject.vy, 10)) | 0;
+if (monsterObject.vy > 0 && this.maps.getBGCode$2((n4 + 15) | 0, (n5 + 25) | 0) >= 20) {
 (n5 = ((Math.imul(J.div(((n5 + 25) | 0), 32), 32) - 26) | 0));
 }
 (monsterObject.pt = ((this.co_w[n3].pb_type > 0) ? ((29 + Math.imul(this.co_w[n3].pb_type, 10)) | 0) : 88));

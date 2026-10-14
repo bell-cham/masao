@@ -2932,7 +2932,9 @@ if ((this.co_j.ac > 3)) {
 (this.co_j.ac = 0);
 }
 (this.co_j.pt = ((this.co_j.vx != 0) ? ((this.co_j.ac <= 1) ? 103 : 104) : ((this.co_j.vy >= 0) ? ((this.co_j.ac <= 1) ? 110 : 111) : ((this.co_j.ac <= 1) ? 110 : 111))));
-if (((((n2 = ((n2 + this.co_j.vx) | 0)) % 32) == 0) && (((n3 = ((n3 + this.co_j.vy) | 0)) % 32) == 0))) {
+n2 = (n2 + this.co_j.vx) | 0;
+n3 = (n3 + this.co_j.vy) | 0;
+if (n2 % 32 === 0 && n3 % 32 === 0) {
 (n = this.getBGZ$2(n2, n3));
 if (((((n == 60) || ((n >= 50) && (n <= 53))) || ((n >= 63) && (n <= 65))) || ((n >= 67) && (n <= 69)))) {
 (this.co_j.vx = 0);
@@ -3064,7 +3066,7 @@ this.gg.os_g.fillPolygon(this.cc_p1_x, this.cc_p1_y, 17);
 this.gg.os_g.fillPolygon(this.cc_p2_x, this.cc_p2_y, 17);
 }
 squareCLS$2(n, n2) {
-var d = J.div(Math.PI, 180);
+var d = Math.PI / 180;
 (this.cc_p1_x[0] = ((J.i((Math.cos((((this.cc_kakudo + 0) | 0) * d)) * n)) + 256) | 0));
 (this.cc_p1_y[0] = ((J.i((Math.sin((((this.cc_kakudo + 0) | 0) * d)) * n)) + 160) | 0));
 (this.cc_p1_x[1] = ((J.i((Math.cos((((this.cc_kakudo + 90) | 0) * d)) * n)) + 256) | 0));
