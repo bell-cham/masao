@@ -23,9 +23,9 @@ constructor(applet) {
 (this.ap = applet);
 (this.di = this.ap.getSize());
 (this.backcolor = Color.black);
-(this.os_img = this.ap.createImage(this.di.width, this.di.height));
+(this.os_img = this.ap.createImage(512, 320));
 (this.os_g = this.os_img.getGraphics());
-(this.os2_img = this.ap.createImage(((this.di.width + 96) | 0), ((this.di.height + 96) | 0)));
+(this.os2_img = this.ap.createImage(608, 416));
 (this.os2_g = this.os2_img.getGraphics());
 (this.mt = new MediaTracker(this.ap));
 var string = this.ap.getParameter("filename_pattern");

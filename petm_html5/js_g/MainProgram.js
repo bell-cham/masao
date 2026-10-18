@@ -2211,9 +2211,21 @@ this.wSetGym$4(Math.imul(n2, 32), Math.imul(n3, 32), 50, 0);
 this.wSetGym$4(Math.imul(n2, 32), Math.imul(n3, 32), 50, 4);
 }
 if ((this.system_mode != 0)) {
-// 【追加】上級版のW: サンダラを生成
-if (((c == 87) && (this.system_mode == 2))) {
-this.wSet$3(Math.imul(n2, 32), Math.imul(n3, 32), 2500);
+// W：サンダラを生成
+if (c == 87) {
+  this.wSet$3(
+    Math.imul(n2, 32),
+    Math.imul(n3, 32),
+    2500
+  );
+}
+// X：スイクウを生成
+if (c == 88) {
+  this.wSet$3(
+    Math.imul(n2, 32),
+    Math.imul(n3, 32),
+    2400
+  );
 }
 //追加ここまで
 if ((c == 85)) {
@@ -8453,6 +8465,87 @@ case 2300:
 (wildObject.pt = 167);
 (wildObject.pth = 0);
 break;
+}
+//スイクウ追加
+case 2400:
+{
+  // スイクウの待機画像
+  wildObject.pt = 177;
+
+  // 主人公の方向を向く
+  wildObject.pth = n4 >= this.co_j.x ? 0 : 1;
+
+  break;
+}
+//追加ここまで
+case 2500:
+{
+  n6 = this.targetPetChikaiX$1(n4);
+
+  if (
+    n6 >= 0 &&
+    J.abs((this.co_p[n6].x - (n4 - 60)) | 0) < 84 &&
+    this.co_p[n6].y > n5 &&
+    wildObject.pp > 16
+  ) {
+    wildObject.c = 2510;
+    wildObject.c1 = 0;
+  }
+
+  if (wildObject.pp <= 16) {
+    wildObject.c = 2520;
+  }
+
+  wildObject.pt = 145;
+  wildObject.pth = n4 >= this.co_j.x ? 0 : 1;
+  break;
+}
+
+case 2510:
+{
+  wildObject.c1 = (wildObject.c1 + 1) | 0;
+
+  if (wildObject.c1 == 10) {
+    this.mSet$6(
+      (n4 - 60) | 0,
+      n5,
+      1000,
+      0,
+      0,
+      1
+    );
+
+    wildObject.pp = (wildObject.pp - 8) | 0;
+  }
+
+  if (wildObject.c1 >= 30) {
+    wildObject.c = 2500;
+  }
+
+  wildObject.pt = 145;
+  wildObject.pth = 0;
+  break;
+}
+
+case 2520:
+{
+  n4 = (n4 + 3) | 0;
+
+  if (n4 >= ((wildObject.positionX + 384) | 0)) {
+    n4 = (wildObject.positionX + 384) | 0;
+    wildObject.c = 2530;
+  }
+
+  wildObject.pt = 145;
+  wildObject.pth = 1;
+  break;
+}
+
+case 2530:
+{
+  wildObject.pt = 145;
+  wildObject.pth = n4 >= this.co_j.x ? 0 : 1;
+  break;
 }
 case 2600:
 {
