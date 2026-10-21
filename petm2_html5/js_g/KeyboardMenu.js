@@ -940,10 +940,10 @@ this.hg.setColor(Color.cyan);
 this.hg.drawString(this.mp.co_p[keyboardMenuObject.item_int[0]].name, ((keyboardMenuObject.x + 10) | 0), ((((((((keyboardMenuObject.y + 6) | 0) + 12) | 0) + 48) | 0) + 8) | 0));
 this.hg.setColor(this.frontcolor);
 if ((this.mp.co_p[keyboardMenuObject.item_int[0]].seibetu == 1)) {
-this.hg.drawString("がんばります！", ((keyboardMenuObject.x + 10) | 0), ((((((((((keyboardMenuObject.y + 6) | 0) + 12) | 0) + 48) | 0) + 8) | 0) + 18) | 0));
+this.hg.drawString("ただいま！", ((keyboardMenuObject.x + 10) | 0), ((((((((((keyboardMenuObject.y + 6) | 0) + 12) | 0) + 48) | 0) + 8) | 0) + 18) | 0));
 }
 else {
-this.hg.drawString("がんばるぞ！", ((keyboardMenuObject.x + 10) | 0), ((((((((((keyboardMenuObject.y + 6) | 0) + 12) | 0) + 48) | 0) + 8) | 0) + 18) | 0));
+this.hg.drawString("ただいま！", ((keyboardMenuObject.x + 10) | 0), ((((((((((keyboardMenuObject.y + 6) | 0) + 12) | 0) + 48) | 0) + 8) | 0) + 18) | 0));
 }
 if ((n == this.aw)) {
 if ((this.fc > 3)) {

@@ -912,10 +912,10 @@ break;
 var n6 = this.km.idlist_item[this.km.getSelectedIndex$1(12)];
 this.km.initSerifubox$5(13, 298, 204, 192, this.mp.co_p[n6].name);
 if ((this.mp.co_p[n6].seibetu == 1)) {
-this.km.addItem$2(13, "わたしはこれから旅に出ます。");
+this.km.addItem$2(13, "またね！");
 }
 else {
-this.km.addItem$2(13, "ぼくはこれから旅に出ます。");
+this.km.addItem$2(13, "またね！");
 }
 this.km.active$1(13);
 this.mp.co_p[n6].initSyurui$2(1000, this.mp);

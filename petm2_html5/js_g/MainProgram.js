@@ -5452,7 +5452,7 @@ this.km.addItem$2(3, (this.item_data_name[1] + "を塗るよ。"));
 }
 this.km.addItem$2(3, this.co_p[n].name);
 if ((this.co_p[n].seibetu == 1)) {
-this.km.addItem$2(3, "痛くないです。");
+this.km.addItem$2(3, "痛くないわ。");
 }
 else {
 this.km.addItem$2(3, "痛くなんかないもーん。");
@@ -15419,7 +15419,7 @@ if ((monsterObject.zokusei == 12)) {
 if ((((Math.abs(((n5 - monsterObject.x) | 0)) < ((28 + monsterObject.ahs) | 0)) && (Math.abs(((n6 - monsterObject.y) | 0)) < ((28 + monsterObject.ahs) | 0))) && !this.gym_f)) {
 this.km.openTimeMessage$5(10, 240, 56, 152, this.co_p[n4].name);
 if ((this.co_p[n4].seibetu == 1)) {
-this.km.addItem$2(10, "効果なしです。");
+this.km.addItem$2(10, "効果がないわ。");
 }
 else {
 this.km.addItem$2(10, "効果がないよ。");
@@ -15711,7 +15711,7 @@ if ((n == 1)) {
 if (!this.gym_f) {
 this.km.openTimeMessage$5(10, 224, 56, 152, string);
 if ((n3 == 1)) {
-this.km.addItem$2(10, "効果は抜群です。");
+this.km.addItem$2(10, "効果は抜群よ！");
 }
 else {
 this.km.addItem$2(10, "効果は抜群だよ！");
@@ -15739,7 +15739,7 @@ if ((n == 3)) {
 if (!this.gym_f) {
 this.km.openTimeMessage$5(10, 224, 56, 152, string);
 if ((n3 == 1)) {
-this.km.addItem$2(10, "効果なしです。");
+this.km.addItem$2(10, "効果がないわ。");
 }
 else {
 this.km.addItem$2(10, "効果がないよ。");
@@ -15786,7 +15786,7 @@ else {
 if (!this.gym_f) {
 this.km.openTimeMessage$5(10, 240, 56, 152, string);
 if ((n5 == 1)) {
-this.km.addItem$2(10, "効果なしです。");
+this.km.addItem$2(10, "効果がないわ。");
 }
 else {
 this.km.addItem$2(10, "効果がないよ。");
@@ -15874,7 +15874,7 @@ if ((n11 == 3)) {
 if (!this.gym_f) {
 this.km.openTimeMessage$5(10, 240, 56, 152, string);
 if ((n5 == 1)) {
-this.km.addItem$2(10, "効果なしです。");
+this.km.addItem$2(10, "効果がないわ。");
 }
 else {
 this.km.addItem$2(10, "効果がないよ。");
@@ -37161,7 +37161,7 @@ s.push(10);
 pc=11709; continue;
 }
 case 11709: {
-s.push("効果なしです。");
+s.push("効果がないわ。");
 pc=11712; continue;
 }
 case 11712: {
@@ -38076,7 +38076,7 @@ s.push(10);
 pc=12212; continue;
 }
 case 12212: {
-s.push("効果なしです。");
+s.push("効果がないわ。");
 pc=12215; continue;
 }
 case 12215: {
