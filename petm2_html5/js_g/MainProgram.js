@@ -15725,7 +15725,7 @@ if ((n == 2)) {
 if (!this.gym_f) {
 this.km.openTimeMessage$5(10, 224, 56, 152, string);
 if ((n3 == 1)) {
-this.km.addItem$2(10, "効果はいまひとつです。");
+this.km.addItem$2(10, "効果はいまひとつよ。");
 }
 else {
 this.km.addItem$2(10, "効果はいまひとつだよ。");
