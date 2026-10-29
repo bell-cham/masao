@@ -1329,10 +1329,25 @@ this.hg.setColor(this.frontcolor);
 }
 }
 drawWindowbox$4(n, n2, n3, n4) {
-this.hg.setColor(this.frontcolor);
-this.hg.fillRect(n, n2, n3, n4);
-this.hg.setColor(this.backcolor);
-this.hg.fillRect(((n + 2) | 0), ((n2 + 2) | 0), ((n3 - 4) | 0), ((n4 - 4) | 0));
+    // 枠線だけを描く。内側は塗りつぶさない。
+    this.hg.setColor(this.frontcolor);
+    this.hg.fillRect(n, n2, n3, 2);
+    this.hg.fillRect(n, n2 + n4 - 2, n3, 2);
+    this.hg.fillRect(n, n2 + 2, 2, n4 - 4);
+    this.hg.fillRect(n + n3 - 2, n2 + 2, 2, n4 - 4);
+
+    // 背景だけを半透明にする。
+    this.hg.setColor(this.backcolor);
+
+    const ctx = this.hg.ctx;
+    ctx.save();
+
+    try {
+        ctx.globalAlpha = 0.7;
+        this.hg.fillRect(n + 2, n2 + 2, n3 - 4, n4 - 4);
+    } finally {
+        ctx.restore();
+    }
 }
 }
 globalThis.KeyboardMenu = KeyboardMenu;
